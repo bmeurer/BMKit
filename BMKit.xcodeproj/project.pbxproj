@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C7BB3F8E13C0C44500E23AAD /* UIImagePickerController+BMKitAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = C7BB3F8C13C0C44500E23AAD /* UIImagePickerController+BMKitAdditions.h */; };
+		C7BB3F8F13C0C44500E23AAD /* UIImagePickerController+BMKitAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = C7BB3F8D13C0C44500E23AAD /* UIImagePickerController+BMKitAdditions.m */; };
+		C7BB3F9213C0C46E00E23AAD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7BB3F9113C0C46E00E23AAD /* UIKit.framework */; };
 		C7F1F36413C05D0D00F1DED1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7F1F36313C05D0D00F1DED1 /* Foundation.framework */; };
 		C7F1F36F13C05E0200F1DED1 /* NSObject+BMKitAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = C7F1F36D13C05E0200F1DED1 /* NSObject+BMKitAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C7F1F37013C05E0200F1DED1 /* NSObject+BMKitAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = C7F1F36E13C05E0200F1DED1 /* NSObject+BMKitAdditions.m */; };
@@ -17,6 +20,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C7BB3F8C13C0C44500E23AAD /* UIImagePickerController+BMKitAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImagePickerController+BMKitAdditions.h"; sourceTree = "<group>"; };
+		C7BB3F8D13C0C44500E23AAD /* UIImagePickerController+BMKitAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImagePickerController+BMKitAdditions.m"; sourceTree = "<group>"; };
+		C7BB3F9113C0C46E00E23AAD /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		C7F1F36013C05D0D00F1DED1 /* libBMKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libBMKit.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7F1F36313C05D0D00F1DED1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		C7F1F36713C05D0D00F1DED1 /* BMKit-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BMKit-Prefix.pch"; sourceTree = "<group>"; };
@@ -34,6 +40,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C7F1F36413C05D0D00F1DED1 /* Foundation.framework in Frameworks */,
+				C7BB3F9213C0C46E00E23AAD /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +68,7 @@
 			isa = PBXGroup;
 			children = (
 				C7F1F36313C05D0D00F1DED1 /* Foundation.framework */,
+				C7BB3F9113C0C46E00E23AAD /* UIKit.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -91,6 +99,8 @@
 				C7F1F37513C06D8000F1DED1 /* NSData+BMKitAdditions.m */,
 				C7F1F36D13C05E0200F1DED1 /* NSObject+BMKitAdditions.h */,
 				C7F1F36E13C05E0200F1DED1 /* NSObject+BMKitAdditions.m */,
+				C7BB3F8C13C0C44500E23AAD /* UIImagePickerController+BMKitAdditions.h */,
+				C7BB3F8D13C0C44500E23AAD /* UIImagePickerController+BMKitAdditions.m */,
 			);
 			name = Additions;
 			sourceTree = "<group>";
@@ -106,6 +116,7 @@
 				C7F1F37313C06D2500F1DED1 /* BMKit.h in Headers */,
 				C7F1F37613C06D8000F1DED1 /* NSData+BMKitAdditions.h in Headers */,
 				C7F1F38D13C086E200F1DED1 /* BMKitTypes.h in Headers */,
+				C7BB3F8E13C0C44500E23AAD /* UIImagePickerController+BMKitAdditions.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -161,6 +172,7 @@
 			files = (
 				C7F1F37013C05E0200F1DED1 /* NSObject+BMKitAdditions.m in Sources */,
 				C7F1F37713C06D8000F1DED1 /* NSData+BMKitAdditions.m in Sources */,
+				C7BB3F8F13C0C44500E23AAD /* UIImagePickerController+BMKitAdditions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -240,6 +252,7 @@
 				C7F1F36C13C05D0D00F1DED1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

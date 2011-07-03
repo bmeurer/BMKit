@@ -1,5 +1,5 @@
 /*-
- * Copyright (c) 2011, Benedikt Meurer <benedikt.meurer@googlemail.com>
+ * Copyright (c) 2004-2011, Benedikt Meurer <benedikt.meurer@googlemail.com>
  * All rights reserved.
  *
  * Redistribution and use in source and binary forms, with or without
@@ -25,18 +25,22 @@
  * SUCH DAMAGE.
  */
 
-#include <Availability.h>
+#import <UIKit/UIKit.h>
 
-#ifndef __IPHONE_3_0
-# warning "This project uses features only available in iPhone SDK 3.0 and later."
-#endif
 
-#include <objc/objc.h>
-#include <objc/runtime.h>
+/** BMKit related additions to the UIImagePickerController. */
+@interface UIImagePickerController (BMKitAdditions)
 
-#include <CommonCrypto/CommonDigest.h>
+///---------------------------------
+/// @name Setting the Picker Source
+///---------------------------------
 
-#ifdef __OBJC__
-# import <Foundation/Foundation.h>
-# import <UIKit/UIKit.h>
-#endif
+/** Returns a Boolean value indicating whether a media type is available for a supported source.
+ 
+ @param mediaType A media type.
+ @param sourceType An UIImagePickerController source type.
+ @return `YES` if the _sourceType_ is supported and the _mediaType_ is available for the _sourceType_, otherwise `NO` is returned.
+ */
++ (BOOL)isMediaType:(NSString *)mediaType availableForSourceType:(UIImagePickerControllerSourceType)sourceType;
+
+@end
