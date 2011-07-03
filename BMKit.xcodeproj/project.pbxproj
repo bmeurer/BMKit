@@ -1,0 +1,214 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C7F1F36413C05D0D00F1DED1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7F1F36313C05D0D00F1DED1 /* Foundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		C7F1F36013C05D0D00F1DED1 /* libBMKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libBMKit.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		C7F1F36313C05D0D00F1DED1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		C7F1F36713C05D0D00F1DED1 /* BMKit-Prefix.pch */ = {isa = PBXFileReference; path = "BMKit-Prefix.pch"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C7F1F35D13C05D0D00F1DED1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C7F1F36413C05D0D00F1DED1 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C7F1F35513C05D0D00F1DED1 = {
+			isa = PBXGroup;
+			children = (
+				C7F1F36513C05D0D00F1DED1 /* BMKit */,
+				C7F1F36213C05D0D00F1DED1 /* Frameworks */,
+				C7F1F36113C05D0D00F1DED1 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C7F1F36113C05D0D00F1DED1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C7F1F36013C05D0D00F1DED1 /* libBMKit.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C7F1F36213C05D0D00F1DED1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C7F1F36313C05D0D00F1DED1 /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C7F1F36513C05D0D00F1DED1 /* BMKit */ = {
+			isa = PBXGroup;
+			children = (
+				C7F1F36613C05D0D00F1DED1 /* Supporting Files */,
+			);
+			path = BMKit;
+			sourceTree = "<group>";
+		};
+		C7F1F36613C05D0D00F1DED1 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C7F1F36713C05D0D00F1DED1 /* BMKit-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		C7F1F35E13C05D0D00F1DED1 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		C7F1F35F13C05D0D00F1DED1 /* BMKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C7F1F36A13C05D0D00F1DED1 /* Build configuration list for PBXNativeTarget "BMKit" */;
+			buildPhases = (
+				C7F1F35C13C05D0D00F1DED1 /* Sources */,
+				C7F1F35D13C05D0D00F1DED1 /* Frameworks */,
+				C7F1F35E13C05D0D00F1DED1 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BMKit;
+			productName = BMKit;
+			productReference = C7F1F36013C05D0D00F1DED1 /* libBMKit.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C7F1F35713C05D0D00F1DED1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				ORGANIZATIONNAME = "Universität Siegen";
+			};
+			buildConfigurationList = C7F1F35A13C05D0D00F1DED1 /* Build configuration list for PBXProject "BMKit" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = C7F1F35513C05D0D00F1DED1;
+			productRefGroup = C7F1F36113C05D0D00F1DED1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C7F1F35F13C05D0D00F1DED1 /* BMKit */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C7F1F35C13C05D0D00F1DED1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		C7F1F36813C05D0D00F1DED1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		C7F1F36913C05D0D00F1DED1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				SDKROOT = iphoneos;
+			};
+			name = Release;
+		};
+		C7F1F36B13C05D0D00F1DED1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				DSTROOT = /tmp/BMKit.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BMKit/BMKit-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		C7F1F36C13C05D0D00F1DED1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				DSTROOT = /tmp/BMKit.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BMKit/BMKit-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C7F1F35A13C05D0D00F1DED1 /* Build configuration list for PBXProject "BMKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C7F1F36813C05D0D00F1DED1 /* Debug */,
+				C7F1F36913C05D0D00F1DED1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C7F1F36A13C05D0D00F1DED1 /* Build configuration list for PBXNativeTarget "BMKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C7F1F36B13C05D0D00F1DED1 /* Debug */,
+				C7F1F36C13C05D0D00F1DED1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C7F1F35713C05D0D00F1DED1 /* Project object */;
+}
