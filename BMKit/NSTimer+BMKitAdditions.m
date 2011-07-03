@@ -57,12 +57,12 @@ static BMTimerBlock BMTimerBlockPrepare(BMTimerBlock aBlock)
                              @selector(BM_invokeWithTimer:),
                              (IMP)BMTimerBlockInvokeWithTimer,
                              "v@:@")) {
-            IMP timerBlockFireWithTimer = class_getMethodImplementation(class, @selector(BM_invokeWithTimer:));
-            if (!timerBlockFireWithTimer) {
+            IMP timerBlockInvokeWithTimer = class_getMethodImplementation(class, @selector(BM_invokeWithTimer:));
+            if (!timerBlockInvokeWithTimer) {
                 // Most probably out-of-memory, handle this gracefully...
                 aBlock = nil;
             }
-            else if (timerBlockFireWithTimer != (IMP)BMTimerBlockInvokeWithTimer) {
+            else if (timerBlockInvokeWithTimer != (IMP)BMTimerBlockInvokeWithTimer) {
                 // Someone messed with our internals, should not happen...
                 [NSException raise:NSInternalInconsistencyException format:@"Invalid method implementation of -BM_invokeWithTimer: for class %s", class_getName(class)];
             }
