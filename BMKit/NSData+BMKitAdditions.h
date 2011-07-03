@@ -28,7 +28,7 @@
 #import <Foundation/Foundation.h>
 
 
-/** BMKit related additions to the NSData class. */
+/** BMKit related additions to the `NSData` class. */
 @interface NSData (BMKitAdditions)
 
 ///-----------------------
@@ -65,6 +65,34 @@
 /// @name Message Digests
 ///-----------------------
 
+/** Returns the MD2 message digest of the receivers bytes.
+ 
+ @return The MD2 message digest of the receivers bytes.
+ @see MD2String
+ */
+- (NSData *)MD2;
+
+/** Returns the string representation of the MD2 message digest of the receivers bytes.
+ 
+ @return The string representation of the MD2 message digest of the receivers bytes.
+ @see MD2
+ */
+- (NSString *)MD2String;
+
+/** Returns the MD4 message digest of the receivers bytes.
+ 
+ @return The MD4 message digest of the receivers bytes.
+ @see MD4String
+ */
+- (NSData *)MD4;
+
+/** Returns the string representation of the MD4 message digest of the receivers bytes.
+ 
+ @return The string representation of the MD4 message digest of the receivers bytes.
+ @see MD4
+ */
+- (NSString *)MD4String;
+
 /** Returns the MD5 message digest of the receivers bytes.
  
  @return The MD5 message digest of the receivers bytes.
@@ -78,5 +106,75 @@
  @see MD5
  */
 - (NSString *)MD5String;
+
+/** Returns the SHA1 message digest of the receivers bytes.
+ 
+ @return The SHA1 message digest of the receivers bytes.
+ @see SHA1String
+ */
+- (NSData *)SHA1;
+
+/** Returns the string representation of the SHA1 message digest of the receivers bytes.
+ 
+ @return The string representation of the SHA1 message digest of the receivers bytes.
+ @see SHA1
+ */
+- (NSString *)SHA1String;
+
+/** Returns the SHA224 message digest of the receivers bytes.
+ 
+ @return The SHA224 message digest of the receivers bytes.
+ @see SHA224String
+ */
+- (NSData *)SHA224;
+
+/** Returns the string representation of the SHA224 message digest of the receivers bytes.
+ 
+ @return The string representation of the SHA224 message digest of the receivers bytes.
+ @see SHA224
+ */
+- (NSString *)SHA224String;
+
+/** Returns the SHA256 message digest of the receivers bytes.
+ 
+ @return The SHA256 message digest of the receivers bytes.
+ @see SHA256String
+ */
+- (NSData *)SHA256;
+
+/** Returns the string representation of the SHA256 message digest of the receivers bytes.
+ 
+ @return The string representation of the SHA256 message digest of the receivers bytes.
+ @see SHA256
+ */
+- (NSString *)SHA256String;
+
+/** Returns the SHA384 message digest of the receivers bytes.
+ 
+ @return The SHA384 message digest of the receivers bytes.
+ @see SHA384String
+ */
+- (NSData *)SHA384;
+
+/** Returns the string representation of the SHA384 message digest of the receivers bytes.
+ 
+ @return The string representation of the SHA384 message digest of the receivers bytes.
+ @see SHA384
+ */
+- (NSString *)SHA384String;
+
+/** Returns the SHA512 message digest of the receivers bytes.
+ 
+ @return The SHA512 message digest of the receivers bytes.
+ @see SHA512String
+ */
+- (NSData *)SHA512;
+
+/** Returns the string representation of the SHA512 message digest of the receivers bytes.
+ 
+ @return The string representation of the SHA512 message digest of the receivers bytes.
+ @see SHA512
+ */
+- (NSString *)SHA512String;
 
 @end

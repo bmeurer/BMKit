@@ -184,27 +184,137 @@ static const char NSDataBase64EncodingTable[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcde
 #pragma mark Message Digests
 
 
-static const char NSDataMD5StringHexDigits[] = "0123456789abcdef";
+static const char NSDataDigestStringHexDigits[] = "0123456789abcdef";
+
+
+static NSString *NSDataDigestString(NSData *digestData)
+{
+    NSString *digestString = nil;
+    if (digestData) {
+        unsigned digestLength = [digestData length];
+        const UInt8 *digest = [digestData bytes];
+        char str[digestLength * 2];
+        for (unsigned n = 0; n < digestLength; ++n) {
+            str[2 * n]     = NSDataDigestStringHexDigits[digest[n] >> 4];
+            str[2 * n + 1] = NSDataDigestStringHexDigits[digest[n] & 0xf];
+        }
+        digestString = [[NSString alloc] initWithBytes:str
+                                                length:(digestLength * 2)
+                                              encoding:NSASCIIStringEncoding];
+    }
+    return [digestString autorelease];
+}
+
+
+- (NSData *)MD2
+{
+    UInt8 digest[CC_MD2_DIGEST_LENGTH];
+    CC_MD2([self bytes], [self length], digest);
+    return [NSData dataWithBytes:digest length:sizeof(digest)];
+}
+
+
+- (NSString *)MD2String
+{
+    return NSDataDigestString([self MD2]);
+}
+
+
+- (NSData *)MD4
+{
+    UInt8 digest[CC_MD4_DIGEST_LENGTH];
+    CC_MD4([self bytes], [self length], digest);
+    return [NSData dataWithBytes:digest length:sizeof(digest)];
+}
+
+
+- (NSString *)MD4String
+{
+    return NSDataDigestString([self MD4]);
+}
 
 
 - (NSData *)MD5
 {
-    uint8_t md[CC_MD5_DIGEST_LENGTH];
-    CC_MD5([self bytes], [self length], md);
-    return [NSData dataWithBytes:md length:sizeof(md)];
+    UInt8 digest[CC_MD5_DIGEST_LENGTH];
+    CC_MD5([self bytes], [self length], digest);
+    return [NSData dataWithBytes:digest length:sizeof(digest)];
 }
 
 
 - (NSString *)MD5String
 {
-    uint8_t md[CC_MD5_DIGEST_LENGTH];
-    char str[CC_MD5_DIGEST_LENGTH * 2];
-    CC_MD5([self bytes], [self length], md);
-    for (unsigned n = 0; n < CC_MD5_DIGEST_LENGTH; ++n) {
-        str[2 * n]     = NSDataMD5StringHexDigits[md[n] >> 4];
-        str[2 * n + 1] = NSDataMD5StringHexDigits[md[n] & 0xf];
-    }
-    return [[[NSString alloc] initWithBytes:str length:sizeof(str) encoding:NSASCIIStringEncoding] autorelease];
+    return NSDataDigestString([self MD5]);
+}
+
+
+- (NSData *)SHA1
+{
+    UInt8 digest[CC_SHA1_DIGEST_LENGTH];
+    CC_SHA1([self bytes], [self length], digest);
+    return [NSData dataWithBytes:digest length:sizeof(digest)];
+}
+
+
+- (NSString *)SHA1String
+{
+    return NSDataDigestString([self SHA1]);
+}
+
+
+- (NSData *)SHA224
+{
+    UInt8 digest[CC_SHA224_DIGEST_LENGTH];
+    CC_SHA224([self bytes], [self length], digest);
+    return [NSData dataWithBytes:digest length:sizeof(digest)];
+}
+
+
+- (NSString *)SHA224String
+{
+    return NSDataDigestString([self SHA224]);
+}
+
+
+- (NSData *)SHA256
+{
+    UInt8 digest[CC_SHA256_DIGEST_LENGTH];
+    CC_SHA256([self bytes], [self length], digest);
+    return [NSData dataWithBytes:digest length:sizeof(digest)];
+}
+
+
+- (NSString *)SHA256String
+{
+    return NSDataDigestString([self SHA256]);
+}
+
+
+- (NSData *)SHA384
+{
+    UInt8 digest[CC_SHA384_DIGEST_LENGTH];
+    CC_SHA384([self bytes], [self length], digest);
+    return [NSData dataWithBytes:digest length:sizeof(digest)];
+}
+
+
+- (NSString *)SHA384String
+{
+    return NSDataDigestString([self SHA384]);
+}
+
+
+- (NSData *)SHA512
+{
+    UInt8 digest[CC_SHA512_DIGEST_LENGTH];
+    CC_SHA512([self bytes], [self length], digest);
+    return [NSData dataWithBytes:digest length:sizeof(digest)];
+}
+
+
+- (NSString *)SHA512String
+{
+    return NSDataDigestString([self SHA512]);
 }
 
 
