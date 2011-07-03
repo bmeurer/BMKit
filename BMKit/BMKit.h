@@ -25,16 +25,5 @@
  * SUCH DAMAGE.
  */
 
-#include <Availability.h>
-
-#ifndef __IPHONE_3_0
-# warning "This project uses features only available in iPhone SDK 3.0 and later."
-#endif
-
-#include <objc/runtime.h>
-
-#include <CommonCrypto/CommonDigest.h>
-
-#ifdef __OBJC__
-# import <Foundation/Foundation.h>
-#endif
+#import "NSData+BMKitAdditions.h"
+#import "NSObject+BMKitAdditions.h"

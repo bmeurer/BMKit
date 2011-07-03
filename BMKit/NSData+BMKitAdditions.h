@@ -1,5 +1,5 @@
 /*-
- * Copyright (c) 2011, Benedikt Meurer <benedikt.meurer@googlemail.com>
+ * Copyright (c) 2004-2011, Benedikt Meurer <benedikt.meurer@googlemail.com>
  * All rights reserved.
  *
  * Redistribution and use in source and binary forms, with or without
@@ -25,16 +25,24 @@
  * SUCH DAMAGE.
  */
 
-#include <Availability.h>
+#import <Foundation/Foundation.h>
 
-#ifndef __IPHONE_3_0
-# warning "This project uses features only available in iPhone SDK 3.0 and later."
-#endif
 
-#include <objc/runtime.h>
+@interface NSData (BMKitAdditions)
 
-#include <CommonCrypto/CommonDigest.h>
+///----------------------
+/// @name Base64 Encoding
+///----------------------
 
-#ifdef __OBJC__
-# import <Foundation/Foundation.h>
-#endif
++ (NSData *)dataWithBase64EncodedString:(NSString *)aString;
+- (id)initWithBase64EncodedString:(NSString *)aString;
+- (NSString *)base64EncodedString;
+
+///----------------------
+/// @name Message Digests
+///----------------------
+
+- (NSData *)MD5;
+- (NSString *)MD5String;
+
+@end

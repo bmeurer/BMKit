@@ -8,12 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		C7F1F36413C05D0D00F1DED1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7F1F36313C05D0D00F1DED1 /* Foundation.framework */; };
+		C7F1F36F13C05E0200F1DED1 /* NSObject+BMKitAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = C7F1F36D13C05E0200F1DED1 /* NSObject+BMKitAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C7F1F37013C05E0200F1DED1 /* NSObject+BMKitAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = C7F1F36E13C05E0200F1DED1 /* NSObject+BMKitAdditions.m */; };
+		C7F1F37313C06D2500F1DED1 /* BMKit.h in Headers */ = {isa = PBXBuildFile; fileRef = C7F1F37213C06D2500F1DED1 /* BMKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C7F1F37613C06D8000F1DED1 /* NSData+BMKitAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = C7F1F37413C06D8000F1DED1 /* NSData+BMKitAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C7F1F37713C06D8000F1DED1 /* NSData+BMKitAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = C7F1F37513C06D8000F1DED1 /* NSData+BMKitAdditions.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		C7F1F36013C05D0D00F1DED1 /* libBMKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libBMKit.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7F1F36313C05D0D00F1DED1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		C7F1F36713C05D0D00F1DED1 /* BMKit-Prefix.pch */ = {isa = PBXFileReference; path = "BMKit-Prefix.pch"; sourceTree = "<group>"; };
+		C7F1F36713C05D0D00F1DED1 /* BMKit-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BMKit-Prefix.pch"; sourceTree = "<group>"; };
+		C7F1F36D13C05E0200F1DED1 /* NSObject+BMKitAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+BMKitAdditions.h"; sourceTree = "<group>"; };
+		C7F1F36E13C05E0200F1DED1 /* NSObject+BMKitAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+BMKitAdditions.m"; sourceTree = "<group>"; };
+		C7F1F37213C06D2500F1DED1 /* BMKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMKit.h; sourceTree = "<group>"; };
+		C7F1F37413C06D8000F1DED1 /* NSData+BMKitAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+BMKitAdditions.h"; sourceTree = "<group>"; };
+		C7F1F37513C06D8000F1DED1 /* NSData+BMKitAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+BMKitAdditions.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,7 +66,9 @@
 		C7F1F36513C05D0D00F1DED1 /* BMKit */ = {
 			isa = PBXGroup;
 			children = (
+				C7F1F37113C05E0700F1DED1 /* Additions */,
 				C7F1F36613C05D0D00F1DED1 /* Supporting Files */,
+				C7F1F37213C06D2500F1DED1 /* BMKit.h */,
 			);
 			path = BMKit;
 			sourceTree = "<group>";
@@ -69,6 +81,17 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		C7F1F37113C05E0700F1DED1 /* Additions */ = {
+			isa = PBXGroup;
+			children = (
+				C7F1F37413C06D8000F1DED1 /* NSData+BMKitAdditions.h */,
+				C7F1F37513C06D8000F1DED1 /* NSData+BMKitAdditions.m */,
+				C7F1F36D13C05E0200F1DED1 /* NSObject+BMKitAdditions.h */,
+				C7F1F36E13C05E0200F1DED1 /* NSObject+BMKitAdditions.m */,
+			);
+			name = Additions;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -76,6 +99,9 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C7F1F36F13C05E0200F1DED1 /* NSObject+BMKitAdditions.h in Headers */,
+				C7F1F37313C06D2500F1DED1 /* BMKit.h in Headers */,
+				C7F1F37613C06D8000F1DED1 /* NSData+BMKitAdditions.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -105,7 +131,7 @@
 		C7F1F35713C05D0D00F1DED1 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				ORGANIZATIONNAME = "Universität Siegen";
+				ORGANIZATIONNAME = "Benedikt Meurer";
 			};
 			buildConfigurationList = C7F1F35A13C05D0D00F1DED1 /* Build configuration list for PBXProject "BMKit" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -129,6 +155,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C7F1F37013C05E0200F1DED1 /* NSObject+BMKitAdditions.m in Sources */,
+				C7F1F37713C06D8000F1DED1 /* NSData+BMKitAdditions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -146,7 +174,7 @@
 				GCC_VERSION = com.apple.compilers.llvmgcc42;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -156,10 +184,11 @@
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = NS_BLOCK_ASSERTIONS;
 				GCC_VERSION = com.apple.compilers.llvmgcc42;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
 				SDKROOT = iphoneos;
 			};
 			name = Release;
