@@ -38,7 +38,7 @@
 /** Returns the decoded data of a Base64-encoded string.
  
  @param aString A Base64-encoded string.
- @return The decoded data of the Base64-encoded string `aString`, or `nil` in case of an error.
+ @return The decoded data of the Base64-encoded string _aString_, or `nil` in case of an error.
  @see initWithBase64EncodedString:
  @see base64EncodedString
  */
