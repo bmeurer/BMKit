@@ -28,21 +28,55 @@
 #import <Foundation/Foundation.h>
 
 
+/** BMKit related additions to the NSData class. */
 @interface NSData (BMKitAdditions)
 
-///----------------------
+///-----------------------
 /// @name Base64 Encoding
-///----------------------
+///-----------------------
 
+/** Returns the decoded data of a Base64-encoded string.
+ 
+ @param aString A Base64-encoded string.
+ @return The decoded data of the Base64-encoded string `aString`, or `nil` in case of an error.
+ @see initWithBase64EncodedString:
+ @see base64EncodedString
+ */
 + (NSData *)dataWithBase64EncodedString:(NSString *)aString;
+
+/** Initializes the receiver by decoding the data from a Base64-encoded string.
+ 
+ @param aString A Base64-encoded string.
+ @return The receiver, or `nil` in case of an error.
+ @see dataWithBase64EncodedString:
+ @see base64EncodedString
+ */
 - (id)initWithBase64EncodedString:(NSString *)aString;
+
+/** Returns the Base64-encoded content of the receiver.
+ 
+ @return An NSString with the Base64 encoding of the receivers bytes.
+ @see dataWithBase64EncodedString:
+ @see initWithBase64EncodedString:
+ */
 - (NSString *)base64EncodedString;
 
-///----------------------
+///-----------------------
 /// @name Message Digests
-///----------------------
+///-----------------------
 
+/** Returns the MD5 message digest of the receivers bytes.
+ 
+ @return The MD5 message digest of the receivers bytes.
+ @see MD5String
+ */
 - (NSData *)MD5;
+
+/** Returns the string representation of the MD5 message digest of the receivers bytes.
+ 
+ @return The string representation of the MD5 message digest of the receivers bytes.
+ @see MD5
+ */
 - (NSString *)MD5String;
 
 @end
