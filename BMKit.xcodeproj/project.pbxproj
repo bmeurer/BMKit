@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C711EBAF13C0C90B0099EAAA /* NSTimer+BMKitAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = C711EBAD13C0C90B0099EAAA /* NSTimer+BMKitAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C711EBB013C0C90B0099EAAA /* NSTimer+BMKitAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = C711EBAE13C0C90B0099EAAA /* NSTimer+BMKitAdditions.m */; };
 		C7BB3F8E13C0C44500E23AAD /* UIImagePickerController+BMKitAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = C7BB3F8C13C0C44500E23AAD /* UIImagePickerController+BMKitAdditions.h */; };
 		C7BB3F8F13C0C44500E23AAD /* UIImagePickerController+BMKitAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = C7BB3F8D13C0C44500E23AAD /* UIImagePickerController+BMKitAdditions.m */; };
 		C7BB3F9213C0C46E00E23AAD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7BB3F9113C0C46E00E23AAD /* UIKit.framework */; };
@@ -20,6 +22,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C711EBAD13C0C90B0099EAAA /* NSTimer+BMKitAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSTimer+BMKitAdditions.h"; sourceTree = "<group>"; };
+		C711EBAE13C0C90B0099EAAA /* NSTimer+BMKitAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSTimer+BMKitAdditions.m"; sourceTree = "<group>"; };
 		C7BB3F8C13C0C44500E23AAD /* UIImagePickerController+BMKitAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImagePickerController+BMKitAdditions.h"; sourceTree = "<group>"; };
 		C7BB3F8D13C0C44500E23AAD /* UIImagePickerController+BMKitAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImagePickerController+BMKitAdditions.m"; sourceTree = "<group>"; };
 		C7BB3F9113C0C46E00E23AAD /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -99,6 +103,8 @@
 				C7F1F37513C06D8000F1DED1 /* NSData+BMKitAdditions.m */,
 				C7F1F36D13C05E0200F1DED1 /* NSObject+BMKitAdditions.h */,
 				C7F1F36E13C05E0200F1DED1 /* NSObject+BMKitAdditions.m */,
+				C711EBAD13C0C90B0099EAAA /* NSTimer+BMKitAdditions.h */,
+				C711EBAE13C0C90B0099EAAA /* NSTimer+BMKitAdditions.m */,
 				C7BB3F8C13C0C44500E23AAD /* UIImagePickerController+BMKitAdditions.h */,
 				C7BB3F8D13C0C44500E23AAD /* UIImagePickerController+BMKitAdditions.m */,
 			);
@@ -117,6 +123,7 @@
 				C7F1F37613C06D8000F1DED1 /* NSData+BMKitAdditions.h in Headers */,
 				C7F1F38D13C086E200F1DED1 /* BMKitTypes.h in Headers */,
 				C7BB3F8E13C0C44500E23AAD /* UIImagePickerController+BMKitAdditions.h in Headers */,
+				C711EBAF13C0C90B0099EAAA /* NSTimer+BMKitAdditions.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -173,6 +180,7 @@
 				C7F1F37013C05E0200F1DED1 /* NSObject+BMKitAdditions.m in Sources */,
 				C7F1F37713C06D8000F1DED1 /* NSData+BMKitAdditions.m in Sources */,
 				C7BB3F8F13C0C44500E23AAD /* UIImagePickerController+BMKitAdditions.m in Sources */,
+				C711EBB013C0C90B0099EAAA /* NSTimer+BMKitAdditions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

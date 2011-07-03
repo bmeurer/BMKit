@@ -40,6 +40,7 @@
 extern "C" {
 #endif
 
+typedef void (^BMTimerBlock)(NSTimer *aTimer);
 typedef void (^BMTargetBlock)(id aTarget);
     
 #ifdef __cplusplus
