@@ -1,5 +1,5 @@
 /*-
- * Copyright (c) 2011, Benedikt Meurer <benedikt.meurer@googlemail.com>
+ * Copyright (c) 2010-2011, Benedikt Meurer <benedikt.meurer@googlemail.com>
  * All rights reserved.
  *
  * Redistribution and use in source and binary forms, with or without
@@ -25,27 +25,46 @@
  * SUCH DAMAGE.
  */
 
-#ifndef __BMKITTYPES__
-#define __BMKITTYPES__
+#include <objc/runtime.h>
 
-#include <Availability.h>
+#import "NSThread+BMKitAdditions.h"
 
-#ifdef __OBJC__
-# import <Foundation/Foundation.h>
-#else
-# include <objc/objc.h>
-#endif
 
-#ifdef __cplusplus
-extern "C" {
-#endif
+@implementation NSThread (BMKitAdditions)
 
-typedef void (^BMBlock)(void);
-typedef void (^BMTargetBlock)(id aTarget);
-typedef void (^BMTimerBlock)(NSTimer *aTimer);
-    
-#ifdef __cplusplus
+
++ (void)BM_invokeBlock:(BMBlock)aBlock
+{
+    if (aBlock) {
+        NSAutoreleasePool *pool = [[NSAutoreleasePool alloc] init];
+        aBlock();
+        [pool drain];
+    }
 }
-#endif
 
-#endif /* __BMKITTYPES__ */
+
+#pragma mark -
+#pragma mark Initializing an NSThread Object
+
+
+- (id)initWithBlock:(BMBlock)aBlock
+{
+    return [self initWithTarget:[NSThread class]
+                       selector:@selector(BM_invokeBlock:)
+                         object:[[aBlock copy] autorelease]];
+}
+
+
+#pragma mark -
+#pragma mark Starting a Thread
+
+
++ (void)detachNewThreadBlock:(BMBlock)aBlock
+{
+    [self detachNewThreadSelector:@selector(BM_invokeBlock:)
+                         toTarget:[NSThread class]
+                       withObject:[[aBlock copy] autorelease]];
+}
+
+
+@end
