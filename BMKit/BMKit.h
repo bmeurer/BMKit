@@ -27,3 +27,4 @@
 
 #import "NSData+BMKitAdditions.h"
 #import "NSObject+BMKitAdditions.h"
+#import "UIImagePickerController+BMKitAdditions.h"
