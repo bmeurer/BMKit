@@ -62,7 +62,7 @@ static const char NSDataBase64EncodingTable[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcde
 
 + (NSData *)dataWithBase64EncodedString:(NSString *)aString
 {
-    return [[self alloc] initWithBase64EncodedString:aString];
+    return [[[self alloc] initWithBase64EncodedString:aString] autorelease];
 }
 
 
