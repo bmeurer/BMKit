@@ -9,9 +9,9 @@
 /* Begin PBXBuildFile section */
 		C711EBAF13C0C90B0099EAAA /* NSTimer+BMKitAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = C711EBAD13C0C90B0099EAAA /* NSTimer+BMKitAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C711EBB013C0C90B0099EAAA /* NSTimer+BMKitAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = C711EBAE13C0C90B0099EAAA /* NSTimer+BMKitAdditions.m */; };
-		C711EBB413C0E8E80099EAAA /* NSThread+BMKitAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = C711EBB213C0E8E80099EAAA /* NSThread+BMKitAdditions.h */; };
+		C711EBB413C0E8E80099EAAA /* NSThread+BMKitAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = C711EBB213C0E8E80099EAAA /* NSThread+BMKitAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C711EBB513C0E8E80099EAAA /* NSThread+BMKitAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = C711EBB313C0E8E80099EAAA /* NSThread+BMKitAdditions.m */; };
-		C7BB3F8E13C0C44500E23AAD /* UIImagePickerController+BMKitAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = C7BB3F8C13C0C44500E23AAD /* UIImagePickerController+BMKitAdditions.h */; };
+		C7BB3F8E13C0C44500E23AAD /* UIImagePickerController+BMKitAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = C7BB3F8C13C0C44500E23AAD /* UIImagePickerController+BMKitAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C7BB3F8F13C0C44500E23AAD /* UIImagePickerController+BMKitAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = C7BB3F8D13C0C44500E23AAD /* UIImagePickerController+BMKitAdditions.m */; };
 		C7BB3F9213C0C46E00E23AAD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7BB3F9113C0C46E00E23AAD /* UIKit.framework */; };
 		C7F1F36413C05D0D00F1DED1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7F1F36313C05D0D00F1DED1 /* Foundation.framework */; };
@@ -198,15 +198,18 @@
 		C7F1F36813C05D0D00F1DED1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_VERSION = "";
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
+				RUN_CLANG_STATIC_ANALYZER = YES;
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -214,14 +217,18 @@
 		C7F1F36913C05D0D00F1DED1 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = s;
 				GCC_PREPROCESSOR_DEFINITIONS = NS_BLOCK_ASSERTIONS;
-				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_VERSION = "";
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
+				RUN_CLANG_STATIC_ANALYZER = YES;
 				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
@@ -233,7 +240,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "BMKit/BMKit-Prefix.pch";
 				OTHER_LDFLAGS = "-ObjC";
+				PRIVATE_HEADERS_FOLDER_PATH = "/../$(PRODUCT_NAME)/$(PRODUCT_NAME)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "/../$(PRODUCT_NAME)/$(PRODUCT_NAME)";
 			};
 			name = Debug;
 		};
@@ -245,7 +254,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "BMKit/BMKit-Prefix.pch";
 				OTHER_LDFLAGS = "-ObjC";
+				PRIVATE_HEADERS_FOLDER_PATH = "/../$(PRODUCT_NAME)/$(PRODUCT_NAME)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "/../$(PRODUCT_NAME)/$(PRODUCT_NAME)";
 			};
 			name = Release;
 		};
