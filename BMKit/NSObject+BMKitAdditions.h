@@ -25,10 +25,8 @@
  * SUCH DAMAGE.
  */
 
-#import <Foundation/Foundation.h>
+#import "BMKitTypes.h"
 
-
-typedef void (^BMTargetBlock)(id aTarget);
 
 /** Additions to the NSObject class. */
 @interface NSObject (BMKitAdditions)

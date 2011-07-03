@@ -25,17 +25,25 @@
  * SUCH DAMAGE.
  */
 
+#ifndef __BMKITTYPES__
+#define __BMKITTYPES__
+
 #include <Availability.h>
-
-#ifndef __IPHONE_3_0
-# warning "This project uses features only available in iPhone SDK 3.0 and later."
-#endif
-
-#include <objc/objc.h>
-#include <objc/runtime.h>
-
-#include <CommonCrypto/CommonDigest.h>
 
 #ifdef __OBJC__
 # import <Foundation/Foundation.h>
+#else
+# include <objc/objc.h>
 #endif
+
+#ifdef __cplusplus
+extern "C" {
+#endif
+
+typedef void (^BMTargetBlock)(id aTarget);
+    
+#ifdef __cplusplus
+}
+#endif
+
+#endif /* __BMKITTYPES__ */

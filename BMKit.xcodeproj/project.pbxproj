@@ -13,6 +13,7 @@
 		C7F1F37313C06D2500F1DED1 /* BMKit.h in Headers */ = {isa = PBXBuildFile; fileRef = C7F1F37213C06D2500F1DED1 /* BMKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C7F1F37613C06D8000F1DED1 /* NSData+BMKitAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = C7F1F37413C06D8000F1DED1 /* NSData+BMKitAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C7F1F37713C06D8000F1DED1 /* NSData+BMKitAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = C7F1F37513C06D8000F1DED1 /* NSData+BMKitAdditions.m */; };
+		C7F1F38D13C086E200F1DED1 /* BMKitTypes.h in Headers */ = {isa = PBXBuildFile; fileRef = C7F1F38C13C086E100F1DED1 /* BMKitTypes.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		C7F1F37213C06D2500F1DED1 /* BMKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMKit.h; sourceTree = "<group>"; };
 		C7F1F37413C06D8000F1DED1 /* NSData+BMKitAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+BMKitAdditions.h"; sourceTree = "<group>"; };
 		C7F1F37513C06D8000F1DED1 /* NSData+BMKitAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+BMKitAdditions.m"; sourceTree = "<group>"; };
+		C7F1F38C13C086E100F1DED1 /* BMKitTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMKitTypes.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +71,7 @@
 				C7F1F37113C05E0700F1DED1 /* Additions */,
 				C7F1F36613C05D0D00F1DED1 /* Supporting Files */,
 				C7F1F37213C06D2500F1DED1 /* BMKit.h */,
+				C7F1F38C13C086E100F1DED1 /* BMKitTypes.h */,
 			);
 			path = BMKit;
 			sourceTree = "<group>";
@@ -102,6 +105,7 @@
 				C7F1F36F13C05E0200F1DED1 /* NSObject+BMKitAdditions.h in Headers */,
 				C7F1F37313C06D2500F1DED1 /* BMKit.h in Headers */,
 				C7F1F37613C06D8000F1DED1 /* NSData+BMKitAdditions.h in Headers */,
+				C7F1F38D13C086E200F1DED1 /* BMKitTypes.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
