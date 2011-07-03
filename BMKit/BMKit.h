@@ -27,5 +27,7 @@
 
 #import "NSData+BMKitAdditions.h"
 #import "NSObject+BMKitAdditions.h"
+#import "NSThread+BMKitAdditions.h"
 #import "NSTimer+BMKitAdditions.h"
+
 #import "UIImagePickerController+BMKitAdditions.h"
