@@ -28,6 +28,7 @@
 #import "BMKitTypes.h"
 
 
+/** BMKit additions to the `NSThread` class. */
 @interface NSThread (BMKitAdditions)
 
 ///---------------------------------------
