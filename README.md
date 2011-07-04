@@ -40,10 +40,10 @@ Contributing
 
 Once you've made your commits:
 
-1. [Fork](http://help.github.com/fork-a-repo/) rails-kitchen-sink
-2. Create a topic branch - `git checkout -b my_branch`
-3. Push to your topic branch - `git push origin my_branch`
-4. Create a [Pull Request](http://help.github.com/pull-requests/) from your topic branch
+1. [Fork](http://help.github.com/fork-a-repo/ "Fork a repo") BMKit.
+2. Create a topic branch - `git checkout -b my_branch`.
+3. Push to your topic branch - `git push origin my_branch`.
+4. Create a [Pull Request](http://help.github.com/pull-requests/ "Send pull requests") from your topic branch.
 5. That's it!
 
 
