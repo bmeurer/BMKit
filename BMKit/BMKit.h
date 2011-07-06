@@ -25,7 +25,7 @@
  * SUCH DAMAGE.
  */
 
-#include "BMImageUtilities.c"
+#include "BMImageUtilities.h"
 
 #import "NSData+BMKitAdditions.h"
 #import "NSObject+BMKitAdditions.h"
