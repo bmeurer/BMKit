@@ -34,6 +34,7 @@
 # import <Foundation/Foundation.h>
 #else
 # include <objc/objc.h>
+# include <CoreFoundation/CoreFoundation.h>
 #endif
 
 #ifdef __cplusplus
@@ -41,8 +42,10 @@ extern "C" {
 #endif
 
 typedef void (^BMBlock)(void);
+#ifdef __OBJC__
 typedef void (^BMTargetBlock)(id aTarget);
 typedef void (^BMTimerBlock)(NSTimer *aTimer);
+#endif
     
 #ifdef __cplusplus
 }

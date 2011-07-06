@@ -1,5 +1,5 @@
 /*-
- * Copyright (c) 2011, Benedikt Meurer <benedikt.meurer@googlemail.com>
+ * Copyright (c) 2010-2011, Benedikt Meurer <benedikt.meurer@googlemail.com>
  * All rights reserved.
  *
  * Redistribution and use in source and binary forms, with or without
@@ -25,12 +25,26 @@
  * SUCH DAMAGE.
  */
 
-#include "BMImageUtilities.c"
+#import <UIKit/UIKit.h>
 
-#import "NSData+BMKitAdditions.h"
-#import "NSObject+BMKitAdditions.h"
-#import "NSThread+BMKitAdditions.h"
-#import "NSTimer+BMKitAdditions.h"
+#include "BMImageUtilities.h"
 
-#import "UIImage+BMKitAdditions.h"
-#import "UIImagePickerController+BMKitAdditions.h"
+
+/** Translates an `UIImageOrientation` to a `BMImageOrientation`. */
+extern BMImageOrientation BMImageOrientationFromUIImageOrientation(UIImageOrientation imageOrientation);
+
+/** Translate a `BMImageOrientation` to an `UIImageOrientation`. */
+extern UIImageOrientation UIImageOrientationFromBMImageOrientation(BMImageOrientation imageOrientation);
+
+
+/** BMKit related additions to the `UIImage` class. */
+@interface UIImage (BMKitAdditions)
+
+/** Returns a version of the receiver rotated to "Up" orientation.
+ 
+ @return The receiver rotated to "Up" orientation.
+ */
+- (UIImage *)imageRotatedToUpOrientation;
+
+@end
+

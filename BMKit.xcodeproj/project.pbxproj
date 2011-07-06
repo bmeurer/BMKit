@@ -11,6 +11,13 @@
 		C711EBB013C0C90B0099EAAA /* NSTimer+BMKitAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = C711EBAE13C0C90B0099EAAA /* NSTimer+BMKitAdditions.m */; };
 		C711EBB413C0E8E80099EAAA /* NSThread+BMKitAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = C711EBB213C0E8E80099EAAA /* NSThread+BMKitAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C711EBB513C0E8E80099EAAA /* NSThread+BMKitAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = C711EBB313C0E8E80099EAAA /* NSThread+BMKitAdditions.m */; };
+		C711ECA313C4D3AD0099EAAA /* BMImageUtilities.h in Headers */ = {isa = PBXBuildFile; fileRef = C711ECA213C4D3AD0099EAAA /* BMImageUtilities.h */; };
+		C711ECA513C4D3C60099EAAA /* BMImageUtilities.c in Sources */ = {isa = PBXBuildFile; fileRef = C711ECA413C4D3C60099EAAA /* BMImageUtilities.c */; };
+		C711ECA713C4D6930099EAAA /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C711ECA613C4D6930099EAAA /* MobileCoreServices.framework */; };
+		C711ECA913C4D6980099EAAA /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C711ECA813C4D6970099EAAA /* ImageIO.framework */; };
+		C711ECAB13C4D6C30099EAAA /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C711ECAA13C4D6C30099EAAA /* CoreGraphics.framework */; };
+		C711ECAE13C4D8890099EAAA /* UIImage+BMKitAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = C711ECAC13C4D8890099EAAA /* UIImage+BMKitAdditions.h */; };
+		C711ECAF13C4D8890099EAAA /* UIImage+BMKitAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = C711ECAD13C4D8890099EAAA /* UIImage+BMKitAdditions.m */; };
 		C7BB3F8E13C0C44500E23AAD /* UIImagePickerController+BMKitAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = C7BB3F8C13C0C44500E23AAD /* UIImagePickerController+BMKitAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C7BB3F8F13C0C44500E23AAD /* UIImagePickerController+BMKitAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = C7BB3F8D13C0C44500E23AAD /* UIImagePickerController+BMKitAdditions.m */; };
 		C7BB3F9213C0C46E00E23AAD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7BB3F9113C0C46E00E23AAD /* UIKit.framework */; };
@@ -28,6 +35,13 @@
 		C711EBAE13C0C90B0099EAAA /* NSTimer+BMKitAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSTimer+BMKitAdditions.m"; sourceTree = "<group>"; };
 		C711EBB213C0E8E80099EAAA /* NSThread+BMKitAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSThread+BMKitAdditions.h"; sourceTree = "<group>"; };
 		C711EBB313C0E8E80099EAAA /* NSThread+BMKitAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSThread+BMKitAdditions.m"; sourceTree = "<group>"; };
+		C711ECA213C4D3AD0099EAAA /* BMImageUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMImageUtilities.h; sourceTree = "<group>"; };
+		C711ECA413C4D3C60099EAAA /* BMImageUtilities.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = BMImageUtilities.c; sourceTree = "<group>"; };
+		C711ECA613C4D6930099EAAA /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		C711ECA813C4D6970099EAAA /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
+		C711ECAA13C4D6C30099EAAA /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		C711ECAC13C4D8890099EAAA /* UIImage+BMKitAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+BMKitAdditions.h"; sourceTree = "<group>"; };
+		C711ECAD13C4D8890099EAAA /* UIImage+BMKitAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+BMKitAdditions.m"; sourceTree = "<group>"; };
 		C7BB3F8C13C0C44500E23AAD /* UIImagePickerController+BMKitAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImagePickerController+BMKitAdditions.h"; sourceTree = "<group>"; };
 		C7BB3F8D13C0C44500E23AAD /* UIImagePickerController+BMKitAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImagePickerController+BMKitAdditions.m"; sourceTree = "<group>"; };
 		C7BB3F9113C0C46E00E23AAD /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -47,7 +61,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C711ECAB13C4D6C30099EAAA /* CoreGraphics.framework in Frameworks */,
 				C7F1F36413C05D0D00F1DED1 /* Foundation.framework in Frameworks */,
+				C711ECA913C4D6980099EAAA /* ImageIO.framework in Frameworks */,
+				C711ECA713C4D6930099EAAA /* MobileCoreServices.framework in Frameworks */,
 				C7BB3F9213C0C46E00E23AAD /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -55,6 +72,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C711EC9E13C4D2F40099EAAA /* CoreGraphics Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				C711ECA213C4D3AD0099EAAA /* BMImageUtilities.h */,
+				C711ECA413C4D3C60099EAAA /* BMImageUtilities.c */,
+			);
+			name = "CoreGraphics Extensions";
+			sourceTree = "<group>";
+		};
+		C711ECA013C4D32A0099EAAA /* UIKit Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				C711ECAC13C4D8890099EAAA /* UIImage+BMKitAdditions.h */,
+				C711ECAD13C4D8890099EAAA /* UIImage+BMKitAdditions.m */,
+				C7BB3F8C13C0C44500E23AAD /* UIImagePickerController+BMKitAdditions.h */,
+				C7BB3F8D13C0C44500E23AAD /* UIImagePickerController+BMKitAdditions.m */,
+			);
+			name = "UIKit Extensions";
+			sourceTree = "<group>";
+		};
 		C7F1F35513C05D0D00F1DED1 = {
 			isa = PBXGroup;
 			children = (
@@ -75,7 +112,10 @@
 		C7F1F36213C05D0D00F1DED1 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C711ECAA13C4D6C30099EAAA /* CoreGraphics.framework */,
 				C7F1F36313C05D0D00F1DED1 /* Foundation.framework */,
+				C711ECA813C4D6970099EAAA /* ImageIO.framework */,
+				C711ECA613C4D6930099EAAA /* MobileCoreServices.framework */,
 				C7BB3F9113C0C46E00E23AAD /* UIKit.framework */,
 			);
 			name = Frameworks;
@@ -84,7 +124,9 @@
 		C7F1F36513C05D0D00F1DED1 /* BMKit */ = {
 			isa = PBXGroup;
 			children = (
-				C7F1F37113C05E0700F1DED1 /* Additions */,
+				C711EC9E13C4D2F40099EAAA /* CoreGraphics Extensions */,
+				C7F1F37113C05E0700F1DED1 /* Foundation Extensions */,
+				C711ECA013C4D32A0099EAAA /* UIKit Extensions */,
 				C7F1F36613C05D0D00F1DED1 /* Supporting Files */,
 				C7F1F37213C06D2500F1DED1 /* BMKit.h */,
 				C7F1F38C13C086E100F1DED1 /* BMKitTypes.h */,
@@ -100,7 +142,7 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		C7F1F37113C05E0700F1DED1 /* Additions */ = {
+		C7F1F37113C05E0700F1DED1 /* Foundation Extensions */ = {
 			isa = PBXGroup;
 			children = (
 				C7F1F37413C06D8000F1DED1 /* NSData+BMKitAdditions.h */,
@@ -111,10 +153,8 @@
 				C711EBB313C0E8E80099EAAA /* NSThread+BMKitAdditions.m */,
 				C711EBAD13C0C90B0099EAAA /* NSTimer+BMKitAdditions.h */,
 				C711EBAE13C0C90B0099EAAA /* NSTimer+BMKitAdditions.m */,
-				C7BB3F8C13C0C44500E23AAD /* UIImagePickerController+BMKitAdditions.h */,
-				C7BB3F8D13C0C44500E23AAD /* UIImagePickerController+BMKitAdditions.m */,
 			);
-			name = Additions;
+			name = "Foundation Extensions";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -131,6 +171,8 @@
 				C7BB3F8E13C0C44500E23AAD /* UIImagePickerController+BMKitAdditions.h in Headers */,
 				C711EBAF13C0C90B0099EAAA /* NSTimer+BMKitAdditions.h in Headers */,
 				C711EBB413C0E8E80099EAAA /* NSThread+BMKitAdditions.h in Headers */,
+				C711ECA313C4D3AD0099EAAA /* BMImageUtilities.h in Headers */,
+				C711ECAE13C4D8890099EAAA /* UIImage+BMKitAdditions.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -189,6 +231,8 @@
 				C7BB3F8F13C0C44500E23AAD /* UIImagePickerController+BMKitAdditions.m in Sources */,
 				C711EBB013C0C90B0099EAAA /* NSTimer+BMKitAdditions.m in Sources */,
 				C711EBB513C0E8E80099EAAA /* NSThread+BMKitAdditions.m in Sources */,
+				C711ECA513C4D3C60099EAAA /* BMImageUtilities.c in Sources */,
+				C711ECAF13C4D8890099EAAA /* UIImage+BMKitAdditions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -35,6 +35,10 @@
 #include <objc/runtime.h>
 
 #include <CommonCrypto/CommonDigest.h>
+#include <CoreFoundation/CoreFoundation.h>
+#include <CoreGraphics/CoreGraphics.h>
+#include <ImageIO/ImageIO.h>
+#include <MobileCoreServices/MobileCoreServices.h>
 
 #ifdef __OBJC__
 # import <Foundation/Foundation.h>
