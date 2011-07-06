@@ -25,6 +25,7 @@ Installation
 * Clone the repository via `git clone git://github.com/bmeurer/BMKit.git`
 * In Xcode, add the `BMKit.xcodeproj` to your project or workspace.
 * In the build phases of a target, add `libBMKit.a` to the _Target Dependencies_ and _Link Binary with Libraries_.
+* In the build phases of a target, add the `ImageIO.framework` and `MobileCoreServices.framework` frameworks. to the _Link Binary with Libraries_.
 * In the build settings, change _Other Linker Flags_ to `-ObjC -all_load` and _Header Search Paths_ to `$(BUILT_PRODUCTS_DIR)/../BMKit/**`.
 * Include the header file using `#import <BMKit/BMKit.h>`.
 
