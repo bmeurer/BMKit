@@ -25,19 +25,26 @@
  * SUCH DAMAGE.
  */
 
-#include "BMKitTypes.h"
+#ifndef __BMOBJECTUTILITIES__
+#define __BMOBJECTUTILITIES__
 
-#include "BMImageUtilities.h"
-#include "BMObjectUtilities.h"
+#include <CoreFoundation/CoreFoundation.h>
 
-#ifdef __OBJC__
+#ifdef __cplusplus
+extern "C" {
+#endif
 
-# import "NSData+BMKitAdditions.h"
-# import "NSObject+BMKitAdditions.h"
-# import "NSThread+BMKitAdditions.h"
-# import "NSTimer+BMKitAdditions.h"
+/** Sends the `retain` message to the object and returns the result. */
+extern const void *BMObjectRetain(const void *object);
+    
+/** Sends the `release` message to the object. */
+extern void BMObjectRelease(const void *object);
+    
+/** Sends the `description` message to the object and returns a copy of the result. */
+CFStringRef BMObjectCopyDescription(const void *object);
+    
+#ifdef __cplusplus
+}
+#endif
 
-# import "UIImage+BMKitAdditions.h"
-# import "UIImagePickerController+BMKitAdditions.h"
-
-#endif /* __OBJC__ */
+#endif /* !__BMOBJECTUTILITIES__ */

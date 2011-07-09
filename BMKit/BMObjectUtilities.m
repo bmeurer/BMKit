@@ -25,19 +25,33 @@
  * SUCH DAMAGE.
  */
 
-#include "BMKitTypes.h"
+#import <Foundation/Foundation.h>
 
-#include "BMImageUtilities.h"
-#include "BMObjectUtilities.h"
+#import "BMObjectUtilities.h"
 
-#ifdef __OBJC__
 
-# import "NSData+BMKitAdditions.h"
-# import "NSObject+BMKitAdditions.h"
-# import "NSThread+BMKitAdditions.h"
-# import "NSTimer+BMKitAdditions.h"
+const void *BMObjectRetain(const void *object)
+{
+    return (const void *)[(id)object retain];
+}
 
-# import "UIImage+BMKitAdditions.h"
-# import "UIImagePickerController+BMKitAdditions.h"
 
-#endif /* __OBJC__ */
+void BMObjectRelease(const void *object)
+{
+    [(id)object release];
+}
+
+
+CFStringRef BMObjectCopyDescription(const void *object)
+{
+    NSString *description = nil;
+    if (!object) {
+        description = @"(Null)";
+    }
+    else {
+        description = [(id)object description];
+    }
+    return (CFStringRef)[description copy];
+}
+
+
