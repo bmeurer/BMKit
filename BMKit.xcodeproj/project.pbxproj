@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C70C20E413D1974700FEA359 /* UIActionSheet+BMKitAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = C70C20E213D1974700FEA359 /* UIActionSheet+BMKitAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C70C20E513D1974700FEA359 /* UIActionSheet+BMKitAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = C70C20E313D1974700FEA359 /* UIActionSheet+BMKitAdditions.m */; };
 		C711EBAF13C0C90B0099EAAA /* NSTimer+BMKitAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = C711EBAD13C0C90B0099EAAA /* NSTimer+BMKitAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C711EBB013C0C90B0099EAAA /* NSTimer+BMKitAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = C711EBAE13C0C90B0099EAAA /* NSTimer+BMKitAdditions.m */; };
 		C711EBB413C0E8E80099EAAA /* NSThread+BMKitAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = C711EBB213C0E8E80099EAAA /* NSThread+BMKitAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -33,6 +35,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C70C20E213D1974700FEA359 /* UIActionSheet+BMKitAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIActionSheet+BMKitAdditions.h"; sourceTree = "<group>"; };
+		C70C20E313D1974700FEA359 /* UIActionSheet+BMKitAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIActionSheet+BMKitAdditions.m"; sourceTree = "<group>"; };
 		C711EBAD13C0C90B0099EAAA /* NSTimer+BMKitAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSTimer+BMKitAdditions.h"; sourceTree = "<group>"; };
 		C711EBAE13C0C90B0099EAAA /* NSTimer+BMKitAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSTimer+BMKitAdditions.m"; sourceTree = "<group>"; };
 		C711EBB213C0E8E80099EAAA /* NSThread+BMKitAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSThread+BMKitAdditions.h"; sourceTree = "<group>"; };
@@ -88,6 +92,8 @@
 		C711ECA013C4D32A0099EAAA /* UIKit Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				C70C20E213D1974700FEA359 /* UIActionSheet+BMKitAdditions.h */,
+				C70C20E313D1974700FEA359 /* UIActionSheet+BMKitAdditions.m */,
 				C711ECAC13C4D8890099EAAA /* UIImage+BMKitAdditions.h */,
 				C711ECAD13C4D8890099EAAA /* UIImage+BMKitAdditions.m */,
 				C7BB3F8C13C0C44500E23AAD /* UIImagePickerController+BMKitAdditions.h */,
@@ -180,6 +186,7 @@
 				C711ECA313C4D3AD0099EAAA /* BMImageUtilities.h in Headers */,
 				C711ECAE13C4D8890099EAAA /* UIImage+BMKitAdditions.h in Headers */,
 				C72092FC13C8415200397C66 /* BMObjectUtilities.h in Headers */,
+				C70C20E413D1974700FEA359 /* UIActionSheet+BMKitAdditions.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -241,6 +248,7 @@
 				C711ECA513C4D3C60099EAAA /* BMImageUtilities.c in Sources */,
 				C711ECAF13C4D8890099EAAA /* UIImage+BMKitAdditions.m in Sources */,
 				C72092FD13C8415200397C66 /* BMObjectUtilities.m in Sources */,
+				C70C20E513D1974700FEA359 /* UIActionSheet+BMKitAdditions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
