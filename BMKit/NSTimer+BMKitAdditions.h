@@ -25,11 +25,13 @@
  * SUCH DAMAGE.
  */
 
-#import "BMKitTypes.h"
+#import <Foundation/Foundation.h>
 
 
 /** BMKit related additions to the NSTimer class. */
 @interface NSTimer (BMKitAdditions)
+
+typedef void (^BMTimerBlock)(NSTimer *aTimer);
 
 ///------------------------
 /// @name Creating a Timer

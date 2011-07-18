@@ -22,6 +22,10 @@
 		C711ECAF13C4D8890099EAAA /* UIImage+BMKitAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = C711ECAD13C4D8890099EAAA /* UIImage+BMKitAdditions.m */; };
 		C72092FC13C8415200397C66 /* BMObjectUtilities.h in Headers */ = {isa = PBXBuildFile; fileRef = C72092FA13C8415200397C66 /* BMObjectUtilities.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C72092FD13C8415200397C66 /* BMObjectUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = C72092FB13C8415200397C66 /* BMObjectUtilities.m */; };
+		C72E12DB13D4283D00181DC3 /* NSArray+BMKitAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = C72E12D913D4283D00181DC3 /* NSArray+BMKitAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C72E12DC13D4283D00181DC3 /* NSArray+BMKitAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = C72E12DA13D4283D00181DC3 /* NSArray+BMKitAdditions.m */; };
+		C72E12E813D43DED00181DC3 /* NSMutableArray+BMKitAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = C72E12E613D43DED00181DC3 /* NSMutableArray+BMKitAdditions.h */; };
+		C72E12E913D43DED00181DC3 /* NSMutableArray+BMKitAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = C72E12E713D43DED00181DC3 /* NSMutableArray+BMKitAdditions.m */; };
 		C7BB3F8E13C0C44500E23AAD /* UIImagePickerController+BMKitAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = C7BB3F8C13C0C44500E23AAD /* UIImagePickerController+BMKitAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C7BB3F8F13C0C44500E23AAD /* UIImagePickerController+BMKitAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = C7BB3F8D13C0C44500E23AAD /* UIImagePickerController+BMKitAdditions.m */; };
 		C7BB3F9213C0C46E00E23AAD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7BB3F9113C0C46E00E23AAD /* UIKit.framework */; };
@@ -50,6 +54,10 @@
 		C711ECAD13C4D8890099EAAA /* UIImage+BMKitAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+BMKitAdditions.m"; sourceTree = "<group>"; };
 		C72092FA13C8415200397C66 /* BMObjectUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMObjectUtilities.h; sourceTree = "<group>"; };
 		C72092FB13C8415200397C66 /* BMObjectUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMObjectUtilities.m; sourceTree = "<group>"; };
+		C72E12D913D4283D00181DC3 /* NSArray+BMKitAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+BMKitAdditions.h"; sourceTree = "<group>"; };
+		C72E12DA13D4283D00181DC3 /* NSArray+BMKitAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+BMKitAdditions.m"; sourceTree = "<group>"; };
+		C72E12E613D43DED00181DC3 /* NSMutableArray+BMKitAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+BMKitAdditions.h"; sourceTree = "<group>"; };
+		C72E12E713D43DED00181DC3 /* NSMutableArray+BMKitAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+BMKitAdditions.m"; sourceTree = "<group>"; };
 		C7BB3F8C13C0C44500E23AAD /* UIImagePickerController+BMKitAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImagePickerController+BMKitAdditions.h"; sourceTree = "<group>"; };
 		C7BB3F8D13C0C44500E23AAD /* UIImagePickerController+BMKitAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImagePickerController+BMKitAdditions.m"; sourceTree = "<group>"; };
 		C7BB3F9113C0C46E00E23AAD /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -157,8 +165,12 @@
 			children = (
 				C72092FA13C8415200397C66 /* BMObjectUtilities.h */,
 				C72092FB13C8415200397C66 /* BMObjectUtilities.m */,
+				C72E12D913D4283D00181DC3 /* NSArray+BMKitAdditions.h */,
+				C72E12DA13D4283D00181DC3 /* NSArray+BMKitAdditions.m */,
 				C7F1F37413C06D8000F1DED1 /* NSData+BMKitAdditions.h */,
 				C7F1F37513C06D8000F1DED1 /* NSData+BMKitAdditions.m */,
+				C72E12E613D43DED00181DC3 /* NSMutableArray+BMKitAdditions.h */,
+				C72E12E713D43DED00181DC3 /* NSMutableArray+BMKitAdditions.m */,
 				C7F1F36D13C05E0200F1DED1 /* NSObject+BMKitAdditions.h */,
 				C7F1F36E13C05E0200F1DED1 /* NSObject+BMKitAdditions.m */,
 				C711EBB213C0E8E80099EAAA /* NSThread+BMKitAdditions.h */,
@@ -187,6 +199,8 @@
 				C711ECAE13C4D8890099EAAA /* UIImage+BMKitAdditions.h in Headers */,
 				C72092FC13C8415200397C66 /* BMObjectUtilities.h in Headers */,
 				C70C20E413D1974700FEA359 /* UIActionSheet+BMKitAdditions.h in Headers */,
+				C72E12DB13D4283D00181DC3 /* NSArray+BMKitAdditions.h in Headers */,
+				C72E12E813D43DED00181DC3 /* NSMutableArray+BMKitAdditions.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -249,6 +263,8 @@
 				C711ECAF13C4D8890099EAAA /* UIImage+BMKitAdditions.m in Sources */,
 				C72092FD13C8415200397C66 /* BMObjectUtilities.m in Sources */,
 				C70C20E513D1974700FEA359 /* UIActionSheet+BMKitAdditions.m in Sources */,
+				C72E12DC13D4283D00181DC3 /* NSArray+BMKitAdditions.m in Sources */,
+				C72E12E913D43DED00181DC3 /* NSMutableArray+BMKitAdditions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -42,13 +42,12 @@ extern "C" {
 #endif
 
 typedef void (^BMBlock)(void);
-#ifdef __OBJC__
 typedef void (^BMTargetBlock)(id aTarget);
-typedef void (^BMTimerBlock)(NSTimer *aTimer);
-#endif
+typedef BOOL (^BMPredicateBlock)(id anObject);
+typedef id   (^BMTransformBlock)(id anObject);
     
 #ifdef __cplusplus
 }
 #endif
 
-#endif /* __BMKITTYPES__ */
+#endif /* !__BMKITTYPES__ */

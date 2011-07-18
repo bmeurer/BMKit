@@ -1,5 +1,5 @@
 /*-
- * Copyright (c) 2011, Benedikt Meurer <benedikt.meurer@googlemail.com>
+ * Copyright (c) 2010-2011, Benedikt Meurer <benedikt.meurer@googlemail.com>
  * All rights reserved.
  *
  * Redistribution and use in source and binary forms, with or without
@@ -25,27 +25,38 @@
  * SUCH DAMAGE.
  */
 
-#ifndef __BMKIT__
-#define __BMKIT__
+#import "NSMutableArray+BMKitAdditions.h"
 
-#include "BMKitTypes.h"
 
-#include "BMImageUtilities.h"
-#include "BMObjectUtilities.h"
+@implementation NSMutableArray (BMKitAdditions)
 
-#ifdef __OBJC__
 
-# import "NSArray+BMKitAdditions.h"
-# import "NSData+BMKitAdditions.h"
-# import "NSMutableArray+BMKitAdditions.h"
-# import "NSObject+BMKitAdditions.h"
-# import "NSThread+BMKitAdditions.h"
-# import "NSTimer+BMKitAdditions.h"
+#pragma mark -
+#pragma mark Filtering Content
 
-# import "UIActionSheet+BMKitAdditions.h"
-# import "UIImage+BMKitAdditions.h"
-# import "UIImagePickerController+BMKitAdditions.h"
 
-#endif /* __OBJC__ */
+- (void)filterUsingBlock:(BMPredicateBlock)aBlock
+{
+    [self filterUsingPredicate:(aBlock ? [NSPredicate predicateWithBlock:^BOOL(id anObject, NSDictionary *bindings) {
+        return aBlock(anObject);
+    }] : nil)];
+}
 
-#endif /* !__BMKIT__ */
+
+#pragma mark -
+#pragma mark Transforming Content
+
+
+- (void)transformUsingBlock:(BMTransformBlock)aBlock
+{
+    if (aBlock) {
+        NSUInteger i, numberOfObjects = [self count];
+        for (i = 0; i < numberOfObjects; ++i) {
+            id object = aBlock([self objectAtIndex:i]) ?: [NSNull null];
+            [self replaceObjectAtIndex:i withObject:object];
+        }
+    }
+}
+
+
+@end
