@@ -41,9 +41,7 @@
         [NSException raise:NSInvalidArgumentException
                     format:@"aBlock is nil (in '%@')", NSStringFromSelector(_cmd)];
     }
-    for (id object in self) {
-        aBlock(object);
-    }
+    [self enumerateObjectsUsingBlock:(void(^)(id, NSUInteger, BOOL *))aBlock];
 }
 
 

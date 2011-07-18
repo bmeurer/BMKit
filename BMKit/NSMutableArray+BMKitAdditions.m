@@ -37,9 +37,7 @@
 
 - (void)filterUsingPredicateBlock:(BMPredicateBlock)predicateBlock
 {
-    [self filterUsingPredicate:(predicateBlock ? [NSPredicate predicateWithBlock:^BOOL(id anObject, NSDictionary *bindings) {
-        return predicateBlock(anObject);
-    }] : nil)];
+    [self filterUsingPredicate:[NSPredicate predicateWithBlock:(BOOL(^)(id, NSDictionary *))predicateBlock]];
 }
 
 
