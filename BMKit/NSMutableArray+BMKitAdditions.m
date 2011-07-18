@@ -35,10 +35,10 @@
 #pragma mark Filtering Content
 
 
-- (void)filterUsingPredicateBlock:(BMPredicateBlock)aBlock
+- (void)filterUsingPredicateBlock:(BMPredicateBlock)predicateBlock
 {
-    [self filterUsingPredicate:(aBlock ? [NSPredicate predicateWithBlock:^BOOL(id anObject, NSDictionary *bindings) {
-        return aBlock(anObject);
+    [self filterUsingPredicate:(predicateBlock ? [NSPredicate predicateWithBlock:^BOOL(id anObject, NSDictionary *bindings) {
+        return predicateBlock(anObject);
     }] : nil)];
 }
 

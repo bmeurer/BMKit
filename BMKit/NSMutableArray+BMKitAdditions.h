@@ -37,9 +37,9 @@
 
 /** Evaluates a given predicate block against the array’s content and leaves only objects for which the predicate block returns true.
  
- @param aBlock The predicate block to evaluate against the array's elements.
+ @param predicateBlock The predicate block to evaluate against the array's elements.
  */
-- (void)filterUsingPredicateBlock:(BMPredicateBlock)aBlock;
+- (void)filterUsingPredicateBlock:(BMPredicateBlock)predicateBlock;
 
 ///----------------------------
 /// @name Transforming Content
