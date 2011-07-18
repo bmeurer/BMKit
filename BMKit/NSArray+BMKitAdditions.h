@@ -52,13 +52,13 @@
  @param aBlock The predicate block against which to evaluate the receiving array’s elements.
  @return A new array containing the objects in the receiving array for which *aBlock* returns true.
  */
-- (NSArray *)filteredArrayUsingBlock:(BMPredicateBlock)aBlock;
+- (NSArray *)filteredArrayUsingPredicateBlock:(BMPredicateBlock)aBlock;
 
-/** Invokes the transform block on each object in the receiving array and returns a new array containing the transformed objects.
+/** Invokes the transformator on each object in the receiving array and returns a new array containing the transformed objects.
  
- @param aBlock The transform block to invoke on the receiving array's elements.
+ @param aTransformator The transformator to invoke on the receiving array's elements.
  @return A new array containing the transformed objects in the receiving array.
  */
-- (NSArray *)transformedArrayUsingBlock:(BMTransformBlock)aBlock;
+- (NSArray *)transformedArrayUsingTransformator:(BMTransformator)aTransformator;
 
 @end

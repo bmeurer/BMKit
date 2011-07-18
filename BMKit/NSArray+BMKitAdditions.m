@@ -51,7 +51,7 @@
 #pragma mark Deriving New Arrays
 
 
-- (NSArray *)filteredArrayUsingBlock:(BMPredicateBlock)aBlock
+- (NSArray *)filteredArrayUsingPredicateBlock:(BMPredicateBlock)aBlock
 {
     NSArray *filteredArray = nil;
     if (aBlock) {
@@ -73,16 +73,16 @@
 }
 
 
-- (NSArray *)transformedArrayUsingBlock:(BMTransformBlock)aBlock
+- (NSArray *)transformedArrayUsingTransformator:(BMTransformator)aTransformator
 {
     NSArray *transformedArray = nil;
-    if (aBlock) {
+    if (aTransformator) {
         NSUInteger i, numberOfObjects = [self count];
         id *objects = (id *)malloc(numberOfObjects * sizeof(id));
         if (objects) {
             [self getObjects:objects range:NSMakeRange(0, numberOfObjects)];
             for (i = 0; i < numberOfObjects; ++i) {
-                objects[i] = aBlock(objects[i]) ?: [NSNull null];
+                objects[i] = aTransformator(objects[i]) ?: [NSNull null];
             }
             transformedArray = [NSArray arrayWithObjects:objects count:numberOfObjects];
             free(objects);

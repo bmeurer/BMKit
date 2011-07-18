@@ -35,7 +35,7 @@
 #pragma mark Filtering Content
 
 
-- (void)filterUsingBlock:(BMPredicateBlock)aBlock
+- (void)filterUsingPredicateBlock:(BMPredicateBlock)aBlock
 {
     [self filterUsingPredicate:(aBlock ? [NSPredicate predicateWithBlock:^BOOL(id anObject, NSDictionary *bindings) {
         return aBlock(anObject);
@@ -47,12 +47,12 @@
 #pragma mark Transforming Content
 
 
-- (void)transformUsingBlock:(BMTransformBlock)aBlock
+- (void)transformUsingTransformator:(BMTransformator)aTransformator
 {
-    if (aBlock) {
+    if (aTransformator) {
         NSUInteger i, numberOfObjects = [self count];
         for (i = 0; i < numberOfObjects; ++i) {
-            id object = aBlock([self objectAtIndex:i]) ?: [NSNull null];
+            id object = aTransformator([self objectAtIndex:i]) ?: [NSNull null];
             [self replaceObjectAtIndex:i withObject:object];
         }
     }

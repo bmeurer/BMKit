@@ -44,7 +44,7 @@ extern "C" {
 typedef void (^BMBlock)(void);
 typedef void (^BMTargetBlock)(id aTarget);
 typedef BOOL (^BMPredicateBlock)(id anObject);
-typedef id   (^BMTransformBlock)(id anObject);
+typedef id   (^BMTransformator)(id anObject);
     
 #ifdef __cplusplus
 }

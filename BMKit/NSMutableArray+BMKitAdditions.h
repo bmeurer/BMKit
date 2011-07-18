@@ -39,16 +39,16 @@
  
  @param aBlock The predicate block to evaluate against the array's elements.
  */
-- (void)filterUsingBlock:(BMPredicateBlock)aBlock;
+- (void)filterUsingPredicateBlock:(BMPredicateBlock)aBlock;
 
 ///----------------------------
 /// @name Transforming Content
 ///----------------------------
 
-/** Invokes the transform block on each object in the receiving array and replaces the elements with the objects returned from the transform block.
+/** Invokes the transformator on each object in the receiving array and replaces the elements with the objects returned from the transformator.
  
- @param aBlock The transform block to invoke on the receiving array's elements.
+ @param aTransformator The transformator to invoke on the receiving array's elements.
  */
-- (void)transformUsingBlock:(BMTransformBlock)aBlock;
+- (void)transformUsingTransformator:(BMTransformator)aTransformator;
 
 @end

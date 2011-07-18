@@ -24,7 +24,7 @@
 		C72092FD13C8415200397C66 /* BMObjectUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = C72092FB13C8415200397C66 /* BMObjectUtilities.m */; };
 		C72E12DB13D4283D00181DC3 /* NSArray+BMKitAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = C72E12D913D4283D00181DC3 /* NSArray+BMKitAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C72E12DC13D4283D00181DC3 /* NSArray+BMKitAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = C72E12DA13D4283D00181DC3 /* NSArray+BMKitAdditions.m */; };
-		C72E12E813D43DED00181DC3 /* NSMutableArray+BMKitAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = C72E12E613D43DED00181DC3 /* NSMutableArray+BMKitAdditions.h */; };
+		C72E12E813D43DED00181DC3 /* NSMutableArray+BMKitAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = C72E12E613D43DED00181DC3 /* NSMutableArray+BMKitAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C72E12E913D43DED00181DC3 /* NSMutableArray+BMKitAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = C72E12E713D43DED00181DC3 /* NSMutableArray+BMKitAdditions.m */; };
 		C7BB3F8E13C0C44500E23AAD /* UIImagePickerController+BMKitAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = C7BB3F8C13C0C44500E23AAD /* UIImagePickerController+BMKitAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C7BB3F8F13C0C44500E23AAD /* UIImagePickerController+BMKitAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = C7BB3F8D13C0C44500E23AAD /* UIImagePickerController+BMKitAdditions.m */; };
