@@ -51,17 +51,17 @@
 #pragma mark Deriving New Arrays
 
 
-- (NSArray *)filteredArrayUsingPredicateBlock:(BMPredicateBlock)aBlock
+- (NSArray *)filteredArrayUsingPredicateBlock:(BMPredicateBlock)predicateBlock
 {
     NSArray *filteredArray = nil;
-    if (aBlock) {
+    if (predicateBlock) {
         NSUInteger i, j, numberOfObjects = [self count];
         id *objects = (id *)malloc(numberOfObjects * sizeof(id));
         if (objects) {
             [self getObjects:objects range:NSMakeRange(0, numberOfObjects)];
             for (i = j = 0; i < numberOfObjects; ++i) {
                 id object = objects[i];
-                if (aBlock(object)) {
+                if (predicateBlock(object)) {
                     objects[j++] = object;
                 }
             }

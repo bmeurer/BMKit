@@ -49,10 +49,10 @@
 
 /** Evaluates a given predicate block against each object in the receiving array and returns a new array containing the objects for which the predicate block returns true.
  
- @param aBlock The predicate block against which to evaluate the receiving array’s elements.
- @return A new array containing the objects in the receiving array for which *aBlock* returns true.
+ @param predicateBlock The predicate block against which to evaluate the receiving array’s elements.
+ @return A new array containing the objects in the receiving array for which *predicateBlock* returns true.
  */
-- (NSArray *)filteredArrayUsingPredicateBlock:(BMPredicateBlock)aBlock;
+- (NSArray *)filteredArrayUsingPredicateBlock:(BMPredicateBlock)predicateBlock;
 
 /** Invokes the transformator on each object in the receiving array and returns a new array containing the transformed objects.
  
