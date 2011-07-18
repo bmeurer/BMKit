@@ -26,6 +26,10 @@
 		C72E12DC13D4283D00181DC3 /* NSArray+BMKitAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = C72E12DA13D4283D00181DC3 /* NSArray+BMKitAdditions.m */; };
 		C72E12E813D43DED00181DC3 /* NSMutableArray+BMKitAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = C72E12E613D43DED00181DC3 /* NSMutableArray+BMKitAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C72E12E913D43DED00181DC3 /* NSMutableArray+BMKitAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = C72E12E713D43DED00181DC3 /* NSMutableArray+BMKitAdditions.m */; };
+		C72E12F013D4490500181DC3 /* NSSet+BMKitAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = C72E12EE13D4490500181DC3 /* NSSet+BMKitAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C72E12F113D4490500181DC3 /* NSSet+BMKitAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = C72E12EF13D4490500181DC3 /* NSSet+BMKitAdditions.m */; };
+		C72E12F413D44E4700181DC3 /* NSMutableSet+BMKitAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = C72E12F213D44E4700181DC3 /* NSMutableSet+BMKitAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C72E12F513D44E4700181DC3 /* NSMutableSet+BMKitAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = C72E12F313D44E4700181DC3 /* NSMutableSet+BMKitAdditions.m */; };
 		C7BB3F8E13C0C44500E23AAD /* UIImagePickerController+BMKitAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = C7BB3F8C13C0C44500E23AAD /* UIImagePickerController+BMKitAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C7BB3F8F13C0C44500E23AAD /* UIImagePickerController+BMKitAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = C7BB3F8D13C0C44500E23AAD /* UIImagePickerController+BMKitAdditions.m */; };
 		C7BB3F9213C0C46E00E23AAD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7BB3F9113C0C46E00E23AAD /* UIKit.framework */; };
@@ -58,6 +62,10 @@
 		C72E12DA13D4283D00181DC3 /* NSArray+BMKitAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+BMKitAdditions.m"; sourceTree = "<group>"; };
 		C72E12E613D43DED00181DC3 /* NSMutableArray+BMKitAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+BMKitAdditions.h"; sourceTree = "<group>"; };
 		C72E12E713D43DED00181DC3 /* NSMutableArray+BMKitAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+BMKitAdditions.m"; sourceTree = "<group>"; };
+		C72E12EE13D4490500181DC3 /* NSSet+BMKitAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSSet+BMKitAdditions.h"; sourceTree = "<group>"; };
+		C72E12EF13D4490500181DC3 /* NSSet+BMKitAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSSet+BMKitAdditions.m"; sourceTree = "<group>"; };
+		C72E12F213D44E4700181DC3 /* NSMutableSet+BMKitAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableSet+BMKitAdditions.h"; sourceTree = "<group>"; };
+		C72E12F313D44E4700181DC3 /* NSMutableSet+BMKitAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableSet+BMKitAdditions.m"; sourceTree = "<group>"; };
 		C7BB3F8C13C0C44500E23AAD /* UIImagePickerController+BMKitAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImagePickerController+BMKitAdditions.h"; sourceTree = "<group>"; };
 		C7BB3F8D13C0C44500E23AAD /* UIImagePickerController+BMKitAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImagePickerController+BMKitAdditions.m"; sourceTree = "<group>"; };
 		C7BB3F9113C0C46E00E23AAD /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -171,8 +179,12 @@
 				C7F1F37513C06D8000F1DED1 /* NSData+BMKitAdditions.m */,
 				C72E12E613D43DED00181DC3 /* NSMutableArray+BMKitAdditions.h */,
 				C72E12E713D43DED00181DC3 /* NSMutableArray+BMKitAdditions.m */,
+				C72E12F213D44E4700181DC3 /* NSMutableSet+BMKitAdditions.h */,
+				C72E12F313D44E4700181DC3 /* NSMutableSet+BMKitAdditions.m */,
 				C7F1F36D13C05E0200F1DED1 /* NSObject+BMKitAdditions.h */,
 				C7F1F36E13C05E0200F1DED1 /* NSObject+BMKitAdditions.m */,
+				C72E12EE13D4490500181DC3 /* NSSet+BMKitAdditions.h */,
+				C72E12EF13D4490500181DC3 /* NSSet+BMKitAdditions.m */,
 				C711EBB213C0E8E80099EAAA /* NSThread+BMKitAdditions.h */,
 				C711EBB313C0E8E80099EAAA /* NSThread+BMKitAdditions.m */,
 				C711EBAD13C0C90B0099EAAA /* NSTimer+BMKitAdditions.h */,
@@ -201,6 +213,8 @@
 				C70C20E413D1974700FEA359 /* UIActionSheet+BMKitAdditions.h in Headers */,
 				C72E12DB13D4283D00181DC3 /* NSArray+BMKitAdditions.h in Headers */,
 				C72E12E813D43DED00181DC3 /* NSMutableArray+BMKitAdditions.h in Headers */,
+				C72E12F013D4490500181DC3 /* NSSet+BMKitAdditions.h in Headers */,
+				C72E12F413D44E4700181DC3 /* NSMutableSet+BMKitAdditions.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -265,6 +279,8 @@
 				C70C20E513D1974700FEA359 /* UIActionSheet+BMKitAdditions.m in Sources */,
 				C72E12DC13D4283D00181DC3 /* NSArray+BMKitAdditions.m in Sources */,
 				C72E12E913D43DED00181DC3 /* NSMutableArray+BMKitAdditions.m in Sources */,
+				C72E12F113D4490500181DC3 /* NSSet+BMKitAdditions.m in Sources */,
+				C72E12F513D44E4700181DC3 /* NSMutableSet+BMKitAdditions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

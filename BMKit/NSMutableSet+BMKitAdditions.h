@@ -1,5 +1,5 @@
 /*-
- * Copyright (c) 2011, Benedikt Meurer <benedikt.meurer@googlemail.com>
+ * Copyright (c) 2010-2011, Benedikt Meurer <benedikt.meurer@googlemail.com>
  * All rights reserved.
  *
  * Redistribution and use in source and binary forms, with or without
@@ -25,29 +25,20 @@
  * SUCH DAMAGE.
  */
 
-#ifndef __BMKIT__
-#define __BMKIT__
+#import "BMKitTypes.h"
 
-#include "BMKitTypes.h"
 
-#include "BMImageUtilities.h"
-#include "BMObjectUtilities.h"
+/** BMKit related additions to the `NSMutableSet` class. */
+@interface NSMutableSet (BMKitAdditions)
 
-#ifdef __OBJC__
+///-----------------------------------
+/// @name Adding and Removing Entries
+///-----------------------------------
 
-# import "NSArray+BMKitAdditions.h"
-# import "NSData+BMKitAdditions.h"
-# import "NSMutableArray+BMKitAdditions.h"
-# import "NSMutableSet+BMKitAdditions.h"
-# import "NSObject+BMKitAdditions.h"
-# import "NSSet+BMKitAdditions.h"
-# import "NSThread+BMKitAdditions.h"
-# import "NSTimer+BMKitAdditions.h"
+/** Evaluates a given predicate block against the set’s content and removes from the set those objects for which the predicate block returns false.
+ 
+ @param predicateBlock A predicate block.
+ */
+- (void)filterUsingPredicateBlock:(BMPredicateBlock)predicateBlock;
 
-# import "UIActionSheet+BMKitAdditions.h"
-# import "UIImage+BMKitAdditions.h"
-# import "UIImagePickerController+BMKitAdditions.h"
-
-#endif /* __OBJC__ */
-
-#endif /* !__BMKIT__ */
+@end

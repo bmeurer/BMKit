@@ -1,5 +1,5 @@
 /*-
- * Copyright (c) 2011, Benedikt Meurer <benedikt.meurer@googlemail.com>
+ * Copyright (c) 2010-2011, Benedikt Meurer <benedikt.meurer@googlemail.com>
  * All rights reserved.
  *
  * Redistribution and use in source and binary forms, with or without
@@ -25,29 +25,29 @@
  * SUCH DAMAGE.
  */
 
-#ifndef __BMKIT__
-#define __BMKIT__
+#import "BMKitTypes.h"
 
-#include "BMKitTypes.h"
 
-#include "BMImageUtilities.h"
-#include "BMObjectUtilities.h"
+/** BMKit related additions to the `NSSet` class. */
+@interface NSSet (BMKitAdditions)
 
-#ifdef __OBJC__
+///-----------------------------
+/// @name Accessing Set Members
+///-----------------------------
 
-# import "NSArray+BMKitAdditions.h"
-# import "NSData+BMKitAdditions.h"
-# import "NSMutableArray+BMKitAdditions.h"
-# import "NSMutableSet+BMKitAdditions.h"
-# import "NSObject+BMKitAdditions.h"
-# import "NSSet+BMKitAdditions.h"
-# import "NSThread+BMKitAdditions.h"
-# import "NSTimer+BMKitAdditions.h"
+/** Evaluates a given predicate block against each object in the receiving set and returns a new set containing the objects for which the predicate block returns true.
+ 
+ @param predicateBlock A predicate block.
+ @return A new set containing the objects in the receiving set for which *predicateBlock* returns true.
+ */
+- (NSSet *)filteredSetUsingPredicateBlock:(BMPredicateBlock)predicateBlock;
 
-# import "UIActionSheet+BMKitAdditions.h"
-# import "UIImage+BMKitAdditions.h"
-# import "UIImagePickerController+BMKitAdditions.h"
+/** Performs a block on each object in the set.
+ 
+ This method raises `NSInvalidArgumentException` if *aBlock* is `nil`.
+ 
+ @param aBlock A block to invoke with the objects in the array. The block must not have the side effect of modifying the receiving array.
+ */
+- (void)makeObjectsPerformBlock:(BMTargetBlock)aBlock;
 
-#endif /* __OBJC__ */
-
-#endif /* !__BMKIT__ */
+@end

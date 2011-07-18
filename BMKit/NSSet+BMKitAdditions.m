@@ -1,5 +1,5 @@
 /*-
- * Copyright (c) 2011, Benedikt Meurer <benedikt.meurer@googlemail.com>
+ * Copyright (c) 2010-2011, Benedikt Meurer <benedikt.meurer@googlemail.com>
  * All rights reserved.
  *
  * Redistribution and use in source and binary forms, with or without
@@ -25,29 +25,30 @@
  * SUCH DAMAGE.
  */
 
-#ifndef __BMKIT__
-#define __BMKIT__
+#import "NSSet+BMKitAdditions.h"
 
-#include "BMKitTypes.h"
 
-#include "BMImageUtilities.h"
-#include "BMObjectUtilities.h"
+@implementation NSSet (BMKitAdditions)
 
-#ifdef __OBJC__
 
-# import "NSArray+BMKitAdditions.h"
-# import "NSData+BMKitAdditions.h"
-# import "NSMutableArray+BMKitAdditions.h"
-# import "NSMutableSet+BMKitAdditions.h"
-# import "NSObject+BMKitAdditions.h"
-# import "NSSet+BMKitAdditions.h"
-# import "NSThread+BMKitAdditions.h"
-# import "NSTimer+BMKitAdditions.h"
+#pragma mark -
+#pragma mark Accessing Set Members
 
-# import "UIActionSheet+BMKitAdditions.h"
-# import "UIImage+BMKitAdditions.h"
-# import "UIImagePickerController+BMKitAdditions.h"
 
-#endif /* __OBJC__ */
+- (NSSet *)filteredSetUsingPredicateBlock:(BMPredicateBlock)predicateBlock
+{
+    return [self filteredSetUsingPredicate:[NSPredicate predicateWithBlock:(BOOL(^)(id, NSDictionary *))predicateBlock]];
+}
 
-#endif /* !__BMKIT__ */
+
+- (void)makeObjectsPerformBlock:(BMTargetBlock)aBlock
+{
+    if (!aBlock) {
+        [NSException raise:NSInvalidArgumentException
+                    format:@"aBlock is nil (in '%@')", NSStringFromSelector(_cmd)];
+    }
+    [self enumerateObjectsUsingBlock:(void(^)(id, BOOL *))aBlock];
+}
+
+
+@end
