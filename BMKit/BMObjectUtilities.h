@@ -41,7 +41,7 @@ extern const void *BMObjectRetain(const void *object);
 extern void BMObjectRelease(const void *object);
     
 /** Sends the `description` message to the object and returns a copy of the result. */
-CFStringRef BMObjectCopyDescription(const void *object);
+extern CFStringRef BMObjectCopyDescription(const void *object);
     
 #ifdef __cplusplus
 }
