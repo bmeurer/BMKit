@@ -30,9 +30,7 @@
 
 #include <CoreGraphics/CoreGraphics.h>
 
-#ifdef __cplusplus
-extern "C" {
-#endif
+__BEGIN_DECLS
     
 /** EXIF image orientations. */
 typedef enum _BMImageOrientation {
@@ -66,8 +64,6 @@ extern CGImageRef BMImageCreateWithImageScaledDownToAspectFill(CGImageRef       
                                                                CGSize                 size,
                                                                CGInterpolationQuality interpolationQuality);
 
-#ifdef __cplusplus
-}
-#endif
+__END_DECLS
 
 #endif /* __BMIMAGEUTILITIES__ */

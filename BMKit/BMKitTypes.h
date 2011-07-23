@@ -37,17 +37,13 @@
 # include <CoreFoundation/CoreFoundation.h>
 #endif
 
-#ifdef __cplusplus
-extern "C" {
-#endif
+__BEGIN_DECLS
 
 typedef void (^BMBlock)(void);
 typedef void (^BMTargetBlock)(id aTarget);
 typedef BOOL (^BMPredicateBlock)(id anObject);
 typedef id   (^BMTransformator)(id anObject);
-    
-#ifdef __cplusplus
-}
-#endif
+
+__END_DECLS
 
 #endif /* !__BMKITTYPES__ */
