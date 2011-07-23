@@ -263,6 +263,7 @@
 		C7F1F35713C05D0D00F1DED1 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastUpgradeCheck = 0410;
 				ORGANIZATIONNAME = "Benedikt Meurer";
 			};
 			buildConfigurationList = C7F1F35A13C05D0D00F1DED1 /* Build configuration list for PBXProject "BMKit" */;
@@ -348,14 +349,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CODE_SIGN_IDENTITY = "";
 				DSTROOT = /tmp/BMKit.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "BMKit/BMKit-Prefix.pch";
-				GCC_VERSION = "";
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_INITIALIZER_NOT_FULLY_BRACKETED = NO;
 				OTHER_LDFLAGS = "-ObjC";
 				PRIVATE_HEADERS_FOLDER_PATH = "/../$(PRODUCT_NAME)/$(PRODUCT_NAME)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PUBLIC_HEADERS_FOLDER_PATH = "/../$(PRODUCT_NAME)/$(PRODUCT_NAME)";
+				SKIP_INSTALL = YES;
 			};
 			name = Debug;
 		};
@@ -363,14 +367,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CODE_SIGN_IDENTITY = "";
 				DSTROOT = /tmp/BMKit.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "BMKit/BMKit-Prefix.pch";
-				GCC_VERSION = "";
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_INITIALIZER_NOT_FULLY_BRACKETED = NO;
 				OTHER_LDFLAGS = "-ObjC";
 				PRIVATE_HEADERS_FOLDER_PATH = "/../$(PRODUCT_NAME)/$(PRODUCT_NAME)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PUBLIC_HEADERS_FOLDER_PATH = "/../$(PRODUCT_NAME)/$(PRODUCT_NAME)";
+				SKIP_INSTALL = YES;
 			};
 			name = Release;
 		};
