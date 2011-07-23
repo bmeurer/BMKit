@@ -35,6 +35,8 @@
 
 #ifdef __OBJC__
 
+# import "BMNetworkReachabilityController.h"
+
 # import "NSArray+BMKitAdditions.h"
 # import "NSData+BMKitAdditions.h"
 # import "NSMutableArray+BMKitAdditions.h"

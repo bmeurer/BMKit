@@ -30,6 +30,9 @@
 		C72E12F113D4490500181DC3 /* NSSet+BMKitAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = C72E12EF13D4490500181DC3 /* NSSet+BMKitAdditions.m */; };
 		C72E12F413D44E4700181DC3 /* NSMutableSet+BMKitAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = C72E12F213D44E4700181DC3 /* NSMutableSet+BMKitAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C72E12F513D44E4700181DC3 /* NSMutableSet+BMKitAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = C72E12F313D44E4700181DC3 /* NSMutableSet+BMKitAdditions.m */; };
+		C72E132213D457C000181DC3 /* BMNetworkReachabilityController.h in Headers */ = {isa = PBXBuildFile; fileRef = C72E132013D457C000181DC3 /* BMNetworkReachabilityController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C72E132313D457C000181DC3 /* BMNetworkReachabilityController.m in Sources */ = {isa = PBXBuildFile; fileRef = C72E132113D457C000181DC3 /* BMNetworkReachabilityController.m */; };
+		C72E132513D457DF00181DC3 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C72E132413D457DE00181DC3 /* SystemConfiguration.framework */; };
 		C7BB3F8E13C0C44500E23AAD /* UIImagePickerController+BMKitAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = C7BB3F8C13C0C44500E23AAD /* UIImagePickerController+BMKitAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C7BB3F8F13C0C44500E23AAD /* UIImagePickerController+BMKitAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = C7BB3F8D13C0C44500E23AAD /* UIImagePickerController+BMKitAdditions.m */; };
 		C7BB3F9213C0C46E00E23AAD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7BB3F9113C0C46E00E23AAD /* UIKit.framework */; };
@@ -66,6 +69,9 @@
 		C72E12EF13D4490500181DC3 /* NSSet+BMKitAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSSet+BMKitAdditions.m"; sourceTree = "<group>"; };
 		C72E12F213D44E4700181DC3 /* NSMutableSet+BMKitAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableSet+BMKitAdditions.h"; sourceTree = "<group>"; };
 		C72E12F313D44E4700181DC3 /* NSMutableSet+BMKitAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableSet+BMKitAdditions.m"; sourceTree = "<group>"; };
+		C72E132013D457C000181DC3 /* BMNetworkReachabilityController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMNetworkReachabilityController.h; sourceTree = "<group>"; };
+		C72E132113D457C000181DC3 /* BMNetworkReachabilityController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMNetworkReachabilityController.m; sourceTree = "<group>"; };
+		C72E132413D457DE00181DC3 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		C7BB3F8C13C0C44500E23AAD /* UIImagePickerController+BMKitAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImagePickerController+BMKitAdditions.h"; sourceTree = "<group>"; };
 		C7BB3F8D13C0C44500E23AAD /* UIImagePickerController+BMKitAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImagePickerController+BMKitAdditions.m"; sourceTree = "<group>"; };
 		C7BB3F9113C0C46E00E23AAD /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -89,6 +95,7 @@
 				C7F1F36413C05D0D00F1DED1 /* Foundation.framework in Frameworks */,
 				C711ECA913C4D6980099EAAA /* ImageIO.framework in Frameworks */,
 				C711ECA713C4D6930099EAAA /* MobileCoreServices.framework in Frameworks */,
+				C72E132513D457DF00181DC3 /* SystemConfiguration.framework in Frameworks */,
 				C7BB3F9213C0C46E00E23AAD /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -118,6 +125,15 @@
 			name = "UIKit Extensions";
 			sourceTree = "<group>";
 		};
+		C72E131E13D4577F00181DC3 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				C72E132013D457C000181DC3 /* BMNetworkReachabilityController.h */,
+				C72E132113D457C000181DC3 /* BMNetworkReachabilityController.m */,
+			);
+			name = Networking;
+			sourceTree = "<group>";
+		};
 		C7F1F35513C05D0D00F1DED1 = {
 			isa = PBXGroup;
 			children = (
@@ -142,6 +158,7 @@
 				C7F1F36313C05D0D00F1DED1 /* Foundation.framework */,
 				C711ECA813C4D6970099EAAA /* ImageIO.framework */,
 				C711ECA613C4D6930099EAAA /* MobileCoreServices.framework */,
+				C72E132413D457DE00181DC3 /* SystemConfiguration.framework */,
 				C7BB3F9113C0C46E00E23AAD /* UIKit.framework */,
 			);
 			name = Frameworks;
@@ -150,6 +167,7 @@
 		C7F1F36513C05D0D00F1DED1 /* BMKit */ = {
 			isa = PBXGroup;
 			children = (
+				C72E131E13D4577F00181DC3 /* Networking */,
 				C711EC9E13C4D2F40099EAAA /* CoreGraphics Extensions */,
 				C7F1F37113C05E0700F1DED1 /* Foundation Extensions */,
 				C711ECA013C4D32A0099EAAA /* UIKit Extensions */,
@@ -215,6 +233,7 @@
 				C72E12E813D43DED00181DC3 /* NSMutableArray+BMKitAdditions.h in Headers */,
 				C72E12F013D4490500181DC3 /* NSSet+BMKitAdditions.h in Headers */,
 				C72E12F413D44E4700181DC3 /* NSMutableSet+BMKitAdditions.h in Headers */,
+				C72E132213D457C000181DC3 /* BMNetworkReachabilityController.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -281,6 +300,7 @@
 				C72E12E913D43DED00181DC3 /* NSMutableArray+BMKitAdditions.m in Sources */,
 				C72E12F113D4490500181DC3 /* NSSet+BMKitAdditions.m in Sources */,
 				C72E12F513D44E4700181DC3 /* NSMutableSet+BMKitAdditions.m in Sources */,
+				C72E132313D457C000181DC3 /* BMNetworkReachabilityController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -331,6 +351,7 @@
 				DSTROOT = /tmp/BMKit.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "BMKit/BMKit-Prefix.pch";
+				GCC_VERSION = "";
 				OTHER_LDFLAGS = "-ObjC";
 				PRIVATE_HEADERS_FOLDER_PATH = "/../$(PRODUCT_NAME)/$(PRODUCT_NAME)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -345,6 +366,7 @@
 				DSTROOT = /tmp/BMKit.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "BMKit/BMKit-Prefix.pch";
+				GCC_VERSION = "";
 				OTHER_LDFLAGS = "-ObjC";
 				PRIVATE_HEADERS_FOLDER_PATH = "/../$(PRODUCT_NAME)/$(PRODUCT_NAME)";
 				PRODUCT_NAME = "$(TARGET_NAME)";

@@ -39,6 +39,7 @@
 #include <CoreGraphics/CoreGraphics.h>
 #include <ImageIO/ImageIO.h>
 #include <MobileCoreServices/MobileCoreServices.h>
+#include <SystemConfiguration/SystemConfiguration.h>
 
 #ifdef __OBJC__
 # import <Foundation/Foundation.h>
