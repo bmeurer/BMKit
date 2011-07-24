@@ -1,0 +1,1470 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>NSData(BMKitAdditions) Category Reference</title>
+		<meta http-equiv="Content-Type" content="application/xhtml+xml;charset=utf-8" />
+		<meta id="xcode-display" name="xcode-display" content="render"/>
+		<meta name="viewport" content="width=550" />
+		<link rel="stylesheet" type="text/css" href="../css/styles.css" />
+		<meta name="generator" content="appledoc 2.0.4 (build 703)" />
+	</head>
+	<body>
+		<header id="top_header">
+			<div id="title" role="banner">
+				<h1 class="hideInXcode">NSData(BMKitAdditions) Category Reference</h1>
+			</div>
+			<ul id="headerButtons" role="toolbar">
+				<li id="toc_button">
+					<button aria-label="Show Table of Contents" role="checkbox" class="open" id="table_of_contents"><span class="disclosure"></span>Table of Contents</button>
+				</li>
+				<li id="jumpto_button" role="navigation">
+					<select id="jumpTo">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+	
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+	
+	
+	
+	
+	
+	<option value="class_methods">Class Methods</option>
+	
+	<option value="//api/name/dataWithBase64EncodedString:">&nbsp;&nbsp;&nbsp;&nbsp;+ dataWithBase64EncodedString:</option>
+	
+	
+	
+	
+	<option value="instance_methods">Instance Methods</option>
+	
+	<option value="//api/name/MD2">&nbsp;&nbsp;&nbsp;&nbsp;- MD2</option>
+	
+	<option value="//api/name/MD2String">&nbsp;&nbsp;&nbsp;&nbsp;- MD2String</option>
+	
+	<option value="//api/name/MD4">&nbsp;&nbsp;&nbsp;&nbsp;- MD4</option>
+	
+	<option value="//api/name/MD4String">&nbsp;&nbsp;&nbsp;&nbsp;- MD4String</option>
+	
+	<option value="//api/name/MD5">&nbsp;&nbsp;&nbsp;&nbsp;- MD5</option>
+	
+	<option value="//api/name/MD5String">&nbsp;&nbsp;&nbsp;&nbsp;- MD5String</option>
+	
+	<option value="//api/name/SHA1">&nbsp;&nbsp;&nbsp;&nbsp;- SHA1</option>
+	
+	<option value="//api/name/SHA1String">&nbsp;&nbsp;&nbsp;&nbsp;- SHA1String</option>
+	
+	<option value="//api/name/SHA224">&nbsp;&nbsp;&nbsp;&nbsp;- SHA224</option>
+	
+	<option value="//api/name/SHA224String">&nbsp;&nbsp;&nbsp;&nbsp;- SHA224String</option>
+	
+	<option value="//api/name/SHA256">&nbsp;&nbsp;&nbsp;&nbsp;- SHA256</option>
+	
+	<option value="//api/name/SHA256String">&nbsp;&nbsp;&nbsp;&nbsp;- SHA256String</option>
+	
+	<option value="//api/name/SHA384">&nbsp;&nbsp;&nbsp;&nbsp;- SHA384</option>
+	
+	<option value="//api/name/SHA384String">&nbsp;&nbsp;&nbsp;&nbsp;- SHA384String</option>
+	
+	<option value="//api/name/SHA512">&nbsp;&nbsp;&nbsp;&nbsp;- SHA512</option>
+	
+	<option value="//api/name/SHA512String">&nbsp;&nbsp;&nbsp;&nbsp;- SHA512String</option>
+	
+	<option value="//api/name/base64EncodedString">&nbsp;&nbsp;&nbsp;&nbsp;- base64EncodedString</option>
+	
+	<option value="//api/name/initWithBase64EncodedString:">&nbsp;&nbsp;&nbsp;&nbsp;- initWithBase64EncodedString:</option>
+	
+	
+	
+</select>
+				</li>
+			</ul>
+		</header>
+		<nav id="tocContainer" class="isShowingTOC">
+			<ul id="toc" role="tree">
+				
+<li role="treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#overview">Overview</a></span></li>
+
+
+
+
+<li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Base64 Encoding">Base64 Encoding</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Message Digests">Message Digests</a></span></li>
+	
+</ul></li>
+
+
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#class_methods">Class Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/dataWithBase64EncodedString:">dataWithBase64EncodedString:</a></span></li>
+	
+</ul></li>
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/MD2">MD2</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/MD2String">MD2String</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/MD4">MD4</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/MD4String">MD4String</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/MD5">MD5</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/MD5String">MD5String</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/SHA1">SHA1</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/SHA1String">SHA1String</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/SHA224">SHA224</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/SHA224String">SHA224String</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/SHA256">SHA256</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/SHA256String">SHA256String</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/SHA384">SHA384</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/SHA384String">SHA384String</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/SHA512">SHA512</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/SHA512String">SHA512String</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/base64EncodedString">base64EncodedString</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/initWithBase64EncodedString:">initWithBase64EncodedString:</a></span></li>
+	
+</ul></li>
+
+
+			</ul>
+		</nav>
+		<article>
+			<div id="contents" class="isShowingTOC" role="main">
+				<a title="NSData(BMKitAdditions) Category Reference" name="top"></a>
+				<div class="main-navigation navigation-top">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="header">
+					<div class="section-header">
+						<h1 class="title title-header">NSData(BMKitAdditions) Category Reference</h1>
+					</div>		
+				</div>
+				<div id="container">	
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<td class="specification-title">Declared in</td>
+	<td class="specification-value">NSData+BMKitAdditions.h</td>
+</tr>
+						</tbody></table></div>
+					
+					
+					
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>BMKit related additions to the <code>NSData</code> class.</p>
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						<h2 class="subtitle subtitle-tasks">Tasks</h2>
+						
+						
+						<a title="Base64 Encoding" name="task_Base64 Encoding"></a>
+						<h3 class="subsubtitle task-title">Base64 Encoding</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/dataWithBase64EncodedString:">+&nbsp;dataWithBase64EncodedString:</a></code>
+		<span class="tooltip"><p>Returns the decoded data of a Base64-encoded string.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/initWithBase64EncodedString:">&ndash;&nbsp;initWithBase64EncodedString:</a></code>
+		<span class="tooltip"><p>Initializes the receiver by decoding the data from a Base64-encoded string.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/base64EncodedString">&ndash;&nbsp;base64EncodedString</a></code>
+		<span class="tooltip"><p>Returns the Base64-encoded content of the receiver.</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Message Digests" name="task_Message Digests"></a>
+						<h3 class="subsubtitle task-title">Message Digests</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/MD2">&ndash;&nbsp;MD2</a></code>
+		<span class="tooltip"><p>Returns the <a href="#//api/name/MD2">MD2</a> message digest of the receivers bytes.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/MD2String">&ndash;&nbsp;MD2String</a></code>
+		<span class="tooltip"><p>Returns the string representation of the <a href="#//api/name/MD2">MD2</a> message digest of the receivers bytes.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/MD4">&ndash;&nbsp;MD4</a></code>
+		<span class="tooltip"><p>Returns the <a href="#//api/name/MD4">MD4</a> message digest of the receivers bytes.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/MD4String">&ndash;&nbsp;MD4String</a></code>
+		<span class="tooltip"><p>Returns the string representation of the <a href="#//api/name/MD4">MD4</a> message digest of the receivers bytes.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/MD5">&ndash;&nbsp;MD5</a></code>
+		<span class="tooltip"><p>Returns the <a href="#//api/name/MD5">MD5</a> message digest of the receivers bytes.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/MD5String">&ndash;&nbsp;MD5String</a></code>
+		<span class="tooltip"><p>Returns the string representation of the <a href="#//api/name/MD5">MD5</a> message digest of the receivers bytes.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/SHA1">&ndash;&nbsp;SHA1</a></code>
+		<span class="tooltip"><p>Returns the <a href="#//api/name/SHA1">SHA1</a> message digest of the receivers bytes.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/SHA1String">&ndash;&nbsp;SHA1String</a></code>
+		<span class="tooltip"><p>Returns the string representation of the <a href="#//api/name/SHA1">SHA1</a> message digest of the receivers bytes.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/SHA224">&ndash;&nbsp;SHA224</a></code>
+		<span class="tooltip"><p>Returns the <a href="#//api/name/SHA224">SHA224</a> message digest of the receivers bytes.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/SHA224String">&ndash;&nbsp;SHA224String</a></code>
+		<span class="tooltip"><p>Returns the string representation of the <a href="#//api/name/SHA224">SHA224</a> message digest of the receivers bytes.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/SHA256">&ndash;&nbsp;SHA256</a></code>
+		<span class="tooltip"><p>Returns the <a href="#//api/name/SHA256">SHA256</a> message digest of the receivers bytes.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/SHA256String">&ndash;&nbsp;SHA256String</a></code>
+		<span class="tooltip"><p>Returns the string representation of the <a href="#//api/name/SHA256">SHA256</a> message digest of the receivers bytes.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/SHA384">&ndash;&nbsp;SHA384</a></code>
+		<span class="tooltip"><p>Returns the <a href="#//api/name/SHA384">SHA384</a> message digest of the receivers bytes.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/SHA384String">&ndash;&nbsp;SHA384String</a></code>
+		<span class="tooltip"><p>Returns the string representation of the <a href="#//api/name/SHA384">SHA384</a> message digest of the receivers bytes.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/SHA512">&ndash;&nbsp;SHA512</a></code>
+		<span class="tooltip"><p>Returns the <a href="#//api/name/SHA512">SHA512</a> message digest of the receivers bytes.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/SHA512String">&ndash;&nbsp;SHA512String</a></code>
+		<span class="tooltip"><p>Returns the string representation of the <a href="#//api/name/SHA512">SHA512</a> message digest of the receivers bytes.</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+					</div>
+					
+					
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Class Methods" name="class_methods"></a>
+						<h2 class="subtitle subtitle-methods">Class Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/dataWithBase64EncodedString:" title="dataWithBase64EncodedString:"></a>
+	<h3 class="subsubtitle method-title">dataWithBase64EncodedString:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns the decoded data of a Base64-encoded string.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>+ (NSData *)dataWithBase64EncodedString:(NSString *)<em>aString</em></code></div>
+	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>aString</em></dt>
+			<dd><p>A Base64-encoded string.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The decoded data of the Base64-encoded string <em>aString</em>, or <code>nil</code> in case of an error.</p>
+	</div>
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Returns the decoded data of a Base64-encoded string.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection see-also-section">
+		<h4 class="method-subtitle">See Also</h4>
+		<ul>
+			
+			<li><code><p><a href="#//api/name/initWithBase64EncodedString:">&ndash; initWithBase64EncodedString:</a></p></code></li>
+			
+			<li><code><p><a href="#//api/name/base64EncodedString">&ndash; base64EncodedString</a></p></code></li>
+			
+		</ul>
+	</div>
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">NSData+BMKitAdditions.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Instance Methods" name="instance_methods"></a>
+						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/MD2" title="MD2"></a>
+	<h3 class="subsubtitle method-title">MD2</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns the <a href="#//api/name/MD2">MD2</a> message digest of the receivers bytes.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (NSData *)MD2</code></div>
+	
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The <a href="#//api/name/MD2">MD2</a> message digest of the receivers bytes.</p>
+	</div>
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Returns the <a href="#//api/name/MD2">MD2</a> message digest of the receivers bytes.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection see-also-section">
+		<h4 class="method-subtitle">See Also</h4>
+		<ul>
+			
+			<li><code><p><a href="#//api/name/MD2String">&ndash; MD2String</a></p></code></li>
+			
+		</ul>
+	</div>
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">NSData+BMKitAdditions.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/MD2String" title="MD2String"></a>
+	<h3 class="subsubtitle method-title">MD2String</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns the string representation of the <a href="#//api/name/MD2">MD2</a> message digest of the receivers bytes.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (NSString *)MD2String</code></div>
+	
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The string representation of the <a href="#//api/name/MD2">MD2</a> message digest of the receivers bytes.</p>
+	</div>
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Returns the string representation of the <a href="#//api/name/MD2">MD2</a> message digest of the receivers bytes.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection see-also-section">
+		<h4 class="method-subtitle">See Also</h4>
+		<ul>
+			
+			<li><code><p><a href="#//api/name/MD2">&ndash; MD2</a></p></code></li>
+			
+		</ul>
+	</div>
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">NSData+BMKitAdditions.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/MD4" title="MD4"></a>
+	<h3 class="subsubtitle method-title">MD4</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns the <a href="#//api/name/MD4">MD4</a> message digest of the receivers bytes.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (NSData *)MD4</code></div>
+	
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The <a href="#//api/name/MD4">MD4</a> message digest of the receivers bytes.</p>
+	</div>
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Returns the <a href="#//api/name/MD4">MD4</a> message digest of the receivers bytes.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection see-also-section">
+		<h4 class="method-subtitle">See Also</h4>
+		<ul>
+			
+			<li><code><p><a href="#//api/name/MD4String">&ndash; MD4String</a></p></code></li>
+			
+		</ul>
+	</div>
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">NSData+BMKitAdditions.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/MD4String" title="MD4String"></a>
+	<h3 class="subsubtitle method-title">MD4String</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns the string representation of the <a href="#//api/name/MD4">MD4</a> message digest of the receivers bytes.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (NSString *)MD4String</code></div>
+	
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The string representation of the <a href="#//api/name/MD4">MD4</a> message digest of the receivers bytes.</p>
+	</div>
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Returns the string representation of the <a href="#//api/name/MD4">MD4</a> message digest of the receivers bytes.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection see-also-section">
+		<h4 class="method-subtitle">See Also</h4>
+		<ul>
+			
+			<li><code><p><a href="#//api/name/MD4">&ndash; MD4</a></p></code></li>
+			
+		</ul>
+	</div>
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">NSData+BMKitAdditions.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/MD5" title="MD5"></a>
+	<h3 class="subsubtitle method-title">MD5</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns the <a href="#//api/name/MD5">MD5</a> message digest of the receivers bytes.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (NSData *)MD5</code></div>
+	
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The <a href="#//api/name/MD5">MD5</a> message digest of the receivers bytes.</p>
+	</div>
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Returns the <a href="#//api/name/MD5">MD5</a> message digest of the receivers bytes.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection see-also-section">
+		<h4 class="method-subtitle">See Also</h4>
+		<ul>
+			
+			<li><code><p><a href="#//api/name/MD5String">&ndash; MD5String</a></p></code></li>
+			
+		</ul>
+	</div>
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">NSData+BMKitAdditions.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/MD5String" title="MD5String"></a>
+	<h3 class="subsubtitle method-title">MD5String</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns the string representation of the <a href="#//api/name/MD5">MD5</a> message digest of the receivers bytes.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (NSString *)MD5String</code></div>
+	
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The string representation of the <a href="#//api/name/MD5">MD5</a> message digest of the receivers bytes.</p>
+	</div>
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Returns the string representation of the <a href="#//api/name/MD5">MD5</a> message digest of the receivers bytes.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection see-also-section">
+		<h4 class="method-subtitle">See Also</h4>
+		<ul>
+			
+			<li><code><p><a href="#//api/name/MD5">&ndash; MD5</a></p></code></li>
+			
+		</ul>
+	</div>
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">NSData+BMKitAdditions.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/SHA1" title="SHA1"></a>
+	<h3 class="subsubtitle method-title">SHA1</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns the <a href="#//api/name/SHA1">SHA1</a> message digest of the receivers bytes.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (NSData *)SHA1</code></div>
+	
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The <a href="#//api/name/SHA1">SHA1</a> message digest of the receivers bytes.</p>
+	</div>
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Returns the <a href="#//api/name/SHA1">SHA1</a> message digest of the receivers bytes.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection see-also-section">
+		<h4 class="method-subtitle">See Also</h4>
+		<ul>
+			
+			<li><code><p><a href="#//api/name/SHA1String">&ndash; SHA1String</a></p></code></li>
+			
+		</ul>
+	</div>
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">NSData+BMKitAdditions.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/SHA1String" title="SHA1String"></a>
+	<h3 class="subsubtitle method-title">SHA1String</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns the string representation of the <a href="#//api/name/SHA1">SHA1</a> message digest of the receivers bytes.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (NSString *)SHA1String</code></div>
+	
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The string representation of the <a href="#//api/name/SHA1">SHA1</a> message digest of the receivers bytes.</p>
+	</div>
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Returns the string representation of the <a href="#//api/name/SHA1">SHA1</a> message digest of the receivers bytes.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection see-also-section">
+		<h4 class="method-subtitle">See Also</h4>
+		<ul>
+			
+			<li><code><p><a href="#//api/name/SHA1">&ndash; SHA1</a></p></code></li>
+			
+		</ul>
+	</div>
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">NSData+BMKitAdditions.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/SHA224" title="SHA224"></a>
+	<h3 class="subsubtitle method-title">SHA224</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns the <a href="#//api/name/SHA224">SHA224</a> message digest of the receivers bytes.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (NSData *)SHA224</code></div>
+	
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The <a href="#//api/name/SHA224">SHA224</a> message digest of the receivers bytes.</p>
+	</div>
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Returns the <a href="#//api/name/SHA224">SHA224</a> message digest of the receivers bytes.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection see-also-section">
+		<h4 class="method-subtitle">See Also</h4>
+		<ul>
+			
+			<li><code><p><a href="#//api/name/SHA224String">&ndash; SHA224String</a></p></code></li>
+			
+		</ul>
+	</div>
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">NSData+BMKitAdditions.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/SHA224String" title="SHA224String"></a>
+	<h3 class="subsubtitle method-title">SHA224String</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns the string representation of the <a href="#//api/name/SHA224">SHA224</a> message digest of the receivers bytes.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (NSString *)SHA224String</code></div>
+	
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The string representation of the <a href="#//api/name/SHA224">SHA224</a> message digest of the receivers bytes.</p>
+	</div>
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Returns the string representation of the <a href="#//api/name/SHA224">SHA224</a> message digest of the receivers bytes.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection see-also-section">
+		<h4 class="method-subtitle">See Also</h4>
+		<ul>
+			
+			<li><code><p><a href="#//api/name/SHA224">&ndash; SHA224</a></p></code></li>
+			
+		</ul>
+	</div>
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">NSData+BMKitAdditions.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/SHA256" title="SHA256"></a>
+	<h3 class="subsubtitle method-title">SHA256</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns the <a href="#//api/name/SHA256">SHA256</a> message digest of the receivers bytes.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (NSData *)SHA256</code></div>
+	
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The <a href="#//api/name/SHA256">SHA256</a> message digest of the receivers bytes.</p>
+	</div>
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Returns the <a href="#//api/name/SHA256">SHA256</a> message digest of the receivers bytes.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection see-also-section">
+		<h4 class="method-subtitle">See Also</h4>
+		<ul>
+			
+			<li><code><p><a href="#//api/name/SHA256String">&ndash; SHA256String</a></p></code></li>
+			
+		</ul>
+	</div>
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">NSData+BMKitAdditions.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/SHA256String" title="SHA256String"></a>
+	<h3 class="subsubtitle method-title">SHA256String</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns the string representation of the <a href="#//api/name/SHA256">SHA256</a> message digest of the receivers bytes.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (NSString *)SHA256String</code></div>
+	
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The string representation of the <a href="#//api/name/SHA256">SHA256</a> message digest of the receivers bytes.</p>
+	</div>
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Returns the string representation of the <a href="#//api/name/SHA256">SHA256</a> message digest of the receivers bytes.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection see-also-section">
+		<h4 class="method-subtitle">See Also</h4>
+		<ul>
+			
+			<li><code><p><a href="#//api/name/SHA256">&ndash; SHA256</a></p></code></li>
+			
+		</ul>
+	</div>
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">NSData+BMKitAdditions.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/SHA384" title="SHA384"></a>
+	<h3 class="subsubtitle method-title">SHA384</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns the <a href="#//api/name/SHA384">SHA384</a> message digest of the receivers bytes.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (NSData *)SHA384</code></div>
+	
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The <a href="#//api/name/SHA384">SHA384</a> message digest of the receivers bytes.</p>
+	</div>
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Returns the <a href="#//api/name/SHA384">SHA384</a> message digest of the receivers bytes.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection see-also-section">
+		<h4 class="method-subtitle">See Also</h4>
+		<ul>
+			
+			<li><code><p><a href="#//api/name/SHA384String">&ndash; SHA384String</a></p></code></li>
+			
+		</ul>
+	</div>
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">NSData+BMKitAdditions.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/SHA384String" title="SHA384String"></a>
+	<h3 class="subsubtitle method-title">SHA384String</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns the string representation of the <a href="#//api/name/SHA384">SHA384</a> message digest of the receivers bytes.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (NSString *)SHA384String</code></div>
+	
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The string representation of the <a href="#//api/name/SHA384">SHA384</a> message digest of the receivers bytes.</p>
+	</div>
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Returns the string representation of the <a href="#//api/name/SHA384">SHA384</a> message digest of the receivers bytes.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection see-also-section">
+		<h4 class="method-subtitle">See Also</h4>
+		<ul>
+			
+			<li><code><p><a href="#//api/name/SHA384">&ndash; SHA384</a></p></code></li>
+			
+		</ul>
+	</div>
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">NSData+BMKitAdditions.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/SHA512" title="SHA512"></a>
+	<h3 class="subsubtitle method-title">SHA512</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns the <a href="#//api/name/SHA512">SHA512</a> message digest of the receivers bytes.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (NSData *)SHA512</code></div>
+	
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The <a href="#//api/name/SHA512">SHA512</a> message digest of the receivers bytes.</p>
+	</div>
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Returns the <a href="#//api/name/SHA512">SHA512</a> message digest of the receivers bytes.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection see-also-section">
+		<h4 class="method-subtitle">See Also</h4>
+		<ul>
+			
+			<li><code><p><a href="#//api/name/SHA512String">&ndash; SHA512String</a></p></code></li>
+			
+		</ul>
+	</div>
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">NSData+BMKitAdditions.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/SHA512String" title="SHA512String"></a>
+	<h3 class="subsubtitle method-title">SHA512String</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns the string representation of the <a href="#//api/name/SHA512">SHA512</a> message digest of the receivers bytes.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (NSString *)SHA512String</code></div>
+	
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The string representation of the <a href="#//api/name/SHA512">SHA512</a> message digest of the receivers bytes.</p>
+	</div>
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Returns the string representation of the <a href="#//api/name/SHA512">SHA512</a> message digest of the receivers bytes.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection see-also-section">
+		<h4 class="method-subtitle">See Also</h4>
+		<ul>
+			
+			<li><code><p><a href="#//api/name/SHA512">&ndash; SHA512</a></p></code></li>
+			
+		</ul>
+	</div>
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">NSData+BMKitAdditions.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/base64EncodedString" title="base64EncodedString"></a>
+	<h3 class="subsubtitle method-title">base64EncodedString</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns the Base64-encoded content of the receiver.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (NSString *)base64EncodedString</code></div>
+	
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>An NSString with the Base64 encoding of the receivers bytes.</p>
+	</div>
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Returns the Base64-encoded content of the receiver.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection see-also-section">
+		<h4 class="method-subtitle">See Also</h4>
+		<ul>
+			
+			<li><code><p><a href="#//api/name/dataWithBase64EncodedString:">+ dataWithBase64EncodedString:</a></p></code></li>
+			
+			<li><code><p><a href="#//api/name/initWithBase64EncodedString:">&ndash; initWithBase64EncodedString:</a></p></code></li>
+			
+		</ul>
+	</div>
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">NSData+BMKitAdditions.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/initWithBase64EncodedString:" title="initWithBase64EncodedString:"></a>
+	<h3 class="subsubtitle method-title">initWithBase64EncodedString:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Initializes the receiver by decoding the data from a Base64-encoded string.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (id)initWithBase64EncodedString:(NSString *)<em>aString</em></code></div>
+	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>aString</em></dt>
+			<dd><p>A Base64-encoded string.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The receiver, or <code>nil</code> in case of an error.</p>
+	</div>
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Initializes the receiver by decoding the data from a Base64-encoded string.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection see-also-section">
+		<h4 class="method-subtitle">See Also</h4>
+		<ul>
+			
+			<li><code><p><a href="#//api/name/dataWithBase64EncodedString:">+ dataWithBase64EncodedString:</a></p></code></li>
+			
+			<li><code><p><a href="#//api/name/base64EncodedString">&ndash; base64EncodedString</a></p></code></li>
+			
+		</ul>
+	</div>
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">NSData+BMKitAdditions.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+				</div>
+				<div class="main-navigation navigation-bottom">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="footer">
+					<hr />
+					<div class="footer-copyright">
+						<p><span class="copyright">&copy; 2011 Benedikt Meurer. All rights reserved. (Last updated: 2011-07-24)</span><br />
+						
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.0.4 (build 703)</a>.</span></p>
+						
+					</div>
+				</div>
+			</div>
+		</article>
+		<script type="text/javascript">
+			function jumpToChange()
+			{
+				window.location.hash = this.options[this.selectedIndex].value;
+			}
+			
+			function toggleTOC()
+			{
+				var contents = document.getElementById('contents');
+				var tocContainer = document.getElementById('tocContainer');
+				
+				if (this.getAttribute('class') == 'open')
+				{
+					this.setAttribute('class', '');
+					contents.setAttribute('class', '');
+					tocContainer.setAttribute('class', '');
+					
+					window.name = "hideTOC";
+				}
+				else
+				{
+					this.setAttribute('class', 'open');
+					contents.setAttribute('class', 'isShowingTOC');
+					tocContainer.setAttribute('class', 'isShowingTOC');
+					
+					window.name = "";
+				}
+				return false;
+			}
+			
+			function toggleTOCEntryChildren(e)
+			{
+				e.stopPropagation();
+				var currentClass = this.getAttribute('class');
+				if (currentClass == 'children') {
+					this.setAttribute('class', 'children open');
+				}
+				else if (currentClass == 'children open') {
+					this.setAttribute('class', 'children');
+				}
+				return false;
+			}
+			
+			function tocEntryClick(e)
+			{
+				e.stopPropagation();
+				return true;
+			}
+			
+			function init()
+			{
+				var selectElement = document.getElementById('jumpTo');
+				selectElement.addEventListener('change', jumpToChange, false);
+				
+				var tocButton = document.getElementById('table_of_contents');
+				tocButton.addEventListener('click', toggleTOC, false);
+				
+				var taskTreeItem = document.getElementById('task_treeitem');
+				if (taskTreeItem.getElementsByTagName('li').length > 0)
+				{
+					taskTreeItem.setAttribute('class', 'children');
+					taskTreeItem.firstChild.setAttribute('class', 'disclosure');
+				}
+				
+				var tocList = document.getElementById('toc');
+				
+				var tocEntries = tocList.getElementsByTagName('li');
+				for (var i = 0; i < tocEntries.length; i++) {
+					tocEntries[i].addEventListener('click', toggleTOCEntryChildren, false);
+				}
+				
+				var tocLinks = tocList.getElementsByTagName('a');
+				for (var i = 0; i < tocLinks.length; i++) {
+					tocLinks[i].addEventListener('click', tocEntryClick, false);
+				}
+				
+				if (window.name == "hideTOC") {
+					toggleTOC.call(tocButton);
+				}
+			}
+			
+			window.onload = init;
+		</script>
+	</body>
+</html>

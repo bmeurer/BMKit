@@ -1,0 +1,977 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>UIActionSheet(BMKitAdditions) Category Reference</title>
+		<meta http-equiv="Content-Type" content="application/xhtml+xml;charset=utf-8" />
+		<meta id="xcode-display" name="xcode-display" content="render"/>
+		<meta name="viewport" content="width=550" />
+		<link rel="stylesheet" type="text/css" href="../css/styles.css" />
+		<meta name="generator" content="appledoc 2.0.4 (build 703)" />
+	</head>
+	<body>
+		<header id="top_header">
+			<div id="title" role="banner">
+				<h1 class="hideInXcode">UIActionSheet(BMKitAdditions) Category Reference</h1>
+			</div>
+			<ul id="headerButtons" role="toolbar">
+				<li id="toc_button">
+					<button aria-label="Show Table of Contents" role="checkbox" class="open" id="table_of_contents"><span class="disclosure"></span>Table of Contents</button>
+				</li>
+				<li id="jumpto_button" role="navigation">
+					<select id="jumpTo">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+	
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+	
+	
+	
+	<option value="properties">Properties</option>
+	
+	<option value="//api/name/actionSheetClickedButtonAtIndexBlock">&nbsp;&nbsp;&nbsp;&nbsp;actionSheetClickedButtonAtIndexBlock</option>
+	
+	<option value="//api/name/actionSheetDidDismissWithButtonIndexBlock">&nbsp;&nbsp;&nbsp;&nbsp;actionSheetDidDismissWithButtonIndexBlock</option>
+	
+	<option value="//api/name/actionSheetWillDismissWithButtonIndexBlock">&nbsp;&nbsp;&nbsp;&nbsp;actionSheetWillDismissWithButtonIndexBlock</option>
+	
+	<option value="//api/name/didPresentActionSheetBlock">&nbsp;&nbsp;&nbsp;&nbsp;didPresentActionSheetBlock</option>
+	
+	<option value="//api/name/willPresentActionSheetBlock">&nbsp;&nbsp;&nbsp;&nbsp;willPresentActionSheetBlock</option>
+	
+	
+	
+	
+	
+	
+	<option value="instance_methods">Instance Methods</option>
+	
+	<option value="//api/name/addButtonWithTitle:block:">&nbsp;&nbsp;&nbsp;&nbsp;- addButtonWithTitle:block:</option>
+	
+	<option value="//api/name/addCancelButtonWithTitle:">&nbsp;&nbsp;&nbsp;&nbsp;- addCancelButtonWithTitle:</option>
+	
+	<option value="//api/name/addCancelButtonWithTitle:block:">&nbsp;&nbsp;&nbsp;&nbsp;- addCancelButtonWithTitle:block:</option>
+	
+	<option value="//api/name/addDestructiveButtonWithTitle:">&nbsp;&nbsp;&nbsp;&nbsp;- addDestructiveButtonWithTitle:</option>
+	
+	<option value="//api/name/addDestructiveButtonWithTitle:block:">&nbsp;&nbsp;&nbsp;&nbsp;- addDestructiveButtonWithTitle:block:</option>
+	
+	<option value="//api/name/buttonBlockAtIndex:">&nbsp;&nbsp;&nbsp;&nbsp;- buttonBlockAtIndex:</option>
+	
+	<option value="//api/name/initWithTitle:">&nbsp;&nbsp;&nbsp;&nbsp;- initWithTitle:</option>
+	
+	
+	
+</select>
+				</li>
+			</ul>
+		</header>
+		<nav id="tocContainer" class="isShowingTOC">
+			<ul id="toc" role="tree">
+				
+<li role="treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#overview">Overview</a></span></li>
+
+
+
+
+<li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Creating Action Sheets">Creating Action Sheets</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Configuring Buttons">Configuring Buttons</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Delegate Blocks">Delegate Blocks</a></span></li>
+	
+</ul></li>
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#properties">Properties</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/actionSheetClickedButtonAtIndexBlock">actionSheetClickedButtonAtIndexBlock</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/actionSheetDidDismissWithButtonIndexBlock">actionSheetDidDismissWithButtonIndexBlock</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/actionSheetWillDismissWithButtonIndexBlock">actionSheetWillDismissWithButtonIndexBlock</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/didPresentActionSheetBlock">didPresentActionSheetBlock</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/willPresentActionSheetBlock">willPresentActionSheetBlock</a></span></li>
+	
+</ul></li>
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/addButtonWithTitle:block:">addButtonWithTitle:block:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/addCancelButtonWithTitle:">addCancelButtonWithTitle:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/addCancelButtonWithTitle:block:">addCancelButtonWithTitle:block:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/addDestructiveButtonWithTitle:">addDestructiveButtonWithTitle:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/addDestructiveButtonWithTitle:block:">addDestructiveButtonWithTitle:block:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/buttonBlockAtIndex:">buttonBlockAtIndex:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/initWithTitle:">initWithTitle:</a></span></li>
+	
+</ul></li>
+
+
+			</ul>
+		</nav>
+		<article>
+			<div id="contents" class="isShowingTOC" role="main">
+				<a title="UIActionSheet(BMKitAdditions) Category Reference" name="top"></a>
+				<div class="main-navigation navigation-top">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="header">
+					<div class="section-header">
+						<h1 class="title title-header">UIActionSheet(BMKitAdditions) Category Reference</h1>
+					</div>		
+				</div>
+				<div id="container">	
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<td class="specification-title">Conforms to</td>
+	<td class="specification-value">UIActionSheetDelegate</td>
+</tr><tr>
+	<td class="specification-title">Declared in</td>
+	<td class="specification-value">UIActionSheet+BMKitAdditions.h</td>
+</tr>
+						</tbody></table></div>
+					
+					
+					
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>BMKit related additions to the <code>UIActionSheet</code> class.</p>
+
+<p>This category allows to use <code>UIActionSheet</code> instances without the need to implement the <code>UIActionSheetDelegate</code> protocol anywhere. Instead of using a delegate, you can implement the actions using blocks.</p><div class="warning"><p>It is not possible to mix and match the delegate approach and this blocks based approach. Either use a delegate or use the block based extensions provided by this category.</p></div>
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						<h2 class="subtitle subtitle-tasks">Tasks</h2>
+						
+						
+						<a title="Creating Action Sheets" name="task_Creating Action Sheets"></a>
+						<h3 class="subsubtitle task-title">Creating Action Sheets</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/initWithTitle:">&ndash;&nbsp;initWithTitle:</a></code>
+		<span class="tooltip"><p>Initializes the action sheet using the specified starting parameters.</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Configuring Buttons" name="task_Configuring Buttons"></a>
+						<h3 class="subsubtitle task-title">Configuring Buttons</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/addButtonWithTitle:block:">&ndash;&nbsp;addButtonWithTitle:block:</a></code>
+		<span class="tooltip"><p>Adds a custom button with a specified code <strong>block</strong> to the action sheet.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/addCancelButtonWithTitle:">&ndash;&nbsp;addCancelButtonWithTitle:</a></code>
+		<span class="tooltip"><p>Adds a custom button to the action sheet and sets it as cancel button.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/addCancelButtonWithTitle:block:">&ndash;&nbsp;addCancelButtonWithTitle:block:</a></code>
+		<span class="tooltip"><p>Adds a custom button with a specified code <strong>block</strong> to the action sheet and sets it as cancel button.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/addDestructiveButtonWithTitle:">&ndash;&nbsp;addDestructiveButtonWithTitle:</a></code>
+		<span class="tooltip"><p>Adds a custom button to the action sheet and sets it as destructive button.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/addDestructiveButtonWithTitle:block:">&ndash;&nbsp;addDestructiveButtonWithTitle:block:</a></code>
+		<span class="tooltip"><p>Adds a custom button with a specified code <strong>block</strong> to the action sheet and sets it as destructive button.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/buttonBlockAtIndex:">&ndash;&nbsp;buttonBlockAtIndex:</a></code>
+		<span class="tooltip"><p>Returns the code block of the button at the specified index.</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Delegate Blocks" name="task_Delegate Blocks"></a>
+						<h3 class="subsubtitle task-title">Delegate Blocks</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/actionSheetClickedButtonAtIndexBlock">&nbsp;&nbsp;actionSheetClickedButtonAtIndexBlock</a></code>
+		<span class="tooltip"><p>The code block to execute when a button is clicked on the action sheet.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/willPresentActionSheetBlock">&nbsp;&nbsp;willPresentActionSheetBlock</a></code>
+		<span class="tooltip"><p>The code block to execute when the action sheet is about to be presented.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/didPresentActionSheetBlock">&nbsp;&nbsp;didPresentActionSheetBlock</a></code>
+		<span class="tooltip"><p>The code block to execute when the action sheet is presented.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/actionSheetWillDismissWithButtonIndexBlock">&nbsp;&nbsp;actionSheetWillDismissWithButtonIndexBlock</a></code>
+		<span class="tooltip"><p>The code block to execute when the action sheet is about to be dismissed.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/actionSheetDidDismissWithButtonIndexBlock">&nbsp;&nbsp;actionSheetDidDismissWithButtonIndexBlock</a></code>
+		<span class="tooltip"><p>The code block to execute when the action sheet is dismissed.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li>
+						</ul>
+						
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Properties" name="properties"></a>
+						<h2 class="subtitle subtitle-methods">Properties</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/actionSheetClickedButtonAtIndexBlock" title="actionSheetClickedButtonAtIndexBlock"></a>
+	<h3 class="subsubtitle method-title">actionSheetClickedButtonAtIndexBlock</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The code block to execute when a button is clicked on the action sheet.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, copy) BMActionSheetWithButtonIndexBlock actionSheetClickedButtonAtIndexBlock</code></div>
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The code block to execute when a button is clicked on the action sheet.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">UIActionSheet+BMKitAdditions.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/actionSheetDidDismissWithButtonIndexBlock" title="actionSheetDidDismissWithButtonIndexBlock"></a>
+	<h3 class="subsubtitle method-title">actionSheetDidDismissWithButtonIndexBlock</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The code block to execute when the action sheet is dismissed.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, copy) BMActionSheetWithButtonIndexBlock actionSheetDidDismissWithButtonIndexBlock</code></div>
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The code block to execute when the action sheet is dismissed.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">UIActionSheet+BMKitAdditions.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/actionSheetWillDismissWithButtonIndexBlock" title="actionSheetWillDismissWithButtonIndexBlock"></a>
+	<h3 class="subsubtitle method-title">actionSheetWillDismissWithButtonIndexBlock</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The code block to execute when the action sheet is about to be dismissed.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, copy) BMActionSheetWithButtonIndexBlock actionSheetWillDismissWithButtonIndexBlock</code></div>
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The code block to execute when the action sheet is about to be dismissed.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">UIActionSheet+BMKitAdditions.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/didPresentActionSheetBlock" title="didPresentActionSheetBlock"></a>
+	<h3 class="subsubtitle method-title">didPresentActionSheetBlock</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The code block to execute when the action sheet is presented.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, copy) BMActionSheetBlock didPresentActionSheetBlock</code></div>
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The code block to execute when the action sheet is presented.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">UIActionSheet+BMKitAdditions.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/willPresentActionSheetBlock" title="willPresentActionSheetBlock"></a>
+	<h3 class="subsubtitle method-title">willPresentActionSheetBlock</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The code block to execute when the action sheet is about to be presented.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, copy) BMActionSheetBlock willPresentActionSheetBlock</code></div>
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The code block to execute when the action sheet is about to be presented.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">UIActionSheet+BMKitAdditions.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Instance Methods" name="instance_methods"></a>
+						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/addButtonWithTitle:block:" title="addButtonWithTitle:block:"></a>
+	<h3 class="subsubtitle method-title">addButtonWithTitle:block:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Adds a custom button with a specified code <strong>block</strong> to the action sheet.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (NSInteger)addButtonWithTitle:(NSString *)<em>title</em> block:(BMActionSheetWithButtonIndexBlock)<em>block</em></code></div>
+	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>title</em></dt>
+			<dd><p>The title of the new button.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>block</em></dt>
+			<dd><p>The code block to run when the new button is clicked.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The index of the new button. Button indices start at <code>0</code> and increase in the order they are added.</p>
+	</div>
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Adds a custom button with a specified code <strong>block</strong> to the action sheet.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">UIActionSheet+BMKitAdditions.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/addCancelButtonWithTitle:" title="addCancelButtonWithTitle:"></a>
+	<h3 class="subsubtitle method-title">addCancelButtonWithTitle:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Adds a custom button to the action sheet and sets it as cancel button.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (NSInteger)addCancelButtonWithTitle:(NSString *)<em>title</em></code></div>
+	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>title</em></dt>
+			<dd><p>The title of the new button.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The index of the new button. Button indices start at <code>0</code> and increase in the order they are added.</p>
+	</div>
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Adds a custom button to the action sheet and sets it as cancel button.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">UIActionSheet+BMKitAdditions.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/addCancelButtonWithTitle:block:" title="addCancelButtonWithTitle:block:"></a>
+	<h3 class="subsubtitle method-title">addCancelButtonWithTitle:block:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Adds a custom button with a specified code <strong>block</strong> to the action sheet and sets it as cancel button.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (NSInteger)addCancelButtonWithTitle:(NSString *)<em>title</em> block:(BMActionSheetWithButtonIndexBlock)<em>block</em></code></div>
+	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>title</em></dt>
+			<dd><p>The title of the new button.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>block</em></dt>
+			<dd><p>The code block to run when the new button is clicked.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The index of the new button. Button indices start at <code>0</code> and increase in the order they are added.</p>
+	</div>
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Adds a custom button with a specified code <strong>block</strong> to the action sheet and sets it as cancel button.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">UIActionSheet+BMKitAdditions.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/addDestructiveButtonWithTitle:" title="addDestructiveButtonWithTitle:"></a>
+	<h3 class="subsubtitle method-title">addDestructiveButtonWithTitle:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Adds a custom button to the action sheet and sets it as destructive button.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (NSInteger)addDestructiveButtonWithTitle:(NSString *)<em>title</em></code></div>
+	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>title</em></dt>
+			<dd><p>The title of the new button.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The index of the new button. Button indices start at <code>0</code> and increase in the order they are added.</p>
+	</div>
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Adds a custom button to the action sheet and sets it as destructive button.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">UIActionSheet+BMKitAdditions.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/addDestructiveButtonWithTitle:block:" title="addDestructiveButtonWithTitle:block:"></a>
+	<h3 class="subsubtitle method-title">addDestructiveButtonWithTitle:block:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Adds a custom button with a specified code <strong>block</strong> to the action sheet and sets it as destructive button.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (NSInteger)addDestructiveButtonWithTitle:(NSString *)<em>title</em> block:(BMActionSheetWithButtonIndexBlock)<em>block</em></code></div>
+	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>title</em></dt>
+			<dd><p>The title of the new button.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>block</em></dt>
+			<dd><p>The code block to run when the new button is clicked.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The index of the new button. Button indices start at <code>0</code> and increase in the order they are added.</p>
+	</div>
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Adds a custom button with a specified code <strong>block</strong> to the action sheet and sets it as destructive button.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">UIActionSheet+BMKitAdditions.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/buttonBlockAtIndex:" title="buttonBlockAtIndex:"></a>
+	<h3 class="subsubtitle method-title">buttonBlockAtIndex:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns the code block of the button at the specified index.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (BMActionSheetWithButtonIndexBlock)buttonBlockAtIndex:(NSInteger)<em>buttonIndex</em></code></div>
+	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>buttonIndex</em></dt>
+			<dd><p>The index of the button. The button indices start at 0.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The code block of the button at the index specified by <strong>buttonIndex</strong> or <code>nil</code>.</p>
+	</div>
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Returns the code block of the button at the specified index.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">UIActionSheet+BMKitAdditions.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/initWithTitle:" title="initWithTitle:"></a>
+	<h3 class="subsubtitle method-title">initWithTitle:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Initializes the action sheet using the specified starting parameters.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (id)initWithTitle:(NSString *)<em>title</em></code></div>
+	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>title</em></dt>
+			<dd><p>A string to display in the title area of the action sheet. Pass <code>nil</code> if you do not want to display any text in the title area.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>A newly initialized action sheet.</p>
+	</div>
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Initializes the action sheet using the specified starting parameters.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">UIActionSheet+BMKitAdditions.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+				</div>
+				<div class="main-navigation navigation-bottom">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="footer">
+					<hr />
+					<div class="footer-copyright">
+						<p><span class="copyright">&copy; 2011 Benedikt Meurer. All rights reserved. (Last updated: 2011-07-24)</span><br />
+						
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.0.4 (build 703)</a>.</span></p>
+						
+					</div>
+				</div>
+			</div>
+		</article>
+		<script type="text/javascript">
+			function jumpToChange()
+			{
+				window.location.hash = this.options[this.selectedIndex].value;
+			}
+			
+			function toggleTOC()
+			{
+				var contents = document.getElementById('contents');
+				var tocContainer = document.getElementById('tocContainer');
+				
+				if (this.getAttribute('class') == 'open')
+				{
+					this.setAttribute('class', '');
+					contents.setAttribute('class', '');
+					tocContainer.setAttribute('class', '');
+					
+					window.name = "hideTOC";
+				}
+				else
+				{
+					this.setAttribute('class', 'open');
+					contents.setAttribute('class', 'isShowingTOC');
+					tocContainer.setAttribute('class', 'isShowingTOC');
+					
+					window.name = "";
+				}
+				return false;
+			}
+			
+			function toggleTOCEntryChildren(e)
+			{
+				e.stopPropagation();
+				var currentClass = this.getAttribute('class');
+				if (currentClass == 'children') {
+					this.setAttribute('class', 'children open');
+				}
+				else if (currentClass == 'children open') {
+					this.setAttribute('class', 'children');
+				}
+				return false;
+			}
+			
+			function tocEntryClick(e)
+			{
+				e.stopPropagation();
+				return true;
+			}
+			
+			function init()
+			{
+				var selectElement = document.getElementById('jumpTo');
+				selectElement.addEventListener('change', jumpToChange, false);
+				
+				var tocButton = document.getElementById('table_of_contents');
+				tocButton.addEventListener('click', toggleTOC, false);
+				
+				var taskTreeItem = document.getElementById('task_treeitem');
+				if (taskTreeItem.getElementsByTagName('li').length > 0)
+				{
+					taskTreeItem.setAttribute('class', 'children');
+					taskTreeItem.firstChild.setAttribute('class', 'disclosure');
+				}
+				
+				var tocList = document.getElementById('toc');
+				
+				var tocEntries = tocList.getElementsByTagName('li');
+				for (var i = 0; i < tocEntries.length; i++) {
+					tocEntries[i].addEventListener('click', toggleTOCEntryChildren, false);
+				}
+				
+				var tocLinks = tocList.getElementsByTagName('a');
+				for (var i = 0; i < tocLinks.length; i++) {
+					tocLinks[i].addEventListener('click', tocEntryClick, false);
+				}
+				
+				if (window.name == "hideTOC") {
+					toggleTOC.call(tocButton);
+				}
+			}
+			
+			window.onload = init;
+		</script>
+	</body>
+</html>

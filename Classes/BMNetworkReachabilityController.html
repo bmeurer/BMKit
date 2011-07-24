@@ -1,0 +1,838 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>BMNetworkReachabilityController Class Reference</title>
+		<meta http-equiv="Content-Type" content="application/xhtml+xml;charset=utf-8" />
+		<meta id="xcode-display" name="xcode-display" content="render"/>
+		<meta name="viewport" content="width=550" />
+		<link rel="stylesheet" type="text/css" href="../css/styles.css" />
+		<meta name="generator" content="appledoc 2.0.4 (build 703)" />
+	</head>
+	<body>
+		<header id="top_header">
+			<div id="title" role="banner">
+				<h1 class="hideInXcode">BMNetworkReachabilityController Class Reference</h1>
+			</div>
+			<ul id="headerButtons" role="toolbar">
+				<li id="toc_button">
+					<button aria-label="Show Table of Contents" role="checkbox" class="open" id="table_of_contents"><span class="disclosure"></span>Table of Contents</button>
+				</li>
+				<li id="jumpto_button" role="navigation">
+					<select id="jumpTo">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+	
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+	
+	
+	
+	<option value="properties">Properties</option>
+	
+	<option value="//api/name/delegate">&nbsp;&nbsp;&nbsp;&nbsp;delegate</option>
+	
+	<option value="//api/name/flags">&nbsp;&nbsp;&nbsp;&nbsp;flags</option>
+	
+	
+	
+	
+	
+	
+	<option value="instance_methods">Instance Methods</option>
+	
+	<option value="//api/name/addReachability:">&nbsp;&nbsp;&nbsp;&nbsp;- addReachability:</option>
+	
+	<option value="//api/name/addReachabilityWithAddress:">&nbsp;&nbsp;&nbsp;&nbsp;- addReachabilityWithAddress:</option>
+	
+	<option value="//api/name/addReachabilityWithLocalAddress:remoteAddress:">&nbsp;&nbsp;&nbsp;&nbsp;- addReachabilityWithLocalAddress:remoteAddress:</option>
+	
+	<option value="//api/name/addReachabilityWithName:">&nbsp;&nbsp;&nbsp;&nbsp;- addReachabilityWithName:</option>
+	
+	<option value="//api/name/reachabilities">&nbsp;&nbsp;&nbsp;&nbsp;- reachabilities</option>
+	
+	<option value="//api/name/removeReachability:">&nbsp;&nbsp;&nbsp;&nbsp;- removeReachability:</option>
+	
+	
+	
+</select>
+				</li>
+			</ul>
+		</header>
+		<nav id="tocContainer" class="isShowingTOC">
+			<ul id="toc" role="tree">
+				
+<li role="treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#overview">Overview</a></span></li>
+
+
+
+
+<li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Managing Reachabilities">Managing Reachabilities</a></span></li>
+	
+</ul></li>
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#properties">Properties</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/delegate">delegate</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/flags">flags</a></span></li>
+	
+</ul></li>
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/addReachability:">addReachability:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/addReachabilityWithAddress:">addReachabilityWithAddress:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/addReachabilityWithLocalAddress:remoteAddress:">addReachabilityWithLocalAddress:remoteAddress:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/addReachabilityWithName:">addReachabilityWithName:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/reachabilities">reachabilities</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/removeReachability:">removeReachability:</a></span></li>
+	
+</ul></li>
+
+
+			</ul>
+		</nav>
+		<article>
+			<div id="contents" class="isShowingTOC" role="main">
+				<a title="BMNetworkReachabilityController Class Reference" name="top"></a>
+				<div class="main-navigation navigation-top">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="header">
+					<div class="section-header">
+						<h1 class="title title-header">BMNetworkReachabilityController Class Reference</h1>
+					</div>		
+				</div>
+				<div id="container">	
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<td class="specification-title">Inherits from</td>
+	<td class="specification-value">NSObject</td>
+</tr><tr>
+	<td class="specification-title">Declared in</td>
+	<td class="specification-value">BMNetworkReachabilityController.h</td>
+</tr>
+						</tbody></table></div>
+					
+					
+					
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>You use a network reachability controller to easily manage a bunch of <code>SCNetworkReachabilityRef</code> references.</p>
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						<h2 class="subtitle subtitle-tasks">Tasks</h2>
+						
+						
+						
+						<h3 class="subsubtitle task-title">Other Methods</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/delegate">&nbsp;&nbsp;delegate</a></code>
+		<span class="tooltip"><p>The object that is notified whenever a new reachability reference is added to the receiver, an existing reachability reference is removed or the <a href="#//api/name/flags">flags</a> of a reachability reference managed by the receiver changed.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/flags">&nbsp;&nbsp;flags</a></code>
+		<span class="tooltip"><p>The OR'ed <a href="#//api/name/flags">flags</a> of all reachability references managed by the receiver. This property is KVO-compliant.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li>
+						</ul>
+						
+						
+						<a title="Managing Reachabilities" name="task_Managing Reachabilities"></a>
+						<h3 class="subsubtitle task-title">Managing Reachabilities</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/addReachability:">&ndash;&nbsp;addReachability:</a></code>
+		<span class="tooltip"><p>Adds a new reachability reference to the receiver.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/addReachabilityWithAddress:">&ndash;&nbsp;addReachabilityWithAddress:</a></code>
+		<span class="tooltip"><p>Creates a new reachability reference to the specified network address and adds it to the receiver.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/addReachabilityWithLocalAddress:remoteAddress:">&ndash;&nbsp;addReachabilityWithLocalAddress:remoteAddress:</a></code>
+		<span class="tooltip"><p>Creates a new reachability reference to the specified network address pair and adds it to the receiver.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/addReachabilityWithName:">&ndash;&nbsp;addReachabilityWithName:</a></code>
+		<span class="tooltip"><p>Creates a new reachability reference to the specified network host or node name and adds it to the receiver.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/removeReachability:">&ndash;&nbsp;removeReachability:</a></code>
+		<span class="tooltip"><p>Removes a reachability reference from the receiver.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/reachabilities">&ndash;&nbsp;reachabilities</a></code>
+		<span class="tooltip"><p>Returns an array with all reachability references managed by the receiver.</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Properties" name="properties"></a>
+						<h2 class="subtitle subtitle-methods">Properties</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/delegate" title="delegate"></a>
+	<h3 class="subsubtitle method-title">delegate</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The object that is notified whenever a new reachability reference is added to the receiver, an existing reachability reference is removed or the <a href="#//api/name/flags">flags</a> of a reachability reference managed by the receiver changed.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) id&lt;BMNetworkReachabilityControllerDelegate&gt; delegate</code></div>
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The object that is notified whenever a new reachability reference is added to the receiver, an existing reachability reference is removed or the <a href="#//api/name/flags">flags</a> of a reachability reference managed by the receiver changed.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">BMNetworkReachabilityController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/flags" title="flags"></a>
+	<h3 class="subsubtitle method-title">flags</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The OR'ed <a href="#//api/name/flags">flags</a> of all reachability references managed by the receiver. This property is KVO-compliant.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, assign, readonly) SCNetworkReachabilityFlags flags</code></div>
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The OR'ed <a href="#//api/name/flags">flags</a> of all reachability references managed by the receiver. This property is KVO-compliant.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">BMNetworkReachabilityController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Instance Methods" name="instance_methods"></a>
+						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/addReachability:" title="addReachability:"></a>
+	<h3 class="subsubtitle method-title">addReachability:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Adds a new reachability reference to the receiver.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (BOOL)addReachability:(SCNetworkReachabilityRef)<em>reachability</em></code></div>
+	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>reachability</em></dt>
+			<dd><p>The new reachability reference.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p><code>YES</code> if the <strong>reachability</strong> was added successfully, <code>NO</code> otherwise.</p>
+	</div>
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Adds a new reachability reference to the receiver.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection see-also-section">
+		<h4 class="method-subtitle">See Also</h4>
+		<ul>
+			
+			<li><code><p><a href="#//api/name/addReachabilityWithAddress:">&ndash; addReachabilityWithAddress:</a></p></code></li>
+			
+			<li><code><p><a href="#//api/name/addReachabilityWithLocalAddress:remoteAddress:">&ndash; addReachabilityWithLocalAddress:remoteAddress:</a></p></code></li>
+			
+			<li><code><p><a href="#//api/name/addReachabilityWithName:">&ndash; addReachabilityWithName:</a></p></code></li>
+			
+			<li><code><p><a href="#//api/name/removeReachability:">&ndash; removeReachability:</a></p></code></li>
+			
+			<li><code><p><a href="#//api/name/reachabilities">&ndash; reachabilities</a></p></code></li>
+			
+		</ul>
+	</div>
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">BMNetworkReachabilityController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/addReachabilityWithAddress:" title="addReachabilityWithAddress:"></a>
+	<h3 class="subsubtitle method-title">addReachabilityWithAddress:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Creates a new reachability reference to the specified network address and adds it to the receiver.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (BOOL)addReachabilityWithAddress:(const struct sockaddr *)<em>address</em></code></div>
+	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>address</em></dt>
+			<dd><p>The address of the desired host.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p><code>YES</code> if the new reachability was added successfully, <code>NO</code> otherwise.</p>
+	</div>
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Creates a new reachability reference to the specified network address and adds it to the receiver.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection see-also-section">
+		<h4 class="method-subtitle">See Also</h4>
+		<ul>
+			
+			<li><code><p><a href="#//api/name/addReachability:">&ndash; addReachability:</a></p></code></li>
+			
+			<li><code><p><a href="#//api/name/addReachabilityWithLocalAddress:remoteAddress:">&ndash; addReachabilityWithLocalAddress:remoteAddress:</a></p></code></li>
+			
+			<li><code><p><a href="#//api/name/addReachabilityWithName:">&ndash; addReachabilityWithName:</a></p></code></li>
+			
+			<li><code><p><a href="#//api/name/removeReachability:">&ndash; removeReachability:</a></p></code></li>
+			
+			<li><code><p><a href="#//api/name/reachabilities">&ndash; reachabilities</a></p></code></li>
+			
+		</ul>
+	</div>
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">BMNetworkReachabilityController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/addReachabilityWithLocalAddress:remoteAddress:" title="addReachabilityWithLocalAddress:remoteAddress:"></a>
+	<h3 class="subsubtitle method-title">addReachabilityWithLocalAddress:remoteAddress:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Creates a new reachability reference to the specified network address pair and adds it to the receiver.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (BOOL)addReachabilityWithLocalAddress:(const struct sockaddr *)<em>localAddress</em> remoteAddress:(const struct sockaddr *)<em>remoteAddress</em></code></div>
+	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>localAddress</em></dt>
+			<dd><p>The local address associated with a network connection. If <code>NULL</code>, only the <strong>remoteAddress</strong> is of interest.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>remoteAddress</em></dt>
+			<dd><p>The remote address associated with a network connection. If <code>NULL</code>, only the <strong>localAddress</strong> is of interest.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p><code>YES</code> if the new reachability was added successfully, <code>NO</code> otherwise.</p>
+	</div>
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Creates a new reachability reference to the specified network address pair and adds it to the receiver.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection see-also-section">
+		<h4 class="method-subtitle">See Also</h4>
+		<ul>
+			
+			<li><code><p><a href="#//api/name/addReachability:">&ndash; addReachability:</a></p></code></li>
+			
+			<li><code><p><a href="#//api/name/addReachabilityWithAddress:">&ndash; addReachabilityWithAddress:</a></p></code></li>
+			
+			<li><code><p><a href="#//api/name/addReachabilityWithName:">&ndash; addReachabilityWithName:</a></p></code></li>
+			
+			<li><code><p><a href="#//api/name/removeReachability:">&ndash; removeReachability:</a></p></code></li>
+			
+			<li><code><p><a href="#//api/name/reachabilities">&ndash; reachabilities</a></p></code></li>
+			
+		</ul>
+	</div>
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">BMNetworkReachabilityController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/addReachabilityWithName:" title="addReachabilityWithName:"></a>
+	<h3 class="subsubtitle method-title">addReachabilityWithName:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Creates a new reachability reference to the specified network host or node name and adds it to the receiver.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (BOOL)addReachabilityWithName:(NSString *)<em>name</em></code></div>
+	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>name</em></dt>
+			<dd><p>The node name of the desired host. This <strong>name</strong> is the same as that passed to the <code>gethostbyname</code> or <code>getaddrinfo</code> functions.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p><code>YES</code> if the new reachability was added successfully, <code>NO</code> otherwise.</p>
+	</div>
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Creates a new reachability reference to the specified network host or node name and adds it to the receiver.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection see-also-section">
+		<h4 class="method-subtitle">See Also</h4>
+		<ul>
+			
+			<li><code><p><a href="#//api/name/addReachability:">&ndash; addReachability:</a></p></code></li>
+			
+			<li><code><p><a href="#//api/name/addReachabilityWithAddress:">&ndash; addReachabilityWithAddress:</a></p></code></li>
+			
+			<li><code><p><a href="#//api/name/addReachabilityWithLocalAddress:remoteAddress:">&ndash; addReachabilityWithLocalAddress:remoteAddress:</a></p></code></li>
+			
+			<li><code><p><a href="#//api/name/removeReachability:">&ndash; removeReachability:</a></p></code></li>
+			
+			<li><code><p><a href="#//api/name/reachabilities">&ndash; reachabilities</a></p></code></li>
+			
+		</ul>
+	</div>
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">BMNetworkReachabilityController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/reachabilities" title="reachabilities"></a>
+	<h3 class="subsubtitle method-title">reachabilities</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns an array with all reachability references managed by the receiver.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (NSArray *)reachabilities</code></div>
+	
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>An array with all reachability references managed by the receiver.</p>
+	</div>
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Returns an array with all reachability references managed by the receiver.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection see-also-section">
+		<h4 class="method-subtitle">See Also</h4>
+		<ul>
+			
+			<li><code><p><a href="#//api/name/addReachability:">&ndash; addReachability:</a></p></code></li>
+			
+			<li><code><p><a href="#//api/name/addReachabilityWithAddress:">&ndash; addReachabilityWithAddress:</a></p></code></li>
+			
+			<li><code><p><a href="#//api/name/addReachabilityWithLocalAddress:remoteAddress:">&ndash; addReachabilityWithLocalAddress:remoteAddress:</a></p></code></li>
+			
+			<li><code><p><a href="#//api/name/addReachabilityWithName:">&ndash; addReachabilityWithName:</a></p></code></li>
+			
+			<li><code><p><a href="#//api/name/removeReachability:">&ndash; removeReachability:</a></p></code></li>
+			
+		</ul>
+	</div>
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">BMNetworkReachabilityController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/removeReachability:" title="removeReachability:"></a>
+	<h3 class="subsubtitle method-title">removeReachability:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Removes a reachability reference from the receiver.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (BOOL)removeReachability:(SCNetworkReachabilityRef)<em>reachability</em></code></div>
+	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>reachability</em></dt>
+			<dd><p>The reachability reference to remove.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p><code>YES</code> if <strong>reachability</strong> was removed successfully, <code>NO</code> otherwise.</p>
+	</div>
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Removes a reachability reference from the receiver.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection see-also-section">
+		<h4 class="method-subtitle">See Also</h4>
+		<ul>
+			
+			<li><code><p><a href="#//api/name/addReachability:">&ndash; addReachability:</a></p></code></li>
+			
+			<li><code><p><a href="#//api/name/addReachabilityWithAddress:">&ndash; addReachabilityWithAddress:</a></p></code></li>
+			
+			<li><code><p><a href="#//api/name/addReachabilityWithLocalAddress:remoteAddress:">&ndash; addReachabilityWithLocalAddress:remoteAddress:</a></p></code></li>
+			
+			<li><code><p><a href="#//api/name/addReachabilityWithName:">&ndash; addReachabilityWithName:</a></p></code></li>
+			
+			<li><code><p><a href="#//api/name/reachabilities">&ndash; reachabilities</a></p></code></li>
+			
+		</ul>
+	</div>
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">BMNetworkReachabilityController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+				</div>
+				<div class="main-navigation navigation-bottom">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="footer">
+					<hr />
+					<div class="footer-copyright">
+						<p><span class="copyright">&copy; 2011 Benedikt Meurer. All rights reserved. (Last updated: 2011-07-24)</span><br />
+						
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.0.4 (build 703)</a>.</span></p>
+						
+					</div>
+				</div>
+			</div>
+		</article>
+		<script type="text/javascript">
+			function jumpToChange()
+			{
+				window.location.hash = this.options[this.selectedIndex].value;
+			}
+			
+			function toggleTOC()
+			{
+				var contents = document.getElementById('contents');
+				var tocContainer = document.getElementById('tocContainer');
+				
+				if (this.getAttribute('class') == 'open')
+				{
+					this.setAttribute('class', '');
+					contents.setAttribute('class', '');
+					tocContainer.setAttribute('class', '');
+					
+					window.name = "hideTOC";
+				}
+				else
+				{
+					this.setAttribute('class', 'open');
+					contents.setAttribute('class', 'isShowingTOC');
+					tocContainer.setAttribute('class', 'isShowingTOC');
+					
+					window.name = "";
+				}
+				return false;
+			}
+			
+			function toggleTOCEntryChildren(e)
+			{
+				e.stopPropagation();
+				var currentClass = this.getAttribute('class');
+				if (currentClass == 'children') {
+					this.setAttribute('class', 'children open');
+				}
+				else if (currentClass == 'children open') {
+					this.setAttribute('class', 'children');
+				}
+				return false;
+			}
+			
+			function tocEntryClick(e)
+			{
+				e.stopPropagation();
+				return true;
+			}
+			
+			function init()
+			{
+				var selectElement = document.getElementById('jumpTo');
+				selectElement.addEventListener('change', jumpToChange, false);
+				
+				var tocButton = document.getElementById('table_of_contents');
+				tocButton.addEventListener('click', toggleTOC, false);
+				
+				var taskTreeItem = document.getElementById('task_treeitem');
+				if (taskTreeItem.getElementsByTagName('li').length > 0)
+				{
+					taskTreeItem.setAttribute('class', 'children');
+					taskTreeItem.firstChild.setAttribute('class', 'disclosure');
+				}
+				
+				var tocList = document.getElementById('toc');
+				
+				var tocEntries = tocList.getElementsByTagName('li');
+				for (var i = 0; i < tocEntries.length; i++) {
+					tocEntries[i].addEventListener('click', toggleTOCEntryChildren, false);
+				}
+				
+				var tocLinks = tocList.getElementsByTagName('a');
+				for (var i = 0; i < tocLinks.length; i++) {
+					tocLinks[i].addEventListener('click', tocEntryClick, false);
+				}
+				
+				if (window.name == "hideTOC") {
+					toggleTOC.call(tocButton);
+				}
+			}
+			
+			window.onload = init;
+		</script>
+	</body>
+</html>

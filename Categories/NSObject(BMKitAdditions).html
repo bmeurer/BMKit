@@ -1,0 +1,1221 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>NSObject(BMKitAdditions) Category Reference</title>
+		<meta http-equiv="Content-Type" content="application/xhtml+xml;charset=utf-8" />
+		<meta id="xcode-display" name="xcode-display" content="render"/>
+		<meta name="viewport" content="width=550" />
+		<link rel="stylesheet" type="text/css" href="../css/styles.css" />
+		<meta name="generator" content="appledoc 2.0.4 (build 703)" />
+	</head>
+	<body>
+		<header id="top_header">
+			<div id="title" role="banner">
+				<h1 class="hideInXcode">NSObject(BMKitAdditions) Category Reference</h1>
+			</div>
+			<ul id="headerButtons" role="toolbar">
+				<li id="toc_button">
+					<button aria-label="Show Table of Contents" role="checkbox" class="open" id="table_of_contents"><span class="disclosure"></span>Table of Contents</button>
+				</li>
+				<li id="jumpto_button" role="navigation">
+					<select id="jumpTo">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+	
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+	
+	
+	
+	
+	
+	<option value="class_methods">Class Methods</option>
+	
+	<option value="//api/name/cancelPreviousPerformRequestsWithTarget:block:">&nbsp;&nbsp;&nbsp;&nbsp;+ cancelPreviousPerformRequestsWithTarget:block:</option>
+	
+	
+	
+	
+	<option value="instance_methods">Instance Methods</option>
+	
+	<option value="//api/name/associatedObjectForKey:">&nbsp;&nbsp;&nbsp;&nbsp;- associatedObjectForKey:</option>
+	
+	<option value="//api/name/performBlock:afterDelay:">&nbsp;&nbsp;&nbsp;&nbsp;- performBlock:afterDelay:</option>
+	
+	<option value="//api/name/performBlock:afterDelay:inModes:">&nbsp;&nbsp;&nbsp;&nbsp;- performBlock:afterDelay:inModes:</option>
+	
+	<option value="//api/name/performBlock:onThread:waitUntilDone:">&nbsp;&nbsp;&nbsp;&nbsp;- performBlock:onThread:waitUntilDone:</option>
+	
+	<option value="//api/name/performBlock:onThread:waitUntilDone:modes:">&nbsp;&nbsp;&nbsp;&nbsp;- performBlock:onThread:waitUntilDone:modes:</option>
+	
+	<option value="//api/name/performBlockInBackground:">&nbsp;&nbsp;&nbsp;&nbsp;- performBlockInBackground:</option>
+	
+	<option value="//api/name/performBlockOnMainThread:waitUntilDone:">&nbsp;&nbsp;&nbsp;&nbsp;- performBlockOnMainThread:waitUntilDone:</option>
+	
+	<option value="//api/name/performBlockOnMainThread:waitUntilDone:modes:">&nbsp;&nbsp;&nbsp;&nbsp;- performBlockOnMainThread:waitUntilDone:modes:</option>
+	
+	<option value="//api/name/removeAssociatedObjects">&nbsp;&nbsp;&nbsp;&nbsp;- removeAssociatedObjects</option>
+	
+	<option value="//api/name/setAssociatedObject:forKey:">&nbsp;&nbsp;&nbsp;&nbsp;- setAssociatedObject:forKey:</option>
+	
+	<option value="//api/name/setAssociatedObject:forKey:policy:">&nbsp;&nbsp;&nbsp;&nbsp;- setAssociatedObject:forKey:policy:</option>
+	
+	
+	
+</select>
+				</li>
+			</ul>
+		</header>
+		<nav id="tocContainer" class="isShowingTOC">
+			<ul id="toc" role="tree">
+				
+<li role="treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#overview">Overview</a></span></li>
+
+
+
+
+<li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Performing Blocks">Performing Blocks</a></span></li>
+	
+</ul></li>
+
+
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#class_methods">Class Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/cancelPreviousPerformRequestsWithTarget:block:">cancelPreviousPerformRequestsWithTarget:block:</a></span></li>
+	
+</ul></li>
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/associatedObjectForKey:">associatedObjectForKey:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/performBlock:afterDelay:">performBlock:afterDelay:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/performBlock:afterDelay:inModes:">performBlock:afterDelay:inModes:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/performBlock:onThread:waitUntilDone:">performBlock:onThread:waitUntilDone:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/performBlock:onThread:waitUntilDone:modes:">performBlock:onThread:waitUntilDone:modes:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/performBlockInBackground:">performBlockInBackground:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/performBlockOnMainThread:waitUntilDone:">performBlockOnMainThread:waitUntilDone:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/performBlockOnMainThread:waitUntilDone:modes:">performBlockOnMainThread:waitUntilDone:modes:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/removeAssociatedObjects">removeAssociatedObjects</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setAssociatedObject:forKey:">setAssociatedObject:forKey:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setAssociatedObject:forKey:policy:">setAssociatedObject:forKey:policy:</a></span></li>
+	
+</ul></li>
+
+
+			</ul>
+		</nav>
+		<article>
+			<div id="contents" class="isShowingTOC" role="main">
+				<a title="NSObject(BMKitAdditions) Category Reference" name="top"></a>
+				<div class="main-navigation navigation-top">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="header">
+					<div class="section-header">
+						<h1 class="title title-header">NSObject(BMKitAdditions) Category Reference</h1>
+					</div>		
+				</div>
+				<div id="container">	
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<td class="specification-title">Declared in</td>
+	<td class="specification-value">NSObject+BMKitAdditions.h</td>
+</tr>
+						</tbody></table></div>
+					
+					
+					
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>BMKit related additions to the NSObject class.</p>
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						<h2 class="subtitle subtitle-tasks">Tasks</h2>
+						
+						
+						
+						<h3 class="subsubtitle task-title">Other Methods</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/associatedObjectForKey:">&ndash;&nbsp;associatedObjectForKey:</a></code>
+		<span class="tooltip"><p>Returns the object associated with a specified key.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/setAssociatedObject:forKey:">&ndash;&nbsp;setAssociatedObject:forKey:</a></code>
+		<span class="tooltip"><p>Associates an object with a specified key on the target.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/setAssociatedObject:forKey:policy:">&ndash;&nbsp;setAssociatedObject:forKey:policy:</a></code>
+		<span class="tooltip"><p>Associates an object with a specified key on the target using a specified association policy.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/removeAssociatedObjects">&ndash;&nbsp;removeAssociatedObjects</a></code>
+		<span class="tooltip"><p>Removes all associated objects of the target.</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Performing Blocks" name="task_Performing Blocks"></a>
+						<h3 class="subsubtitle task-title">Performing Blocks</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/performBlock:afterDelay:">&ndash;&nbsp;performBlock:afterDelay:</a></code>
+		<span class="tooltip"><p>Invokes a block on the current thread using the default mode after a delay.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/performBlock:afterDelay:inModes:">&ndash;&nbsp;performBlock:afterDelay:inModes:</a></code>
+		<span class="tooltip"><p>Invokes a block on the current thread using the specified modes after a delay.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/performBlockOnMainThread:waitUntilDone:">&ndash;&nbsp;performBlockOnMainThread:waitUntilDone:</a></code>
+		<span class="tooltip"><p>Invokes a block on the receiver on the main thread using the default mode.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/performBlockOnMainThread:waitUntilDone:modes:">&ndash;&nbsp;performBlockOnMainThread:waitUntilDone:modes:</a></code>
+		<span class="tooltip"><p>Invokes a block on the receiver on the main thread using the specified modes.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/performBlock:onThread:waitUntilDone:">&ndash;&nbsp;performBlock:onThread:waitUntilDone:</a></code>
+		<span class="tooltip"><p>Invokes a block on the receiver on the specified thread using the default mode.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/performBlock:onThread:waitUntilDone:modes:">&ndash;&nbsp;performBlock:onThread:waitUntilDone:modes:</a></code>
+		<span class="tooltip"><p>Invokes a block on the receiver on the specified thread using the specified modes.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/performBlockInBackground:">&ndash;&nbsp;performBlockInBackground:</a></code>
+		<span class="tooltip"><p>Invokes a block on the receiver on a new background thread.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/cancelPreviousPerformRequestsWithTarget:block:">+&nbsp;cancelPreviousPerformRequestsWithTarget:block:</a></code>
+		<span class="tooltip"><p>Cancels perform requests previously registered with <a href="#//api/name/performBlock:afterDelay:">performBlock:afterDelay:</a>.</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+					</div>
+					
+					
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Class Methods" name="class_methods"></a>
+						<h2 class="subtitle subtitle-methods">Class Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/cancelPreviousPerformRequestsWithTarget:block:" title="cancelPreviousPerformRequestsWithTarget:block:"></a>
+	<h3 class="subsubtitle method-title">cancelPreviousPerformRequestsWithTarget:block:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Cancels perform requests previously registered with <a href="#//api/name/performBlock:afterDelay:">performBlock:afterDelay:</a>.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>+ (void)cancelPreviousPerformRequestsWithTarget:(id)<em>aTarget</em> block:(BMTargetBlock)<em>aBlock</em></code></div>
+	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>aTarget</em></dt>
+			<dd><p>The target for requests previously registered with the <a href="#//api/name/performBlock:afterDelay:">performBlock:afterDelay:</a> instance method.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>aBlock</em></dt>
+			<dd><p>The heap-allocated copy of the block for requests previously registered with the <a href="#//api/name/performBlock:afterDelay:">performBlock:afterDelay:</a> instance method.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Cancels perform requests previously registered with <a href="#//api/name/performBlock:afterDelay:">performBlock:afterDelay:</a>.</p>
+
+<p>All perform requests are canceled that have the same target as <em>aTarget</em> and block as <em>aBlock</em>.</p><div class="warning"><p><strong>Important:</strong> <em>aBlock</em> must refer to the heap-allocated copy of the block, which was passed to <a href="#//api/name/performBlock:afterDelay:">performBlock:afterDelay:</a>. If unsure, just pass the value returned from <a href="#//api/name/performBlock:afterDelay:">performBlock:afterDelay:</a> as <em>aBlock</em>.</p></div>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection see-also-section">
+		<h4 class="method-subtitle">See Also</h4>
+		<ul>
+			
+			<li><code><p><a href="#//api/name/performBlock:afterDelay:">&ndash; performBlock:afterDelay:</a></p></code></li>
+			
+			<li><code><p><a href="#//api/name/performBlock:afterDelay:inModes:">&ndash; performBlock:afterDelay:inModes:</a></p></code></li>
+			
+		</ul>
+	</div>
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">NSObject+BMKitAdditions.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Instance Methods" name="instance_methods"></a>
+						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/associatedObjectForKey:" title="associatedObjectForKey:"></a>
+	<h3 class="subsubtitle method-title">associatedObjectForKey:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns the object associated with a specified key.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (id)associatedObjectForKey:(BMAssociationKey)<em>aKey</em></code></div>
+	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>aKey</em></dt>
+			<dd><p>An association key, an arbitrary pointer.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The object associated with <em>aKey</em>, or <code>nil</code> if no object is associated with the key.</p>
+	</div>
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Returns the object associated with a specified key.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection see-also-section">
+		<h4 class="method-subtitle">See Also</h4>
+		<ul>
+			
+			<li><code><p><a href="#//api/name/setAssociatedObject:forKey:">&ndash; setAssociatedObject:forKey:</a></p></code></li>
+			
+			<li><code><p><a href="#//api/name/setAssociatedObject:forKey:policy:">&ndash; setAssociatedObject:forKey:policy:</a></p></code></li>
+			
+			<li><code><p><a href="#//api/name/removeAssociatedObjects">&ndash; removeAssociatedObjects</a></p></code></li>
+			
+		</ul>
+	</div>
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">NSObject+BMKitAdditions.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/performBlock:afterDelay:" title="performBlock:afterDelay:"></a>
+	<h3 class="subsubtitle method-title">performBlock:afterDelay:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Invokes a block on the current thread using the default mode after a delay.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (BMTargetBlock)performBlock:(BMTargetBlock)<em>aBlock</em> afterDelay:(NSTimeInterval)<em>delay</em></code></div>
+	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>aBlock</em></dt>
+			<dd><p>The block to invoke.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>delay</em></dt>
+			<dd><p>The minimum time before which the message is sent. Specifying a delay of 0 does not necessarily cause the block to be performed immediately. The block is still queued on the thread&rsquo;s run loop and performed as soon as possible.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>A copy of the <em>aBlock</em>, which can be used to cancel the perform request using the <a href="#//api/name/cancelPreviousPerformRequestsWithTarget:block:">cancelPreviousPerformRequestsWithTarget:block:</a> class method.</p>
+	</div>
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Invokes a block on the current thread using the default mode after a delay.</p>
+
+<p>This method takes a copy of <em>aBlock</em> and schedules it for invocation after <em>delay</em> seconds using the <code>performSelector:withObject:afterDelay:</code> instance method of the NSObject class.</p>
+
+<p>This method retains the receiver and keeps a heap-allocated copy of the <em>aBlock</em> parameter until after the block is performed.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection see-also-section">
+		<h4 class="method-subtitle">See Also</h4>
+		<ul>
+			
+			<li><code><p><a href="#//api/name/performBlock:afterDelay:inModes:">&ndash; performBlock:afterDelay:inModes:</a></p></code></li>
+			
+			<li><code><p><a href="#//api/name/cancelPreviousPerformRequestsWithTarget:block:">+ cancelPreviousPerformRequestsWithTarget:block:</a></p></code></li>
+			
+		</ul>
+	</div>
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">NSObject+BMKitAdditions.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/performBlock:afterDelay:inModes:" title="performBlock:afterDelay:inModes:"></a>
+	<h3 class="subsubtitle method-title">performBlock:afterDelay:inModes:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Invokes a block on the current thread using the specified modes after a delay.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (BMTargetBlock)performBlock:(BMTargetBlock)<em>aBlock</em> afterDelay:(NSTimeInterval)<em>delay</em> inModes:(NSArray *)<em>modes</em></code></div>
+	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>aBlock</em></dt>
+			<dd><p>The block to invoke.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>delay</em></dt>
+			<dd><p>The minimum time before which the message is sent. Specifying a delay of 0 does not necessarily cause the block to be performed immediately. The block is still queued on the thread&rsquo;s run loop and performed as soon as possible.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>modes</em></dt>
+			<dd><p>An array of strings that identify the modes to associate with the timer that performs the selector. This array must contain at least one string. If you specify <code>nil</code> or an empty array for this parameter, this method returns without performing the specified block.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>A copy of the <em>aBlock</em>, which can be used to cancel the perform request using the <a href="#//api/name/cancelPreviousPerformRequestsWithTarget:block:">cancelPreviousPerformRequestsWithTarget:block:</a> class method.</p>
+	</div>
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Invokes a block on the current thread using the specified modes after a delay.</p>
+
+<p>This method takes a copy of <em>aBlock</em> and schedules it for invocation in the specified <em>modes</em> after <em>delay</em> seconds using the <code>performSelector:withObject:afterDelay:inModes:</code> instance method of the NSObject class.</p>
+
+<p>This method retains the receiver and keeps a heap-allocated copy of the <em>aBlock</em> parameter until after the block is performed.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection see-also-section">
+		<h4 class="method-subtitle">See Also</h4>
+		<ul>
+			
+			<li><code><p><a href="#//api/name/performBlock:afterDelay:">&ndash; performBlock:afterDelay:</a></p></code></li>
+			
+			<li><code><p><a href="#//api/name/cancelPreviousPerformRequestsWithTarget:block:">+ cancelPreviousPerformRequestsWithTarget:block:</a></p></code></li>
+			
+		</ul>
+	</div>
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">NSObject+BMKitAdditions.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/performBlock:onThread:waitUntilDone:" title="performBlock:onThread:waitUntilDone:"></a>
+	<h3 class="subsubtitle method-title">performBlock:onThread:waitUntilDone:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Invokes a block on the receiver on the specified thread using the default mode.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)performBlock:(BMTargetBlock)<em>aBlock</em> onThread:(NSThread *)<em>aThread</em> waitUntilDone:(BOOL)<em>wait</em></code></div>
+	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>aBlock</em></dt>
+			<dd><p>The block to invoke.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>aThread</em></dt>
+			<dd><p>The thread on which to execute <em>aBlock</em>.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>wait</em></dt>
+			<dd><p>A Boolean that specifies whether the current thread blocks until after the specified block is performed on the receiver on the specified thread. Specify <code>YES</code> to block this thread; otherwise, specify <code>NO</code> to have this method return immediately. If the current thread and target thread are the same, and you specify <code>YES</code> for this parameter, the block is performed immediately on the current thread. If you specify <code>NO</code>, this method queues the message on the thread&rsquo;s run loop and returns, just like it does for other threads. The current thread must then dequeue and process the message when it has an opportunity to do so.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Invokes a block on the receiver on the specified thread using the default mode.</p>
+
+<p>This method schedules a block for invocation on <em>aThread</em> in the default mode using the <code>performSelector:onThread:withObject:waitUntilDone:</code> instance method of the NSObject class.</p>
+
+<p>This method retains the receiver and the <em>aBlock</em> parameter (or a heap-allocated of it) until after the block is performed.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection see-also-section">
+		<h4 class="method-subtitle">See Also</h4>
+		<ul>
+			
+			<li><code><p><a href="#//api/name/performBlock:onThread:waitUntilDone:modes:">&ndash; performBlock:onThread:waitUntilDone:modes:</a></p></code></li>
+			
+			<li><code><p><a href="#//api/name/performBlockOnMainThread:waitUntilDone:">&ndash; performBlockOnMainThread:waitUntilDone:</a></p></code></li>
+			
+		</ul>
+	</div>
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">NSObject+BMKitAdditions.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/performBlock:onThread:waitUntilDone:modes:" title="performBlock:onThread:waitUntilDone:modes:"></a>
+	<h3 class="subsubtitle method-title">performBlock:onThread:waitUntilDone:modes:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Invokes a block on the receiver on the specified thread using the specified modes.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)performBlock:(BMTargetBlock)<em>aBlock</em> onThread:(NSThread *)<em>aThread</em> waitUntilDone:(BOOL)<em>wait</em> modes:(NSArray *)<em>modes</em></code></div>
+	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>aBlock</em></dt>
+			<dd><p>The block to invoke.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>aThread</em></dt>
+			<dd><p>The thread on which to execute <em>aBlock</em>.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>wait</em></dt>
+			<dd><p>A Boolean that specifies whether the current thread blocks until after the specified block is performed on the receiver on the specified thread. Specify <code>YES</code> to block this thread; otherwise, specify <code>NO</code> to have this method return immediately. If the current thread and target thread are the same, and you specify <code>YES</code> for this parameter, the block is performed immediately on the current thread. If you specify <code>NO</code>, this method queues the message on the thread&rsquo;s run loop and returns, just like it does for other threads. The current thread must then dequeue and process the message when it has an opportunity to do so.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>modes</em></dt>
+			<dd><p>An array of strings that identify the modes to associate with the timer that performs the selector. This array must contain at least one string. If you specify <code>nil</code> or an empty array for this parameter, this method returns without performing the specified block.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Invokes a block on the receiver on the specified thread using the specified modes.</p>
+
+<p>This method schedules a block for invocation on <em>aThread</em> in the specified <em>modes</em> using the <code>performSelector:onThread:withObject:waitUntilDone:modes:</code> instance method of the NSObject class.</p>
+
+<p>This method retains the receiver and the <em>aBlock</em> parameter (or a heap-allocated of it) until after the block is performed.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection see-also-section">
+		<h4 class="method-subtitle">See Also</h4>
+		<ul>
+			
+			<li><code><p><a href="#//api/name/performBlock:onThread:waitUntilDone:">&ndash; performBlock:onThread:waitUntilDone:</a></p></code></li>
+			
+			<li><code><p><a href="#//api/name/performBlockOnMainThread:waitUntilDone:modes:">&ndash; performBlockOnMainThread:waitUntilDone:modes:</a></p></code></li>
+			
+		</ul>
+	</div>
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">NSObject+BMKitAdditions.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/performBlockInBackground:" title="performBlockInBackground:"></a>
+	<h3 class="subsubtitle method-title">performBlockInBackground:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Invokes a block on the receiver on a new background thread.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)performBlockInBackground:(BMTargetBlock)<em>aBlock</em></code></div>
+	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>aBlock</em></dt>
+			<dd><p>The block to invoke.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Invokes a block on the receiver on a new background thread.</p>
+
+<p>This method takes a copy of <em>aBlock</em> and schedules it for background execution in a new background using the <code>performSelectorInBackground:withObject:</code> instance method of the NSObject class. This method also sets up an autorelease pool for the new background, so in contrast to the <code>performSelectorInBackground:withObject:</code> instance method, you do not need to set up an autorelease pool yourself.</p>
+
+<p>This method retains the receiver and keeps a heap-allocated copy of the <em>aBlock</em> parameter until after the block is performed.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection see-also-section">
+		<h4 class="method-subtitle">See Also</h4>
+		<ul>
+			
+			<li><code><p><a href="#//api/name/performBlock:onThread:waitUntilDone:">&ndash; performBlock:onThread:waitUntilDone:</a></p></code></li>
+			
+		</ul>
+	</div>
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">NSObject+BMKitAdditions.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/performBlockOnMainThread:waitUntilDone:" title="performBlockOnMainThread:waitUntilDone:"></a>
+	<h3 class="subsubtitle method-title">performBlockOnMainThread:waitUntilDone:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Invokes a block on the receiver on the main thread using the default mode.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)performBlockOnMainThread:(BMTargetBlock)<em>aBlock</em> waitUntilDone:(BOOL)<em>wait</em></code></div>
+	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>aBlock</em></dt>
+			<dd><p>The block to invoke.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>wait</em></dt>
+			<dd><p>A Boolean that specifies whether the current thread blocks until after the specified block is performed on the receiver on the main thread. Specify <code>YES</code> to block this thread; otherwise, specify <code>NO</code> to have this method return immediately. If the current thread is also the main thread, and you specify <code>YES</code> for this parameter, the block is performed immediately.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Invokes a block on the receiver on the main thread using the default mode.</p>
+
+<p>This method schedules a block for invocation on the main thread in the default mode using the <code>performSelectorOnMainThread:withObject:waitUntilDone:</code> instance method of the NSObject class.</p>
+
+<p>This method retains the receiver and the <em>aBlock</em> parameter (or a heap-allocated of it) until after the block is performed.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection see-also-section">
+		<h4 class="method-subtitle">See Also</h4>
+		<ul>
+			
+			<li><code><p><a href="#//api/name/performBlockOnMainThread:waitUntilDone:modes:">&ndash; performBlockOnMainThread:waitUntilDone:modes:</a></p></code></li>
+			
+			<li><code><p><a href="#//api/name/performBlock:onThread:waitUntilDone:">&ndash; performBlock:onThread:waitUntilDone:</a></p></code></li>
+			
+		</ul>
+	</div>
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">NSObject+BMKitAdditions.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/performBlockOnMainThread:waitUntilDone:modes:" title="performBlockOnMainThread:waitUntilDone:modes:"></a>
+	<h3 class="subsubtitle method-title">performBlockOnMainThread:waitUntilDone:modes:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Invokes a block on the receiver on the main thread using the specified modes.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)performBlockOnMainThread:(BMTargetBlock)<em>aBlock</em> waitUntilDone:(BOOL)<em>wait</em> modes:(NSArray *)<em>modes</em></code></div>
+	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>aBlock</em></dt>
+			<dd><p>The block to invoke.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>wait</em></dt>
+			<dd><p>A Boolean that specifies whether the current thread blocks until after the specified block is performed on the receiver on the main thread. Specify <code>YES</code> to block this thread; otherwise, specify <code>NO</code> to have this method return immediately. If the current thread is also the main thread, and you specify <code>YES</code> for this parameter, the block is performed immediately.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>modes</em></dt>
+			<dd><p>An array of strings that identify the modes to associate with the timer that performs the selector. This array must contain at least one string. If you specify <code>nil</code> or an empty array for this parameter, this method returns without performing the specified block.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Invokes a block on the receiver on the main thread using the specified modes.</p>
+
+<p>This method schedules a block for invocation on the main thread in the specified <em>modes</em> using the <code>performSelectorOnMainThread:withObject:waitUntilDone:modes:</code> instance method of the NSObject class.</p>
+
+<p>This method retains the receiver and the <em>aBlock</em> parameter (or a heap-allocated of it) until after the block is performed.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection see-also-section">
+		<h4 class="method-subtitle">See Also</h4>
+		<ul>
+			
+			<li><code><p><a href="#//api/name/performBlockOnMainThread:waitUntilDone:">&ndash; performBlockOnMainThread:waitUntilDone:</a></p></code></li>
+			
+			<li><code><p><a href="#//api/name/performBlock:onThread:waitUntilDone:">&ndash; performBlock:onThread:waitUntilDone:</a></p></code></li>
+			
+		</ul>
+	</div>
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">NSObject+BMKitAdditions.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/removeAssociatedObjects" title="removeAssociatedObjects"></a>
+	<h3 class="subsubtitle method-title">removeAssociatedObjects</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Removes all associated objects of the target.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)removeAssociatedObjects</code></div>
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Removes all associated objects of the target.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection see-also-section">
+		<h4 class="method-subtitle">See Also</h4>
+		<ul>
+			
+			<li><code><p><a href="#//api/name/associatedObjectForKey:">&ndash; associatedObjectForKey:</a></p></code></li>
+			
+			<li><code><p><a href="#//api/name/setAssociatedObject:forKey:">&ndash; setAssociatedObject:forKey:</a></p></code></li>
+			
+			<li><code><p><a href="#//api/name/setAssociatedObject:forKey:policy:">&ndash; setAssociatedObject:forKey:policy:</a></p></code></li>
+			
+		</ul>
+	</div>
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">NSObject+BMKitAdditions.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/setAssociatedObject:forKey:" title="setAssociatedObject:forKey:"></a>
+	<h3 class="subsubtitle method-title">setAssociatedObject:forKey:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Associates an object with a specified key on the target.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)setAssociatedObject:(id)<em>anObject</em> forKey:(BMAssociationKey)<em>aKey</em></code></div>
+	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>anObject</em></dt>
+			<dd><p>The object to associate with the key. Pass <code>nil</code> to clear the association for <em>aKey</em>.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>aKey</em></dt>
+			<dd><p>An association key, an arbitrary pointer.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Associates an object with a specified key on the target.</p>
+
+<p>The effect of sending this message is similar to sending the <a href="#//api/name/setAssociatedObject:forKey:policy:">setAssociatedObject:forKey:policy:</a> message, passing <code>BMAssociationNonatomicRetainPolicy</code> as <em>policy</em>.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection see-also-section">
+		<h4 class="method-subtitle">See Also</h4>
+		<ul>
+			
+			<li><code><p><a href="#//api/name/associatedObjectForKey:">&ndash; associatedObjectForKey:</a></p></code></li>
+			
+			<li><code><p><a href="#//api/name/setAssociatedObject:forKey:policy:">&ndash; setAssociatedObject:forKey:policy:</a></p></code></li>
+			
+			<li><code><p><a href="#//api/name/removeAssociatedObjects">&ndash; removeAssociatedObjects</a></p></code></li>
+			
+		</ul>
+	</div>
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">NSObject+BMKitAdditions.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/setAssociatedObject:forKey:policy:" title="setAssociatedObject:forKey:policy:"></a>
+	<h3 class="subsubtitle method-title">setAssociatedObject:forKey:policy:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Associates an object with a specified key on the target using a specified association policy.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)setAssociatedObject:(id)<em>anObject</em> forKey:(BMAssociationKey)<em>aKey</em> policy:(BMAssociationPolicy)<em>policy</em></code></div>
+	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>anObject</em></dt>
+			<dd><p>The object to associate with the key. Pass <code>nil</code> to clear the association for <em>aKey</em>.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>aKey</em></dt>
+			<dd><p>An association key, an arbitrary pointer.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>policy</em></dt>
+			<dd><p>The policy for associating <em>anObject</em> with <em>aKey</em> on the target.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Associates an object with a specified key on the target using a specified association policy.</p>
+
+<p>Right now the following association policies are supported:</p>
+
+<ul>
+<li><code>BMAssociationAssignPolicy</code> Specifies a weak reference to the associated object.</li>
+<li><code>BMAssociationAtomicRetainPolicy</code> Specifies a strong reference to the associated object, and that the association is made atomically.</li>
+<li><code>BMAssociationAtomicCopyPolicy</code> Specifies that the associated object is copied, and that the association is made atomically.</li>
+<li><code>BMAssociationNonatomicRetainPolicy</code> Specifies a strong reference to the associated object, and that the association is not made atomically.</li>
+<li><code>BMAssociationNonatomicCopyPolicy</code> Specifies that the associated object is copied, and that the association is not made atomically.</li>
+</ul>
+
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection see-also-section">
+		<h4 class="method-subtitle">See Also</h4>
+		<ul>
+			
+			<li><code><p><a href="#//api/name/associatedObjectForKey:">&ndash; associatedObjectForKey:</a></p></code></li>
+			
+			<li><code><p><a href="#//api/name/setAssociatedObject:forKey:">&ndash; setAssociatedObject:forKey:</a></p></code></li>
+			
+			<li><code><p><a href="#//api/name/removeAssociatedObjects">&ndash; removeAssociatedObjects</a></p></code></li>
+			
+		</ul>
+	</div>
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">NSObject+BMKitAdditions.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+				</div>
+				<div class="main-navigation navigation-bottom">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="footer">
+					<hr />
+					<div class="footer-copyright">
+						<p><span class="copyright">&copy; 2011 Benedikt Meurer. All rights reserved. (Last updated: 2011-07-24)</span><br />
+						
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.0.4 (build 703)</a>.</span></p>
+						
+					</div>
+				</div>
+			</div>
+		</article>
+		<script type="text/javascript">
+			function jumpToChange()
+			{
+				window.location.hash = this.options[this.selectedIndex].value;
+			}
+			
+			function toggleTOC()
+			{
+				var contents = document.getElementById('contents');
+				var tocContainer = document.getElementById('tocContainer');
+				
+				if (this.getAttribute('class') == 'open')
+				{
+					this.setAttribute('class', '');
+					contents.setAttribute('class', '');
+					tocContainer.setAttribute('class', '');
+					
+					window.name = "hideTOC";
+				}
+				else
+				{
+					this.setAttribute('class', 'open');
+					contents.setAttribute('class', 'isShowingTOC');
+					tocContainer.setAttribute('class', 'isShowingTOC');
+					
+					window.name = "";
+				}
+				return false;
+			}
+			
+			function toggleTOCEntryChildren(e)
+			{
+				e.stopPropagation();
+				var currentClass = this.getAttribute('class');
+				if (currentClass == 'children') {
+					this.setAttribute('class', 'children open');
+				}
+				else if (currentClass == 'children open') {
+					this.setAttribute('class', 'children');
+				}
+				return false;
+			}
+			
+			function tocEntryClick(e)
+			{
+				e.stopPropagation();
+				return true;
+			}
+			
+			function init()
+			{
+				var selectElement = document.getElementById('jumpTo');
+				selectElement.addEventListener('change', jumpToChange, false);
+				
+				var tocButton = document.getElementById('table_of_contents');
+				tocButton.addEventListener('click', toggleTOC, false);
+				
+				var taskTreeItem = document.getElementById('task_treeitem');
+				if (taskTreeItem.getElementsByTagName('li').length > 0)
+				{
+					taskTreeItem.setAttribute('class', 'children');
+					taskTreeItem.firstChild.setAttribute('class', 'disclosure');
+				}
+				
+				var tocList = document.getElementById('toc');
+				
+				var tocEntries = tocList.getElementsByTagName('li');
+				for (var i = 0; i < tocEntries.length; i++) {
+					tocEntries[i].addEventListener('click', toggleTOCEntryChildren, false);
+				}
+				
+				var tocLinks = tocList.getElementsByTagName('a');
+				for (var i = 0; i < tocLinks.length; i++) {
+					tocLinks[i].addEventListener('click', tocEntryClick, false);
+				}
+				
+				if (window.name == "hideTOC") {
+					toggleTOC.call(tocButton);
+				}
+			}
+			
+			window.onload = init;
+		</script>
+	</body>
+</html>

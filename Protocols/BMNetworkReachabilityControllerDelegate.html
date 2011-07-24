@@ -1,0 +1,438 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>BMNetworkReachabilityControllerDelegate Protocol Reference</title>
+		<meta http-equiv="Content-Type" content="application/xhtml+xml;charset=utf-8" />
+		<meta id="xcode-display" name="xcode-display" content="render"/>
+		<meta name="viewport" content="width=550" />
+		<link rel="stylesheet" type="text/css" href="../css/styles.css" />
+		<meta name="generator" content="appledoc 2.0.4 (build 703)" />
+	</head>
+	<body>
+		<header id="top_header">
+			<div id="title" role="banner">
+				<h1 class="hideInXcode">BMNetworkReachabilityControllerDelegate Protocol Reference</h1>
+			</div>
+			<ul id="headerButtons" role="toolbar">
+				<li id="toc_button">
+					<button aria-label="Show Table of Contents" role="checkbox" class="open" id="table_of_contents"><span class="disclosure"></span>Table of Contents</button>
+				</li>
+				<li id="jumpto_button" role="navigation">
+					<select id="jumpTo">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+	
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<option value="instance_methods">Instance Methods</option>
+	
+	<option value="//api/name/networkReachabilityController:didAddReachability:">&nbsp;&nbsp;&nbsp;&nbsp;- networkReachabilityController:didAddReachability:</option>
+	
+	<option value="//api/name/networkReachabilityController:didChangeReachability:flags:">&nbsp;&nbsp;&nbsp;&nbsp;- networkReachabilityController:didChangeReachability:flags:</option>
+	
+	<option value="//api/name/networkReachabilityController:didRemoveReachability:">&nbsp;&nbsp;&nbsp;&nbsp;- networkReachabilityController:didRemoveReachability:</option>
+	
+	
+	
+</select>
+				</li>
+			</ul>
+		</header>
+		<nav id="tocContainer" class="isShowingTOC">
+			<ul id="toc" role="tree">
+				
+<li role="treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#overview">Overview</a></span></li>
+
+
+
+
+<li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
+	
+</ul></li>
+
+
+
+
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/networkReachabilityController:didAddReachability:">networkReachabilityController:didAddReachability:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/networkReachabilityController:didChangeReachability:flags:">networkReachabilityController:didChangeReachability:flags:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/networkReachabilityController:didRemoveReachability:">networkReachabilityController:didRemoveReachability:</a></span></li>
+	
+</ul></li>
+
+
+			</ul>
+		</nav>
+		<article>
+			<div id="contents" class="isShowingTOC" role="main">
+				<a title="BMNetworkReachabilityControllerDelegate Protocol Reference" name="top"></a>
+				<div class="main-navigation navigation-top">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="header">
+					<div class="section-header">
+						<h1 class="title title-header">BMNetworkReachabilityControllerDelegate Protocol Reference</h1>
+					</div>		
+				</div>
+				<div id="container">	
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<td class="specification-title">Conforms to</td>
+	<td class="specification-value">NSObject</td>
+</tr><tr>
+	<td class="specification-title">Declared in</td>
+	<td class="specification-value">BMNetworkReachabilityController.h</td>
+</tr>
+						</tbody></table></div>
+					
+					
+					
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>An instance of the <a href="../Classes/BMNetworkReachabilityController.html">BMNetworkReachabilityController</a> class uses methods in this protocol to notify it&rsquo;s delegate that the managed reachability references changed in some way.</p>
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						<h2 class="subtitle subtitle-tasks">Tasks</h2>
+						
+						
+						
+						
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/networkReachabilityController:didAddReachability:">&ndash;&nbsp;networkReachabilityController:didAddReachability:</a></code>
+		<span class="tooltip"><p>Notifies the receiver that a new reachability reference was added to the sender.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/networkReachabilityController:didRemoveReachability:">&ndash;&nbsp;networkReachabilityController:didRemoveReachability:</a></code>
+		<span class="tooltip"><p>Notifies the receiver that an existing reachability reference was removed from the sender.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/networkReachabilityController:didChangeReachability:flags:">&ndash;&nbsp;networkReachabilityController:didChangeReachability:flags:</a></code>
+		<span class="tooltip"><p>Notifies the receiver that the flags of a reachability reference managed by the sender did change.</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+					</div>
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Instance Methods" name="instance_methods"></a>
+						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/networkReachabilityController:didAddReachability:" title="networkReachabilityController:didAddReachability:"></a>
+	<h3 class="subsubtitle method-title">networkReachabilityController:didAddReachability:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Notifies the receiver that a new reachability reference was added to the sender.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)networkReachabilityController:(BMNetworkReachabilityController *)<em>networkReachabilityController</em> didAddReachability:(SCNetworkReachabilityRef)<em>reachability</em></code></div>
+	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>networkReachabilityController</em></dt>
+			<dd><p>The network reachability controller.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>reachability</em></dt>
+			<dd><p>The added reachability reference.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Notifies the receiver that a new reachability reference was added to the sender.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">BMNetworkReachabilityController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/networkReachabilityController:didChangeReachability:flags:" title="networkReachabilityController:didChangeReachability:flags:"></a>
+	<h3 class="subsubtitle method-title">networkReachabilityController:didChangeReachability:flags:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Notifies the receiver that the flags of a reachability reference managed by the sender did change.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)networkReachabilityController:(BMNetworkReachabilityController *)<em>networkReachabilityController</em> didChangeReachability:(SCNetworkReachabilityRef)<em>reachability</em> flags:(SCNetworkReachabilityFlags)<em>flags</em></code></div>
+	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>networkReachabilityController</em></dt>
+			<dd><p>The network reachability controller.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>reachability</em></dt>
+			<dd><p>The reachability reference whos flags did change.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>flags</em></dt>
+			<dd><p>The new flags of <strong>reachability</strong>.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Notifies the receiver that the flags of a reachability reference managed by the sender did change.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">BMNetworkReachabilityController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/networkReachabilityController:didRemoveReachability:" title="networkReachabilityController:didRemoveReachability:"></a>
+	<h3 class="subsubtitle method-title">networkReachabilityController:didRemoveReachability:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Notifies the receiver that an existing reachability reference was removed from the sender.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)networkReachabilityController:(BMNetworkReachabilityController *)<em>networkReachabilityController</em> didRemoveReachability:(SCNetworkReachabilityRef)<em>reachability</em></code></div>
+	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>networkReachabilityController</em></dt>
+			<dd><p>The network reachability controller.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>reachability</em></dt>
+			<dd><p>The removed reachability reference.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Notifies the receiver that an existing reachability reference was removed from the sender.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">BMNetworkReachabilityController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+				</div>
+				<div class="main-navigation navigation-bottom">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="footer">
+					<hr />
+					<div class="footer-copyright">
+						<p><span class="copyright">&copy; 2011 Benedikt Meurer. All rights reserved. (Last updated: 2011-07-24)</span><br />
+						
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.0.4 (build 703)</a>.</span></p>
+						
+					</div>
+				</div>
+			</div>
+		</article>
+		<script type="text/javascript">
+			function jumpToChange()
+			{
+				window.location.hash = this.options[this.selectedIndex].value;
+			}
+			
+			function toggleTOC()
+			{
+				var contents = document.getElementById('contents');
+				var tocContainer = document.getElementById('tocContainer');
+				
+				if (this.getAttribute('class') == 'open')
+				{
+					this.setAttribute('class', '');
+					contents.setAttribute('class', '');
+					tocContainer.setAttribute('class', '');
+					
+					window.name = "hideTOC";
+				}
+				else
+				{
+					this.setAttribute('class', 'open');
+					contents.setAttribute('class', 'isShowingTOC');
+					tocContainer.setAttribute('class', 'isShowingTOC');
+					
+					window.name = "";
+				}
+				return false;
+			}
+			
+			function toggleTOCEntryChildren(e)
+			{
+				e.stopPropagation();
+				var currentClass = this.getAttribute('class');
+				if (currentClass == 'children') {
+					this.setAttribute('class', 'children open');
+				}
+				else if (currentClass == 'children open') {
+					this.setAttribute('class', 'children');
+				}
+				return false;
+			}
+			
+			function tocEntryClick(e)
+			{
+				e.stopPropagation();
+				return true;
+			}
+			
+			function init()
+			{
+				var selectElement = document.getElementById('jumpTo');
+				selectElement.addEventListener('change', jumpToChange, false);
+				
+				var tocButton = document.getElementById('table_of_contents');
+				tocButton.addEventListener('click', toggleTOC, false);
+				
+				var taskTreeItem = document.getElementById('task_treeitem');
+				if (taskTreeItem.getElementsByTagName('li').length > 0)
+				{
+					taskTreeItem.setAttribute('class', 'children');
+					taskTreeItem.firstChild.setAttribute('class', 'disclosure');
+				}
+				
+				var tocList = document.getElementById('toc');
+				
+				var tocEntries = tocList.getElementsByTagName('li');
+				for (var i = 0; i < tocEntries.length; i++) {
+					tocEntries[i].addEventListener('click', toggleTOCEntryChildren, false);
+				}
+				
+				var tocLinks = tocList.getElementsByTagName('a');
+				for (var i = 0; i < tocLinks.length; i++) {
+					tocLinks[i].addEventListener('click', tocEntryClick, false);
+				}
+				
+				if (window.name == "hideTOC") {
+					toggleTOC.call(tocButton);
+				}
+			}
+			
+			window.onload = init;
+		</script>
+	</body>
+</html>
