@@ -56,7 +56,7 @@
 
 /** Adds a new reachability reference to the receiver.
  
- @param reachabilty The new reachability reference.
+ @param reachability The new reachability reference.
  @return `YES` if the *reachability* was added successfully, `NO` otherwise.
  @see addReachabilityWithAddress:
  @see addReachabilityWithLocalAddress:remoteAddress:
