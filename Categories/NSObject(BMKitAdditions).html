@@ -315,9 +315,7 @@
 	
 	<div class="method-subsection discussion-section">
 		<h4 class="method-subtitle">Discussion</h4>
-		<p>Cancels perform requests previously registered with <a href="#//api/name/performBlock:afterDelay:">performBlock:afterDelay:</a>.</p>
-
-<p>All perform requests are canceled that have the same target as <em>aTarget</em> and block as <em>aBlock</em>.</p><div class="warning"><p><strong>Important:</strong> <em>aBlock</em> must refer to the heap-allocated copy of the block, which was passed to <a href="#//api/name/performBlock:afterDelay:">performBlock:afterDelay:</a>. If unsure, just pass the value returned from <a href="#//api/name/performBlock:afterDelay:">performBlock:afterDelay:</a> as <em>aBlock</em>.</p></div>
+		<p>All perform requests are canceled that have the same target as <em>aTarget</em> and block as <em>aBlock</em>.</p><div class="warning"><p><strong>Important:</strong> <em>aBlock</em> must refer to the heap-allocated copy of the block, which was passed to <a href="#//api/name/performBlock:afterDelay:">performBlock:afterDelay:</a>. If unsure, just pass the value returned from <a href="#//api/name/performBlock:afterDelay:">performBlock:afterDelay:</a> as <em>aBlock</em>.</p></div>
 	</div>
 	
 	
@@ -386,11 +384,6 @@
 	
 	
 	
-	<div class="method-subsection discussion-section">
-		<h4 class="method-subtitle">Discussion</h4>
-		<p>Returns the object associated with a specified key.</p>
-	</div>
-	
 	
 	
 	
@@ -458,9 +451,7 @@
 	
 	<div class="method-subsection discussion-section">
 		<h4 class="method-subtitle">Discussion</h4>
-		<p>Invokes a block on the current thread using the default mode after a delay.</p>
-
-<p>This method takes a copy of <em>aBlock</em> and schedules it for invocation after <em>delay</em> seconds using the <code>performSelector:withObject:afterDelay:</code> instance method of the NSObject class.</p>
+		<p>This method takes a copy of <em>aBlock</em> and schedules it for invocation after <em>delay</em> seconds using the <code>performSelector:withObject:afterDelay:</code> instance method of the NSObject class.</p>
 
 <p>This method retains the receiver and keeps a heap-allocated copy of the <em>aBlock</em> parameter until after the block is performed.</p>
 	</div>
@@ -535,9 +526,7 @@
 	
 	<div class="method-subsection discussion-section">
 		<h4 class="method-subtitle">Discussion</h4>
-		<p>Invokes a block on the current thread using the specified modes after a delay.</p>
-
-<p>This method takes a copy of <em>aBlock</em> and schedules it for invocation in the specified <em>modes</em> after <em>delay</em> seconds using the <code>performSelector:withObject:afterDelay:inModes:</code> instance method of the NSObject class.</p>
+		<p>This method takes a copy of <em>aBlock</em> and schedules it for invocation in the specified <em>modes</em> after <em>delay</em> seconds using the <code>performSelector:withObject:afterDelay:inModes:</code> instance method of the NSObject class.</p>
 
 <p>This method retains the receiver and keeps a heap-allocated copy of the <em>aBlock</em> parameter until after the block is performed.</p>
 	</div>
@@ -607,9 +596,7 @@
 	
 	<div class="method-subsection discussion-section">
 		<h4 class="method-subtitle">Discussion</h4>
-		<p>Invokes a block on the receiver on the specified thread using the default mode.</p>
-
-<p>This method schedules a block for invocation on <em>aThread</em> in the default mode using the <code>performSelector:onThread:withObject:waitUntilDone:</code> instance method of the NSObject class.</p>
+		<p>This method schedules a block for invocation on <em>aThread</em> in the default mode using the <code>performSelector:onThread:withObject:waitUntilDone:</code> instance method of the NSObject class.</p>
 
 <p>This method retains the receiver and the <em>aBlock</em> parameter (or a heap-allocated of it) until after the block is performed.</p>
 	</div>
@@ -684,9 +671,7 @@
 	
 	<div class="method-subsection discussion-section">
 		<h4 class="method-subtitle">Discussion</h4>
-		<p>Invokes a block on the receiver on the specified thread using the specified modes.</p>
-
-<p>This method schedules a block for invocation on <em>aThread</em> in the specified <em>modes</em> using the <code>performSelector:onThread:withObject:waitUntilDone:modes:</code> instance method of the NSObject class.</p>
+		<p>This method schedules a block for invocation on <em>aThread</em> in the specified <em>modes</em> using the <code>performSelector:onThread:withObject:waitUntilDone:modes:</code> instance method of the NSObject class.</p>
 
 <p>This method retains the receiver and the <em>aBlock</em> parameter (or a heap-allocated of it) until after the block is performed.</p>
 	</div>
@@ -746,9 +731,7 @@
 	
 	<div class="method-subsection discussion-section">
 		<h4 class="method-subtitle">Discussion</h4>
-		<p>Invokes a block on the receiver on a new background thread.</p>
-
-<p>This method takes a copy of <em>aBlock</em> and schedules it for background execution in a new background using the <code>performSelectorInBackground:withObject:</code> instance method of the NSObject class. This method also sets up an autorelease pool for the new background, so in contrast to the <code>performSelectorInBackground:withObject:</code> instance method, you do not need to set up an autorelease pool yourself.</p>
+		<p>This method takes a copy of <em>aBlock</em> and schedules it for background execution in a new background using the <code>performSelectorInBackground:withObject:</code> instance method of the NSObject class. This method also sets up an autorelease pool for the new background, so in contrast to the <code>performSelectorInBackground:withObject:</code> instance method, you do not need to set up an autorelease pool yourself.</p>
 
 <p>This method retains the receiver and keeps a heap-allocated copy of the <em>aBlock</em> parameter until after the block is performed.</p>
 	</div>
@@ -811,9 +794,7 @@
 	
 	<div class="method-subsection discussion-section">
 		<h4 class="method-subtitle">Discussion</h4>
-		<p>Invokes a block on the receiver on the main thread using the default mode.</p>
-
-<p>This method schedules a block for invocation on the main thread in the default mode using the <code>performSelectorOnMainThread:withObject:waitUntilDone:</code> instance method of the NSObject class.</p>
+		<p>This method schedules a block for invocation on the main thread in the default mode using the <code>performSelectorOnMainThread:withObject:waitUntilDone:</code> instance method of the NSObject class.</p>
 
 <p>This method retains the receiver and the <em>aBlock</em> parameter (or a heap-allocated of it) until after the block is performed.</p>
 	</div>
@@ -883,9 +864,7 @@
 	
 	<div class="method-subsection discussion-section">
 		<h4 class="method-subtitle">Discussion</h4>
-		<p>Invokes a block on the receiver on the main thread using the specified modes.</p>
-
-<p>This method schedules a block for invocation on the main thread in the specified <em>modes</em> using the <code>performSelectorOnMainThread:withObject:waitUntilDone:modes:</code> instance method of the NSObject class.</p>
+		<p>This method schedules a block for invocation on the main thread in the specified <em>modes</em> using the <code>performSelectorOnMainThread:withObject:waitUntilDone:modes:</code> instance method of the NSObject class.</p>
 
 <p>This method retains the receiver and the <em>aBlock</em> parameter (or a heap-allocated of it) until after the block is performed.</p>
 	</div>
@@ -932,11 +911,6 @@
 	
 	
 	
-	
-	<div class="method-subsection discussion-section">
-		<h4 class="method-subtitle">Discussion</h4>
-		<p>Removes all associated objects of the target.</p>
-	</div>
 	
 	
 	
@@ -1000,9 +974,7 @@
 	
 	<div class="method-subsection discussion-section">
 		<h4 class="method-subtitle">Discussion</h4>
-		<p>Associates an object with a specified key on the target.</p>
-
-<p>The effect of sending this message is similar to sending the <a href="#//api/name/setAssociatedObject:forKey:policy:">setAssociatedObject:forKey:policy:</a> message, passing <code>BMAssociationNonatomicRetainPolicy</code> as <em>policy</em>.</p>
+		<p>The effect of sending this message is similar to sending the <a href="#//api/name/setAssociatedObject:forKey:policy:">setAssociatedObject:forKey:policy:</a> message, passing <code>BMAssociationNonatomicRetainPolicy</code> as <em>policy</em>.</p>
 	</div>
 	
 	
@@ -1072,9 +1044,7 @@
 	
 	<div class="method-subsection discussion-section">
 		<h4 class="method-subtitle">Discussion</h4>
-		<p>Associates an object with a specified key on the target using a specified association policy.</p>
-
-<p>Right now the following association policies are supported:</p>
+		<p>Right now the following association policies are supported:</p>
 
 <ul>
 <li><code>BMAssociationAssignPolicy</code> Specifies a weak reference to the associated object.</li>

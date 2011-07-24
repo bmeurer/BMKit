@@ -202,9 +202,7 @@
 	
 	<div class="method-subsection discussion-section">
 		<h4 class="method-subtitle">Discussion</h4>
-		<p>Detaches a new thread and uses the specified block as the thread entry point.</p>
-
-<p>In contrast to the <code>detachNewThreadSelector:toTarget:withObject:</code> class method of the <code>NSThread</code> class, you do not need to set up an autorelease pool for the block in a non garbage-collected environment. This is done automatically.</p>
+		<p>In contrast to the <code>detachNewThreadSelector:toTarget:withObject:</code> class method of the <code>NSThread</code> class, you do not need to set up an autorelease pool for the block in a non garbage-collected environment. This is done automatically.</p>
 
 <p>The block <em>aBlock</em> is copied, and released when the thread finally exits. The detached thread is exited (using the <code>exit</code> class method of the <code>NSThread</code> class) as soon as <em>aBlock</em> has completed executing.</p>
 
@@ -277,9 +275,7 @@
 	
 	<div class="method-subsection discussion-section">
 		<h4 class="method-subtitle">Discussion</h4>
-		<p>Returns an <code>NSThread</code> object initialized with the given arguments.</p>
-
-<p>In contrast to the <code>initWithTarget:selector:object:</code> instance method of the <code>NSThread</code> class, you do not need to set up an autorelease pool for the block in a non garbage-collected environment. This is done automatically.</p>
+		<p>In contrast to the <code>initWithTarget:selector:object:</code> instance method of the <code>NSThread</code> class, you do not need to set up an autorelease pool for the block in a non garbage-collected environment. This is done automatically.</p>
 
 <p>The block <em>aBlock</em> is copied, and released when the thread finally exits.</p>
 	</div>
