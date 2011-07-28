@@ -39,6 +39,7 @@
 
 # import "NSArray+BMKitAdditions.h"
 # import "NSData+BMKitAdditions.h"
+# import "NSEnumerator+BMKitAdditions.h"
 # import "NSMutableArray+BMKitAdditions.h"
 # import "NSMutableSet+BMKitAdditions.h"
 # import "NSObject+BMKitAdditions.h"
