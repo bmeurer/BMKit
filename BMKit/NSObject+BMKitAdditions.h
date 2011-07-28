@@ -94,11 +94,11 @@ typedef const void *BMAssociationKey;
  */
 - (void)removeAssociatedObjects;
 
-///-------------------------
-/// @name Performing Blocks
-///-------------------------
+///------------------------
+/// @name Executing Blocks
+///------------------------
 
-/** Invokes a block on the current thread using the default mode after a delay.
+/** Executes a block on the current thread using the default mode after a delay.
  
  This method takes a copy of _aBlock_ and schedules it for invocation after _delay_ seconds using the `performSelector:withObject:afterDelay:` instance method of the NSObject class.
  
@@ -112,13 +112,13 @@ typedef const void *BMAssociationKey;
  */
 - (BMTargetBlock)performBlock:(BMTargetBlock)aBlock afterDelay:(NSTimeInterval)delay;
 
-/** Invokes a block on the current thread using the specified modes after a delay.
+/** Executes a block on the current thread using the specified modes after a delay.
  
  This method takes a copy of _aBlock_ and schedules it for invocation in the specified _modes_ after _delay_ seconds using the `performSelector:withObject:afterDelay:inModes:` instance method of the NSObject class.
  
  This method retains the receiver and keeps a heap-allocated copy of the _aBlock_ parameter until after the block is performed.
  
- @param aBlock The block to invoke.
+ @param aBlock The block to execute.
  @param delay The minimum time before which the message is sent. Specifying a delay of 0 does not necessarily cause the block to be performed immediately. The block is still queued on the thread's run loop and performed as soon as possible.
  @param modes An array of strings that identify the modes to associate with the timer that performs the selector. This array must contain at least one string. If you specify `nil` or an empty array for this parameter, this method returns without performing the specified block.
  @return A copy of the _aBlock_, which can be used to cancel the perform request using the cancelPreviousPerformRequestsWithTarget:block: class method.
@@ -127,26 +127,26 @@ typedef const void *BMAssociationKey;
  */
 - (BMTargetBlock)performBlock:(BMTargetBlock)aBlock afterDelay:(NSTimeInterval)delay inModes:(NSArray *)modes;
 
-/** Invokes a block on the receiver on the main thread using the default mode.
+/** Executes a block on the receiver on the main thread using the default mode.
  
  This method schedules a block for invocation on the main thread in the default mode using the `performSelectorOnMainThread:withObject:waitUntilDone:` instance method of the NSObject class.
  
- This method retains the receiver and the _aBlock_ parameter (or a heap-allocated of it) until after the block is performed.
+ This method retains the receiver and the _aBlock_ parameter (or a heap-allocated copy of it) until after the block is performed.
  
- @param aBlock The block to invoke.
+ @param aBlock The block to execute.
  @param wait A Boolean that specifies whether the current thread blocks until after the specified block is performed on the receiver on the main thread. Specify `YES` to block this thread; otherwise, specify `NO` to have this method return immediately. If the current thread is also the main thread, and you specify `YES` for this parameter, the block is performed immediately.
  @see performBlockOnMainThread:waitUntilDone:modes:
  @see performBlock:onThread:waitUntilDone:
  */
 - (void)performBlockOnMainThread:(BMTargetBlock)aBlock waitUntilDone:(BOOL)wait;
 
-/** Invokes a block on the receiver on the main thread using the specified modes.
+/** Executes a block on the receiver on the main thread using the specified modes.
  
  This method schedules a block for invocation on the main thread in the specified _modes_ using the `performSelectorOnMainThread:withObject:waitUntilDone:modes:` instance method of the NSObject class.
  
- This method retains the receiver and the _aBlock_ parameter (or a heap-allocated of it) until after the block is performed.
+ This method retains the receiver and the _aBlock_ parameter (or a heap-allocated copy of it) until after the block is performed.
  
- @param aBlock The block to invoke.
+ @param aBlock The block to execute.
  @param wait A Boolean that specifies whether the current thread blocks until after the specified block is performed on the receiver on the main thread. Specify `YES` to block this thread; otherwise, specify `NO` to have this method return immediately. If the current thread is also the main thread, and you specify `YES` for this parameter, the block is performed immediately.
  @param modes An array of strings that identify the modes to associate with the timer that performs the selector. This array must contain at least one string. If you specify `nil` or an empty array for this parameter, this method returns without performing the specified block.
  @see performBlockOnMainThread:waitUntilDone:
@@ -154,13 +154,13 @@ typedef const void *BMAssociationKey;
  */
 - (void)performBlockOnMainThread:(BMTargetBlock)aBlock waitUntilDone:(BOOL)wait modes:(NSArray *)modes;
 
-/** Invokes a block on the receiver on the specified thread using the default mode.
+/** Executes a block on the receiver on the specified thread using the default mode.
  
- This method schedules a block for invocation on _aThread_ in the default mode using the `performSelector:onThread:withObject:waitUntilDone:` instance method of the NSObject class.
+ This method schedules a block for execution on _aThread_ in the default mode using the `performSelector:onThread:withObject:waitUntilDone:` instance method of the NSObject class.
  
- This method retains the receiver and the _aBlock_ parameter (or a heap-allocated of it) until after the block is performed.
+ This method retains the receiver and the _aBlock_ parameter (or a heap-allocated copy of it) until after the block is performed.
  
- @param aBlock The block to invoke.
+ @param aBlock The block to execute.
  @param aThread The thread on which to execute _aBlock_.
  @param wait A Boolean that specifies whether the current thread blocks until after the specified block is performed on the receiver on the specified thread. Specify `YES` to block this thread; otherwise, specify `NO` to have this method return immediately. If the current thread and target thread are the same, and you specify `YES` for this parameter, the block is performed immediately on the current thread. If you specify `NO`, this method queues the message on the thread's run loop and returns, just like it does for other threads. The current thread must then dequeue and process the message when it has an opportunity to do so.
  @see performBlock:onThread:waitUntilDone:modes:
@@ -168,13 +168,13 @@ typedef const void *BMAssociationKey;
  */
 - (void)performBlock:(BMTargetBlock)aBlock onThread:(NSThread *)aThread waitUntilDone:(BOOL)wait;
 
-/** Invokes a block on the receiver on the specified thread using the specified modes.
+/** Executes a block on the receiver on the specified thread using the specified modes.
  
- This method schedules a block for invocation on _aThread_ in the specified _modes_ using the `performSelector:onThread:withObject:waitUntilDone:modes:` instance method of the NSObject class.
+ This method schedules a block for execution on _aThread_ in the specified _modes_ using the `performSelector:onThread:withObject:waitUntilDone:modes:` instance method of the NSObject class.
  
- This method retains the receiver and the _aBlock_ parameter (or a heap-allocated of it) until after the block is performed.
+ This method retains the receiver and the _aBlock_ parameter (or a heap-allocated copy of it) until after the block is performed.
  
- @param aBlock The block to invoke.
+ @param aBlock The block to execute.
  @param aThread The thread on which to execute _aBlock_.
  @param wait A Boolean that specifies whether the current thread blocks until after the specified block is performed on the receiver on the specified thread. Specify `YES` to block this thread; otherwise, specify `NO` to have this method return immediately. If the current thread and target thread are the same, and you specify `YES` for this parameter, the block is performed immediately on the current thread. If you specify `NO`, this method queues the message on the thread's run loop and returns, just like it does for other threads. The current thread must then dequeue and process the message when it has an opportunity to do so.
  @param modes An array of strings that identify the modes to associate with the timer that performs the selector. This array must contain at least one string. If you specify `nil` or an empty array for this parameter, this method returns without performing the specified block.
@@ -183,16 +183,29 @@ typedef const void *BMAssociationKey;
  */
 - (void)performBlock:(BMTargetBlock)aBlock onThread:(NSThread *)aThread waitUntilDone:(BOOL)wait modes:(NSArray *)modes;
 
-/** Invokes a block on the receiver on a new background thread.
+/** Executes a block on the receiver on a new background thread.
  
  This method takes a copy of _aBlock_ and schedules it for background execution in a new background using the `performSelectorInBackground:withObject:` instance method of the NSObject class. This method also sets up an autorelease pool for the new background, so in contrast to the `performSelectorInBackground:withObject:` instance method, you do not need to set up an autorelease pool yourself.
  
  This method retains the receiver and keeps a heap-allocated copy of the _aBlock_ parameter until after the block is performed.
  
- @param aBlock The block to invoke.
+ @param aBlock The block to execute.
  @see performBlock:onThread:waitUntilDone:
  */
 - (void)performBlockInBackground:(BMTargetBlock)aBlock;
+
+/** Executes a block on the receiver on a given dispatch queue.
+ 
+ You can use this method to schedule a block for execution on _aQueue_, optionally waiting for the execution to finish.
+ 
+ This method retains the receiver, the _aBlock_ parameter (or a heap-allocated copy of it) and the _aQueue_ parameter until after the block is performed.
+ 
+ @param aBlock The block to execute.
+ @param aQueue The dispatch queue on which to execute _aBlock_.
+ @param wait A Boolean that specifies whether the current thread blocks until after the specified block is dispatched on the receiver on the specified queue. Specify `YES` to block this thread; otherwise, specify `NO` to have this method return immediately on the current thread. Be careful not to introduce deadlocks when specifying `YES` here.
+ @see performSelector:onQueue:withObject:waitUntilDone:
+ */
+- (void)performBlock:(BMTargetBlock)aBlock onQueue:(dispatch_queue_t)aQueue waitUntilDone:(BOOL)wait;
 
 /** Cancels perform requests previously registered with performBlock:afterDelay:.
  
@@ -206,5 +219,23 @@ typedef const void *BMAssociationKey;
  @see performBlock:afterDelay:inModes:
  */
 + (void)cancelPreviousPerformRequestsWithTarget:(id)aTarget block:(BMTargetBlock)aBlock;
+
+///------------------------
+/// @name Sending Messages
+///------------------------
+
+/** Invokes a method of the receiver on the specified dispatch queue.
+ 
+ You can use this method to deliver messages to other queues in your application. The message in this case is a method of the current object that you want to execute on the target queue.
+ 
+ This method retains the receiver, as well as the _anObject_ and the _aQueue_ parameters until after the selector is performed.
+
+ @param aSelector A selector that identifies the method to invoke. The method should not have a significant return value and should take a single argument of type id, or no arguments.
+ @param aQueue The dispatch queue on which to execute _aSelector_.
+ @param anObject The argument to pass to the method when it is invoked. Pass `nil` if the method does not take an argument.
+ @param wait A Boolean that specifies whether the current thread blocks until after the specified selector is dispatched on the receiver on the specified queue. Specify `YES` to block this thread; otherwise, specify `NO` to have this method return immediately on the current thread. Be careful not to introduce deadlocks when specifying `YES` here.
+ @see performBlock:onQueue:waitUntilDone:
+ */
+- (void)performSelector:(SEL)aSelector onQueue:(dispatch_queue_t)aQueue withObject:(id)anObject waitUntilDone:(BOOL)wait;
 
 @end

@@ -174,11 +174,48 @@
 }
 
 
+- (void)performBlock:(BMTargetBlock)aBlock onQueue:(dispatch_queue_t)aQueue waitUntilDone:(BOOL)wait
+{
+    if (!aQueue) {
+        [NSException raise:NSInvalidArgumentException
+                    format:@"aQueue is NULL (in '%@')", NSStringFromSelector(_cmd)];
+    }
+    if (wait) {
+        dispatch_sync(aQueue, ^{
+            [self BM_invokeTargetBlock:aBlock];
+        });
+    }
+    else {
+        aBlock = [aBlock copy];
+        dispatch_async(aQueue, ^{
+            [self BM_invokeTargetBlockWithAutoreleasePool:aBlock];
+        });
+        [aBlock release];
+    }
+}
+
+
 + (void)cancelPreviousPerformRequestsWithTarget:(id)aTarget block:(BMTargetBlock)aBlock
 {
     if (aTarget && aBlock) {
         [self cancelPreviousPerformRequestsWithTarget:aTarget selector:@selector(BM_invokeTargetBlock:) object:aBlock];
     }
+}
+
+
+#pragma mark -
+#pragma mark Sending Messages
+
+
+- (void)performSelector:(SEL)aSelector onQueue:(dispatch_queue_t)aQueue withObject:(id)anObject waitUntilDone:(BOOL)wait
+{
+    if (!aSelector) {
+        [NSException raise:NSInvalidArgumentException
+                    format:@"aSelector is NULL (in '%@')", NSStringFromSelector(_cmd)];
+    }
+    [self performBlock:^(id self) {
+        [self performSelector:aSelector withObject:anObject];
+    } onQueue:aQueue waitUntilDone:wait];
 }
 
 
