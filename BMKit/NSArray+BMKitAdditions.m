@@ -32,6 +32,16 @@
 
 
 #pragma mark -
+#pragma mark Querying an Array
+
+
+- (id)firstObject
+{
+    return [self count] ? [self objectAtIndex:0] : nil;
+}
+
+
+#pragma mark -
 #pragma mark Performing Blocks on Elements
 
 

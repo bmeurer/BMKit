@@ -31,6 +31,16 @@
 /** BMKit related additions to the `NSArray` class. */
 @interface NSArray (BMKitAdditions)
 
+///-------------------------
+/// @name Querying an Array
+///-------------------------
+
+/** Returns the object in the array with the lowest index value.
+ 
+ @return The object in the array with the lowest index value. If the array is empty, returns `nil`.
+ */
+- (id)firstObject;
+
 ///-------------------------------------
 /// @name Performing Blocks on Elements
 ///-------------------------------------
