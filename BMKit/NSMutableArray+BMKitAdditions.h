@@ -31,6 +31,16 @@
 /** BMKit related additions to the `NSMutableArray` class. */
 @interface NSMutableArray (BMKitAdditions)
 
+///------------------------
+/// @name Removing Objects
+///------------------------
+
+/** Removes the object with the lowest-valued index in the array.
+ 
+ `removeFirstObject` raises an `NSRangeException` if there are no objects in the array.
+ */
+- (void)removeFirstObject;
+
 ///-------------------------
 /// @name Filtering Content
 ///-------------------------

@@ -32,6 +32,16 @@
 
 
 #pragma mark -
+#pragma mark Removing Objects
+
+
+- (void)removeFirstObject
+{
+    [self removeObjectAtIndex:0];
+}
+
+
+#pragma mark -
 #pragma mark Filtering Content
 
 
