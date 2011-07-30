@@ -18,16 +18,12 @@ See the [LICENSE](http://github.com/bmeurer/BMKit/raw/master/LICENSE) file for d
 
 Run the following command to add BMKit as a [Git](http://git-scm.org) submodule to your project. Be sure you have are you in the root folder of your project.
 
-{% highlight console %}
-$ git submodule add git://github.com/bmeurer/BMKit.git Vendor/BMKit
-{% endhighlight %}
+    $ git submodule add git://github.com/bmeurer/BMKit.git Vendor/BMKit
 
 If you don't want to add BMKit as a submodule to your project or if your project is not managed using [Git](http://git-scm.org), then you can run the following commands to download the source code of the most recent revision.
 
-{% highlight console %}
-$ mkdir -p Vendor/BMKit
-$ curl -L http://github.com/bmeurer/BMKit/tarball/master | tar xz --strip 1 -C Vendor/BMKit
-{% endhighlight %}
+    $ mkdir -p Vendor/BMKit
+    $ curl -L http://github.com/bmeurer/BMKit/tarball/master | tar xz --strip 1 -C Vendor/BMKit
 
 
 ### Adding to your Project
