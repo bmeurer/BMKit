@@ -48,6 +48,7 @@
 # import "NSTimer+BMKitAdditions.h"
 
 # import "UIActionSheet+BMKitAdditions.h"
+# import "UIGestureRecognizer+BMKitAdditions.h"
 # import "UIImage+BMKitAdditions.h"
 # import "UIImagePickerController+BMKitAdditions.h"
 

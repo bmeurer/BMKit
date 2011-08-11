@@ -35,6 +35,8 @@
 		C72E132513D457DF00181DC3 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C72E132413D457DE00181DC3 /* SystemConfiguration.framework */; };
 		C751BE2F13E1889300DF26A3 /* NSEnumerator+BMKitAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = C751BE2D13E1889300DF26A3 /* NSEnumerator+BMKitAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C751BE3013E1889300DF26A3 /* NSEnumerator+BMKitAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = C751BE2E13E1889300DF26A3 /* NSEnumerator+BMKitAdditions.m */; };
+		C78AA86213F3A953008ED9D6 /* UIGestureRecognizer+BMKitAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = C78AA86013F3A953008ED9D6 /* UIGestureRecognizer+BMKitAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C78AA86313F3A953008ED9D6 /* UIGestureRecognizer+BMKitAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = C78AA86113F3A953008ED9D6 /* UIGestureRecognizer+BMKitAdditions.m */; };
 		C7BB3F8E13C0C44500E23AAD /* UIImagePickerController+BMKitAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = C7BB3F8C13C0C44500E23AAD /* UIImagePickerController+BMKitAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C7BB3F8F13C0C44500E23AAD /* UIImagePickerController+BMKitAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = C7BB3F8D13C0C44500E23AAD /* UIImagePickerController+BMKitAdditions.m */; };
 		C7BB3F9213C0C46E00E23AAD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7BB3F9113C0C46E00E23AAD /* UIKit.framework */; };
@@ -76,6 +78,8 @@
 		C72E132413D457DE00181DC3 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		C751BE2D13E1889300DF26A3 /* NSEnumerator+BMKitAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSEnumerator+BMKitAdditions.h"; sourceTree = "<group>"; };
 		C751BE2E13E1889300DF26A3 /* NSEnumerator+BMKitAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSEnumerator+BMKitAdditions.m"; sourceTree = "<group>"; };
+		C78AA86013F3A953008ED9D6 /* UIGestureRecognizer+BMKitAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIGestureRecognizer+BMKitAdditions.h"; sourceTree = "<group>"; };
+		C78AA86113F3A953008ED9D6 /* UIGestureRecognizer+BMKitAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIGestureRecognizer+BMKitAdditions.m"; sourceTree = "<group>"; };
 		C7BB3F8C13C0C44500E23AAD /* UIImagePickerController+BMKitAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImagePickerController+BMKitAdditions.h"; sourceTree = "<group>"; };
 		C7BB3F8D13C0C44500E23AAD /* UIImagePickerController+BMKitAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImagePickerController+BMKitAdditions.m"; sourceTree = "<group>"; };
 		C7BB3F9113C0C46E00E23AAD /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -121,6 +125,8 @@
 			children = (
 				C70C20E213D1974700FEA359 /* UIActionSheet+BMKitAdditions.h */,
 				C70C20E313D1974700FEA359 /* UIActionSheet+BMKitAdditions.m */,
+				C78AA86013F3A953008ED9D6 /* UIGestureRecognizer+BMKitAdditions.h */,
+				C78AA86113F3A953008ED9D6 /* UIGestureRecognizer+BMKitAdditions.m */,
 				C711ECAC13C4D8890099EAAA /* UIImage+BMKitAdditions.h */,
 				C711ECAD13C4D8890099EAAA /* UIImage+BMKitAdditions.m */,
 				C7BB3F8C13C0C44500E23AAD /* UIImagePickerController+BMKitAdditions.h */,
@@ -241,6 +247,7 @@
 				C72E12F413D44E4700181DC3 /* NSMutableSet+BMKitAdditions.h in Headers */,
 				C72E132213D457C000181DC3 /* BMNetworkReachabilityController.h in Headers */,
 				C751BE2F13E1889300DF26A3 /* NSEnumerator+BMKitAdditions.h in Headers */,
+				C78AA86213F3A953008ED9D6 /* UIGestureRecognizer+BMKitAdditions.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -310,6 +317,7 @@
 				C72E12F513D44E4700181DC3 /* NSMutableSet+BMKitAdditions.m in Sources */,
 				C72E132313D457C000181DC3 /* BMNetworkReachabilityController.m in Sources */,
 				C751BE3013E1889300DF26A3 /* NSEnumerator+BMKitAdditions.m in Sources */,
+				C78AA86313F3A953008ED9D6 /* UIGestureRecognizer+BMKitAdditions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
